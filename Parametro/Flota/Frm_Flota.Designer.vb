@@ -169,9 +169,9 @@ Partial Class Frm_Flota
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(16, 32)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(71, 15)
+        Me.Label1.Size = New System.Drawing.Size(84, 15)
         Me.Label1.TabIndex = 6
-        Me.Label1.Text = "Id. Flota : "
+        Me.Label1.Text = "Cod. Flota : "
         '
         'GroupBox3
         '
