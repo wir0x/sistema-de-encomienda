@@ -1,0 +1,66 @@
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\bin\Debug\Parametro.exe
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\bin\Debug\Parametro.pdb
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\bin\Debug\Parametro.xml
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\bin\Debug\LCN.dll
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\bin\Debug\LCD.dll
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\bin\Debug\LCN.pdb
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\bin\Debug\LCN.xml
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\bin\Debug\LCD.pdb
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\bin\Debug\LCD.xml
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\obj\x86\Debug\Presentacion.vbprojResolveAssemblyReference.cache
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\obj\x86\Debug\Parametro.Frm_Chofer.resources
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\obj\x86\Debug\Parametro.Frm_Cliente.resources
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\obj\x86\Debug\Parametro.Frm_ListaClientes.resources
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\obj\x86\Debug\Parametro.Frm_Encomienda.resources
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\obj\x86\Debug\Parametro.Frm_Flota.resources
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\obj\x86\Debug\Parametro.Frm_Permisos.resources
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\obj\x86\Debug\Parametro.Frm_HojaRuta.resources
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\obj\x86\Debug\Parametro.MDIPrincipal.resources
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\obj\x86\Debug\Parametro.Frm_Parametro.resources
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\obj\x86\Debug\Parametro.Resources.resources
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\obj\x86\Debug\Parametro.Frm_Login.resources
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\obj\x86\Debug\Parametro.Frm_Punto.resources
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\obj\x86\Debug\Parametro.Frm_TipoUsuario.resources
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\obj\x86\Debug\Parametro.Frm_Usuario.resources
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\obj\x86\Debug\Presentacion.vbproj.GenerateResource.Cache
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\obj\x86\Debug\Parametro.exe
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\obj\x86\Debug\Parametro.xml
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\obj\x86\Debug\Parametro.pdb
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\obj\x86\Debug\Parametro.Frm_Confirmar.resources
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\obj\x86\Debug\Parametro.Frm_ListaFlotas.resources
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\obj\x86\Debug\Parametro.Frm_ListaChoferes.resources
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\obj\x86\Debug\Parametro.Frm_ListaUsuarios.resources
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\Parametro\obj\x86\Debug\Parametro.Form1.resources
+d:\flash\Parametro_central\Parametro\obj\x86\Debug\Parametro.exe
+d:\flash\Parametro_central\Parametro\obj\x86\Debug\Parametro.xml
+d:\flash\Parametro_central\Parametro\obj\x86\Debug\Parametro.pdb
+d:\flash\Parametro_central\Parametro\bin\Debug\Parametro.exe
+d:\flash\Parametro_central\Parametro\bin\Debug\Parametro.pdb
+d:\flash\Parametro_central\Parametro\bin\Debug\Parametro.xml
+d:\flash\Parametro_central\Parametro\bin\Debug\LCN.dll
+d:\flash\Parametro_central\Parametro\bin\Debug\LCD.dll
+d:\flash\Parametro_central\Parametro\bin\Debug\LCN.pdb
+d:\flash\Parametro_central\Parametro\bin\Debug\LCN.xml
+d:\flash\Parametro_central\Parametro\bin\Debug\LCD.pdb
+d:\flash\Parametro_central\Parametro\bin\Debug\LCD.xml
+d:\flash\Parametro_central\Parametro\obj\x86\Debug\Presentacion.vbprojResolveAssemblyReference.cache
+d:\flash\Parametro_central\Parametro\obj\x86\Debug\Parametro.Frm_Chofer.resources
+d:\flash\Parametro_central\Parametro\obj\x86\Debug\Parametro.Frm_Cliente.resources
+d:\flash\Parametro_central\Parametro\obj\x86\Debug\Parametro.Frm_ListaClientes.resources
+d:\flash\Parametro_central\Parametro\obj\x86\Debug\Parametro.Frm_Confirmar.resources
+d:\flash\Parametro_central\Parametro\obj\x86\Debug\Parametro.Form1.resources
+d:\flash\Parametro_central\Parametro\obj\x86\Debug\Parametro.Frm_Encomienda.resources
+d:\flash\Parametro_central\Parametro\obj\x86\Debug\Parametro.Frm_Flota.resources
+d:\flash\Parametro_central\Parametro\obj\x86\Debug\Parametro.Frm_ListaFlotas.resources
+d:\flash\Parametro_central\Parametro\obj\x86\Debug\Parametro.Frm_Permisos.resources
+d:\flash\Parametro_central\Parametro\obj\x86\Debug\Parametro.Frm_HojaRuta.resources
+d:\flash\Parametro_central\Parametro\obj\x86\Debug\Parametro.MDIPrincipal.resources
+d:\flash\Parametro_central\Parametro\obj\x86\Debug\Parametro.Frm_Parametro.resources
+d:\flash\Parametro_central\Parametro\obj\x86\Debug\Parametro.Resources.resources
+d:\flash\Parametro_central\Parametro\obj\x86\Debug\Parametro.Frm_Login.resources
+d:\flash\Parametro_central\Parametro\obj\x86\Debug\Parametro.Frm_Punto.resources
+d:\flash\Parametro_central\Parametro\obj\x86\Debug\Parametro.Frm_TipoUsuario.resources
+d:\flash\Parametro_central\Parametro\obj\x86\Debug\Parametro.Frm_ListaChoferes.resources
+d:\flash\Parametro_central\Parametro\obj\x86\Debug\Parametro.Frm_ListaUsuarios.resources
+d:\flash\Parametro_central\Parametro\obj\x86\Debug\Parametro.Frm_Usuario.resources
+d:\flash\Parametro_central\Parametro\obj\x86\Debug\Presentacion.vbproj.GenerateResource.Cache

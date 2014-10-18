@@ -1,0 +1,93 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+LCN
+</name>
+</assembly>
+<members>
+<member name="P:LCN.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:LCN.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:LCN.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:LCN.Parametro.IdParam">
+	<summary>
+ Identificador del la tabla Parametro 
+ </summary>
+	<value>Ingresar el Id del Parametro</value>
+	<returns>Retorna el Id del parametro</returns>
+	<remarks></remarks>
+</member><member name="P:LCN.Parametro.PrecioMin">
+	<summary>
+ Precio Minimo de la tabla Parametro
+ </summary>
+	<value>Ingresar Precio minimo de la tabla Parametro</value>
+	<returns>Retorna el precio minimo de la tabla Parametro</returns>
+	<remarks></remarks>
+</member><member name="P:LCN.Parametro.PrecioKil">
+	<summary>
+ Precio Kilo de la tabla Parametro
+ </summary>
+	<value>Set Precio por Kilo</value>
+	<returns>Get Precio por Kilo</returns>
+	<remarks></remarks>
+</member><member name="P:LCN.Parametro.PrecioVol">
+	<summary>
+ Precio por Volumen
+ </summary>
+	<value>Set Precio por volumen</value>
+	<returns>Get Precio por volumen</returns>
+	<remarks></remarks>
+</member><member name="P:LCN.Parametro.Activo">
+	<summary>
+ Activo: Todo parametro que esta 
+ Descativo: no elimina la base de datos
+ </summary>
+	<value>Set Activo</value>
+	<returns>Get Activo</returns>
+	<remarks></remarks>
+</member><member name="P:LCN.Parametro.Fecha">
+	<summary>
+ La fecha se registra automaticamente el la base de datos
+ </summary>
+	<value>Set Fecha de registro</value>
+	<returns>Get fecha registro</returns>
+	<remarks></remarks>
+</member><member name="M:LCN.Parametro.#ctor(System.Decimal,System.Decimal,System.Decimal)">
+	<summary>
+ Constructur del la clase parametro
+ </summary>
+	<param name="PrecioMin">Precio Minimo</param>
+	<param name="PrecioKil">Precio Kilo</param>
+	<param name="PrecioVol">Precio Volumen</param>
+	<remarks></remarks>
+</member><member name="M:LCN.Parametro.CreateParametro">
+	<summary>
+ Crear un nuevo registro el la clase parametro
+ </summary>
+	<returns>retorna un boolean true si el la registro se ejecuto exitosamente</returns>
+	<remarks></remarks>
+</member><member name="M:LCN.Parametro.ReadAllParameters">
+	<summary>
+ Lee toda los registro de la tabla Parametro para el Usuario
+ </summary>
+	<returns>Retorna en una tabla todos los registro </returns>
+	<remarks></remarks>
+</member><member name="M:LCN.Parametro.UpdateParametro">
+	<summary>
+ Actualiza el ultimo parametro Activado
+ </summary>
+	<returns>Retorna el ultimo parametro modificado</returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

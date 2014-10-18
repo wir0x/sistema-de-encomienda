@@ -1,0 +1,24 @@
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\LCN\bin\Debug\LCN.dll
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\LCN\bin\Debug\LCN.pdb
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\LCN\bin\Debug\LCN.xml
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\LCN\bin\Debug\LCD.dll
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\LCN\bin\Debug\LCD.pdb
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\LCN\bin\Debug\LCD.xml
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\LCN\obj\Debug\LCN.vbprojResolveAssemblyReference.cache
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\LCN\obj\Debug\LCN.Resources.resources
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\LCN\obj\Debug\LCN.vbproj.GenerateResource.Cache
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\LCN\obj\Debug\LCN.dll
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\LCN\obj\Debug\LCN.xml
+D:\iFiles\Documents\Visual Studio 2010\Projects\Parametro\LCN\obj\Debug\LCN.pdb
+d:\flash\Parametro_central\LCN\bin\Debug\LCN.dll
+d:\flash\Parametro_central\LCN\bin\Debug\LCN.pdb
+d:\flash\Parametro_central\LCN\bin\Debug\LCN.xml
+d:\flash\Parametro_central\LCN\bin\Debug\LCD.dll
+d:\flash\Parametro_central\LCN\bin\Debug\LCD.pdb
+d:\flash\Parametro_central\LCN\bin\Debug\LCD.xml
+d:\flash\Parametro_central\LCN\obj\Debug\LCN.vbprojResolveAssemblyReference.cache
+d:\flash\Parametro_central\LCN\obj\Debug\LCN.Resources.resources
+d:\flash\Parametro_central\LCN\obj\Debug\LCN.vbproj.GenerateResource.Cache
+d:\flash\Parametro_central\LCN\obj\Debug\LCN.dll
+d:\flash\Parametro_central\LCN\obj\Debug\LCN.xml
+d:\flash\Parametro_central\LCN\obj\Debug\LCN.pdb

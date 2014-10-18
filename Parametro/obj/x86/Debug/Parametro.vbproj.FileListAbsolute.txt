@@ -1,0 +1,17 @@
+d:\ifiles\documents\visual studio 2010\Projects\Parametro\Parametro\bin\Debug\Parametro.exe
+d:\ifiles\documents\visual studio 2010\Projects\Parametro\Parametro\bin\Debug\Parametro.pdb
+d:\ifiles\documents\visual studio 2010\Projects\Parametro\Parametro\bin\Debug\Parametro.xml
+d:\ifiles\documents\visual studio 2010\Projects\Parametro\Parametro\bin\Debug\LCN.dll
+d:\ifiles\documents\visual studio 2010\Projects\Parametro\Parametro\bin\Debug\LCD.dll
+d:\ifiles\documents\visual studio 2010\Projects\Parametro\Parametro\bin\Debug\LCN.pdb
+d:\ifiles\documents\visual studio 2010\Projects\Parametro\Parametro\bin\Debug\LCN.xml
+d:\ifiles\documents\visual studio 2010\Projects\Parametro\Parametro\bin\Debug\LCD.pdb
+d:\ifiles\documents\visual studio 2010\Projects\Parametro\Parametro\bin\Debug\LCD.xml
+d:\ifiles\documents\visual studio 2010\Projects\Parametro\Parametro\obj\x86\Debug\Parametro.vbprojResolveAssemblyReference.cache
+d:\ifiles\documents\visual studio 2010\Projects\Parametro\Parametro\obj\x86\Debug\Parametro.Frm_Parametro.resources
+d:\ifiles\documents\visual studio 2010\Projects\Parametro\Parametro\obj\x86\Debug\Parametro.Resources.resources
+d:\ifiles\documents\visual studio 2010\Projects\Parametro\Parametro\obj\x86\Debug\Parametro.vbproj.GenerateResource.Cache
+d:\ifiles\documents\visual studio 2010\Projects\Parametro\Parametro\obj\x86\Debug\Parametro.exe
+d:\ifiles\documents\visual studio 2010\Projects\Parametro\Parametro\obj\x86\Debug\Parametro.xml
+d:\ifiles\documents\visual studio 2010\Projects\Parametro\Parametro\obj\x86\Debug\Parametro.pdb
+d:\ifiles\documents\visual studio 2010\Projects\Parametro\Parametro\obj\x86\Debug\Parametro.MDIParent1.resources
