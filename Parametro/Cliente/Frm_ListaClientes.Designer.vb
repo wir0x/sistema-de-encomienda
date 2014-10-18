@@ -58,7 +58,7 @@ Partial Class Frm_ListaClientes
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.dgv_parametro)
-        Me.GroupBox2.Font = New System.Drawing.Font("Ubuntu Light", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.SystemColors.AppWorkspace
         Me.GroupBox2.Location = New System.Drawing.Point(12, 143)
         Me.GroupBox2.Name = "GroupBox2"
@@ -151,7 +151,7 @@ Partial Class Frm_ListaClientes
         Me.GroupBox3.Controls.Add(Me.txt_buscar)
         Me.GroupBox3.Controls.Add(Me.Label3)
         Me.GroupBox3.Controls.Add(Me.Label1)
-        Me.GroupBox3.Font = New System.Drawing.Font("Ubuntu Light", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.ForeColor = System.Drawing.SystemColors.AppWorkspace
         Me.GroupBox3.Location = New System.Drawing.Point(12, 77)
         Me.GroupBox3.Name = "GroupBox3"
@@ -165,7 +165,7 @@ Partial Class Frm_ListaClientes
         Me.cmb_estado.FormattingEnabled = True
         Me.cmb_estado.Location = New System.Drawing.Point(87, 23)
         Me.cmb_estado.Name = "cmb_estado"
-        Me.cmb_estado.Size = New System.Drawing.Size(201, 25)
+        Me.cmb_estado.Size = New System.Drawing.Size(201, 23)
         Me.cmb_estado.TabIndex = 10
         '
         'txt_buscar
@@ -180,22 +180,22 @@ Partial Class Frm_ListaClientes
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Ubuntu Light", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label3.Location = New System.Drawing.Point(341, 28)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(45, 17)
+        Me.Label3.Size = New System.Drawing.Size(51, 15)
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "Buscar"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Ubuntu Light", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(24, 27)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(45, 17)
+        Me.Label1.Size = New System.Drawing.Size(51, 15)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Estado"
         '
@@ -204,7 +204,7 @@ Partial Class Frm_ListaClientes
         Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Controls.Add(Me.btn_cancelar)
         Me.GroupBox1.Controls.Add(Me.btn_guardar)
-        Me.GroupBox1.Font = New System.Drawing.Font("Ubuntu Light", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.AppWorkspace
         Me.GroupBox1.Location = New System.Drawing.Point(12, 532)
         Me.GroupBox1.Name = "GroupBox1"
@@ -219,7 +219,7 @@ Partial Class Frm_ListaClientes
         Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.Azure
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Ubuntu Light", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Button1.Image = Global.Parametro.My.Resources.Resources.file
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -239,7 +239,7 @@ Partial Class Frm_ListaClientes
         Me.btn_cancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btn_cancelar.FlatAppearance.BorderColor = System.Drawing.Color.Azure
         Me.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_cancelar.Font = New System.Drawing.Font("Ubuntu Light", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_cancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_cancelar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btn_cancelar.Image = Global.Parametro.My.Resources.Resources._exit
         Me.btn_cancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -258,7 +258,7 @@ Partial Class Frm_ListaClientes
         Me.btn_guardar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_guardar.FlatAppearance.BorderColor = System.Drawing.Color.Azure
         Me.btn_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_guardar.Font = New System.Drawing.Font("Ubuntu Light", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_guardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_guardar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btn_guardar.Image = Global.Parametro.My.Resources.Resources.insert_template
         Me.btn_guardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -295,11 +295,11 @@ Partial Class Frm_ListaClientes
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Ubuntu Condensed", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(316, 9)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(192, 35)
+        Me.Label4.Size = New System.Drawing.Size(231, 33)
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "Lista de Clientes"
         '
