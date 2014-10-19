@@ -110,7 +110,7 @@ Partial Class MDIPrincipal
         '
         Me.ArchivoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.IniciarSesiónToolStripMenuItem, Me.CerrarSesiónToolStripMenuItem, Me.ToolStripSeparator1, Me.SalirToolStripMenuItem})
         Me.ArchivoToolStripMenuItem.Name = "ArchivoToolStripMenuItem"
-        Me.ArchivoToolStripMenuItem.Size = New System.Drawing.Size(66, 22)
+        Me.ArchivoToolStripMenuItem.Size = New System.Drawing.Size(74, 27)
         Me.ArchivoToolStripMenuItem.Text = "Archivo"
         '
         'IniciarSesiónToolStripMenuItem
@@ -118,75 +118,75 @@ Partial Class MDIPrincipal
         Me.IniciarSesiónToolStripMenuItem.Image = Global.Parametro.My.Resources.Resources.open99
         Me.IniciarSesiónToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Transparent
         Me.IniciarSesiónToolStripMenuItem.Name = "IniciarSesiónToolStripMenuItem"
-        Me.IniciarSesiónToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
+        Me.IniciarSesiónToolStripMenuItem.Size = New System.Drawing.Size(170, 28)
         Me.IniciarSesiónToolStripMenuItem.Text = "Iniciar Sesión"
         '
         'CerrarSesiónToolStripMenuItem
         '
         Me.CerrarSesiónToolStripMenuItem.Image = Global.Parametro.My.Resources.Resources.padlock18
         Me.CerrarSesiónToolStripMenuItem.Name = "CerrarSesiónToolStripMenuItem"
-        Me.CerrarSesiónToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
+        Me.CerrarSesiónToolStripMenuItem.Size = New System.Drawing.Size(170, 28)
         Me.CerrarSesiónToolStripMenuItem.Text = "Cerrar Sesión"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(155, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(167, 6)
         '
         'SalirToolStripMenuItem
         '
         Me.SalirToolStripMenuItem.Image = Global.Parametro.My.Resources.Resources.login6
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(170, 28)
         Me.SalirToolStripMenuItem.Text = "Salir"
         '
         'EncomiendaToolStripMenuItem
         '
         Me.EncomiendaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevaEncomiendaToolStripMenuItem, Me.ConToolStripMenuItem})
         Me.EncomiendaToolStripMenuItem.Name = "EncomiendaToolStripMenuItem"
-        Me.EncomiendaToolStripMenuItem.Size = New System.Drawing.Size(94, 22)
+        Me.EncomiendaToolStripMenuItem.Size = New System.Drawing.Size(101, 27)
         Me.EncomiendaToolStripMenuItem.Text = "Encomienda"
         '
         'NuevaEncomiendaToolStripMenuItem
         '
         Me.NuevaEncomiendaToolStripMenuItem.Image = Global.Parametro.My.Resources.Resources.gift
         Me.NuevaEncomiendaToolStripMenuItem.Name = "NuevaEncomiendaToolStripMenuItem"
-        Me.NuevaEncomiendaToolStripMenuItem.Size = New System.Drawing.Size(212, 22)
+        Me.NuevaEncomiendaToolStripMenuItem.Size = New System.Drawing.Size(224, 28)
         Me.NuevaEncomiendaToolStripMenuItem.Text = "Nueva Encomienda"
         '
         'ConToolStripMenuItem
         '
         Me.ConToolStripMenuItem.Image = Global.Parametro.My.Resources.Resources.checkmark2
         Me.ConToolStripMenuItem.Name = "ConToolStripMenuItem"
-        Me.ConToolStripMenuItem.Size = New System.Drawing.Size(212, 22)
+        Me.ConToolStripMenuItem.Size = New System.Drawing.Size(224, 28)
         Me.ConToolStripMenuItem.Text = "Confirma Encomienda"
         '
         'ClienteToolStripMenuItem
         '
         Me.ClienteToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoClienteToolStripMenuItem, Me.ListaDeClientesToolStripMenuItem})
         Me.ClienteToolStripMenuItem.Name = "ClienteToolStripMenuItem"
-        Me.ClienteToolStripMenuItem.Size = New System.Drawing.Size(62, 22)
+        Me.ClienteToolStripMenuItem.Size = New System.Drawing.Size(70, 27)
         Me.ClienteToolStripMenuItem.Text = "Cliente"
         '
         'NuevoClienteToolStripMenuItem
         '
         Me.NuevoClienteToolStripMenuItem.Image = Global.Parametro.My.Resources.Resources.user2
         Me.NuevoClienteToolStripMenuItem.Name = "NuevoClienteToolStripMenuItem"
-        Me.NuevoClienteToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.NuevoClienteToolStripMenuItem.Size = New System.Drawing.Size(188, 28)
         Me.NuevoClienteToolStripMenuItem.Text = "Nuevo Cliente"
         '
         'ListaDeClientesToolStripMenuItem
         '
         Me.ListaDeClientesToolStripMenuItem.Image = Global.Parametro.My.Resources.Resources.address_book
         Me.ListaDeClientesToolStripMenuItem.Name = "ListaDeClientesToolStripMenuItem"
-        Me.ListaDeClientesToolStripMenuItem.Size = New System.Drawing.Size(176, 22)
+        Me.ListaDeClientesToolStripMenuItem.Size = New System.Drawing.Size(188, 28)
         Me.ListaDeClientesToolStripMenuItem.Text = "Lista de Clientes"
         '
         'PersonalToolStripMenuItem
         '
         Me.PersonalToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuarioToolStripMenuItem1, Me.ChoferToolStripMenuItem1})
         Me.PersonalToolStripMenuItem.Name = "PersonalToolStripMenuItem"
-        Me.PersonalToolStripMenuItem.Size = New System.Drawing.Size(73, 22)
+        Me.PersonalToolStripMenuItem.Size = New System.Drawing.Size(78, 27)
         Me.PersonalToolStripMenuItem.Text = "Personal"
         '
         'UsuarioToolStripMenuItem1
@@ -194,21 +194,21 @@ Partial Class MDIPrincipal
         Me.UsuarioToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarToolStripMenuItem1, Me.ListaDeUsuariosToolStripMenuItem})
         Me.UsuarioToolStripMenuItem1.Image = Global.Parametro.My.Resources.Resources.user4
         Me.UsuarioToolStripMenuItem1.Name = "UsuarioToolStripMenuItem1"
-        Me.UsuarioToolStripMenuItem1.Size = New System.Drawing.Size(125, 22)
+        Me.UsuarioToolStripMenuItem1.Size = New System.Drawing.Size(131, 28)
         Me.UsuarioToolStripMenuItem1.Text = "Usuario"
         '
         'AgregarToolStripMenuItem1
         '
         Me.AgregarToolStripMenuItem1.Image = Global.Parametro.My.Resources.Resources._018
         Me.AgregarToolStripMenuItem1.Name = "AgregarToolStripMenuItem1"
-        Me.AgregarToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.AgregarToolStripMenuItem1.Size = New System.Drawing.Size(191, 28)
         Me.AgregarToolStripMenuItem1.Text = "Agregar"
         '
         'ListaDeUsuariosToolStripMenuItem
         '
         Me.ListaDeUsuariosToolStripMenuItem.Image = Global.Parametro.My.Resources.Resources.address_book1
         Me.ListaDeUsuariosToolStripMenuItem.Name = "ListaDeUsuariosToolStripMenuItem"
-        Me.ListaDeUsuariosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ListaDeUsuariosToolStripMenuItem.Size = New System.Drawing.Size(191, 28)
         Me.ListaDeUsuariosToolStripMenuItem.Text = "Lista de Usuarios"
         '
         'ChoferToolStripMenuItem1
@@ -216,28 +216,28 @@ Partial Class MDIPrincipal
         Me.ChoferToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarToolStripMenuItem3, Me.ListaDeChoferesToolStripMenuItem})
         Me.ChoferToolStripMenuItem1.Image = Global.Parametro.My.Resources.Resources.user41
         Me.ChoferToolStripMenuItem1.Name = "ChoferToolStripMenuItem1"
-        Me.ChoferToolStripMenuItem1.Size = New System.Drawing.Size(125, 22)
+        Me.ChoferToolStripMenuItem1.Size = New System.Drawing.Size(131, 28)
         Me.ChoferToolStripMenuItem1.Text = "Chofer"
         '
         'AgregarToolStripMenuItem3
         '
         Me.AgregarToolStripMenuItem3.Image = Global.Parametro.My.Resources.Resources._018
         Me.AgregarToolStripMenuItem3.Name = "AgregarToolStripMenuItem3"
-        Me.AgregarToolStripMenuItem3.Size = New System.Drawing.Size(182, 22)
+        Me.AgregarToolStripMenuItem3.Size = New System.Drawing.Size(194, 28)
         Me.AgregarToolStripMenuItem3.Text = "Agregar"
         '
         'ListaDeChoferesToolStripMenuItem
         '
         Me.ListaDeChoferesToolStripMenuItem.Image = Global.Parametro.My.Resources.Resources.address_book2
         Me.ListaDeChoferesToolStripMenuItem.Name = "ListaDeChoferesToolStripMenuItem"
-        Me.ListaDeChoferesToolStripMenuItem.Size = New System.Drawing.Size(182, 22)
+        Me.ListaDeChoferesToolStripMenuItem.Size = New System.Drawing.Size(194, 28)
         Me.ListaDeChoferesToolStripMenuItem.Text = "Lista de Choferes"
         '
         'ConfiguracionToolStripMenuItem
         '
         Me.ConfiguracionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ParametroToolStripMenuItem, Me.PuntosToolStripMenuItem, Me.HojaRutaToolStripMenuItem, Me.FlotaToolStripMenuItem})
         Me.ConfiguracionToolStripMenuItem.Name = "ConfiguracionToolStripMenuItem"
-        Me.ConfiguracionToolStripMenuItem.Size = New System.Drawing.Size(64, 22)
+        Me.ConfiguracionToolStripMenuItem.Size = New System.Drawing.Size(70, 27)
         Me.ConfiguracionToolStripMenuItem.Text = "Edición"
         '
         'ParametroToolStripMenuItem
@@ -245,14 +245,14 @@ Partial Class MDIPrincipal
         Me.ParametroToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarToolStripMenuItem})
         Me.ParametroToolStripMenuItem.Image = Global.Parametro.My.Resources.Resources.coin
         Me.ParametroToolStripMenuItem.Name = "ParametroToolStripMenuItem"
-        Me.ParametroToolStripMenuItem.Size = New System.Drawing.Size(142, 22)
+        Me.ParametroToolStripMenuItem.Size = New System.Drawing.Size(148, 28)
         Me.ParametroToolStripMenuItem.Text = "Parametro"
         '
         'AgregarToolStripMenuItem
         '
         Me.AgregarToolStripMenuItem.Image = Global.Parametro.My.Resources.Resources._021
         Me.AgregarToolStripMenuItem.Name = "AgregarToolStripMenuItem"
-        Me.AgregarToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
+        Me.AgregarToolStripMenuItem.Size = New System.Drawing.Size(136, 28)
         Me.AgregarToolStripMenuItem.Text = "Agregar "
         '
         'PuntosToolStripMenuItem
@@ -260,13 +260,13 @@ Partial Class MDIPrincipal
         Me.PuntosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarToolStripMenuItem2})
         Me.PuntosToolStripMenuItem.Image = Global.Parametro.My.Resources.Resources.location
         Me.PuntosToolStripMenuItem.Name = "PuntosToolStripMenuItem"
-        Me.PuntosToolStripMenuItem.Size = New System.Drawing.Size(142, 22)
+        Me.PuntosToolStripMenuItem.Size = New System.Drawing.Size(148, 28)
         Me.PuntosToolStripMenuItem.Text = "Puntos"
         '
         'AgregarToolStripMenuItem2
         '
         Me.AgregarToolStripMenuItem2.Name = "AgregarToolStripMenuItem2"
-        Me.AgregarToolStripMenuItem2.Size = New System.Drawing.Size(128, 22)
+        Me.AgregarToolStripMenuItem2.Size = New System.Drawing.Size(132, 28)
         Me.AgregarToolStripMenuItem2.Text = "Agregar"
         '
         'HojaRutaToolStripMenuItem
@@ -274,13 +274,13 @@ Partial Class MDIPrincipal
         Me.HojaRutaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarToolStripMenuItem6})
         Me.HojaRutaToolStripMenuItem.Image = Global.Parametro.My.Resources.Resources.location2
         Me.HojaRutaToolStripMenuItem.Name = "HojaRutaToolStripMenuItem"
-        Me.HojaRutaToolStripMenuItem.Size = New System.Drawing.Size(142, 22)
+        Me.HojaRutaToolStripMenuItem.Size = New System.Drawing.Size(148, 28)
         Me.HojaRutaToolStripMenuItem.Text = "Hoja Ruta"
         '
         'AgregarToolStripMenuItem6
         '
         Me.AgregarToolStripMenuItem6.Name = "AgregarToolStripMenuItem6"
-        Me.AgregarToolStripMenuItem6.Size = New System.Drawing.Size(128, 22)
+        Me.AgregarToolStripMenuItem6.Size = New System.Drawing.Size(132, 28)
         Me.AgregarToolStripMenuItem6.Text = "Agregar"
         '
         'FlotaToolStripMenuItem
@@ -288,28 +288,28 @@ Partial Class MDIPrincipal
         Me.FlotaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevaFlotaToolStripMenuItem1, Me.ListaFlotasToolStripMenuItem})
         Me.FlotaToolStripMenuItem.Image = Global.Parametro.My.Resources.Resources.truck
         Me.FlotaToolStripMenuItem.Name = "FlotaToolStripMenuItem"
-        Me.FlotaToolStripMenuItem.Size = New System.Drawing.Size(142, 22)
+        Me.FlotaToolStripMenuItem.Size = New System.Drawing.Size(148, 28)
         Me.FlotaToolStripMenuItem.Text = "Flota"
         '
         'NuevaFlotaToolStripMenuItem1
         '
         Me.NuevaFlotaToolStripMenuItem1.Image = Global.Parametro.My.Resources.Resources.plus
         Me.NuevaFlotaToolStripMenuItem1.Name = "NuevaFlotaToolStripMenuItem1"
-        Me.NuevaFlotaToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.NuevaFlotaToolStripMenuItem1.Size = New System.Drawing.Size(160, 28)
         Me.NuevaFlotaToolStripMenuItem1.Text = "Nueva Flota"
         '
         'ListaFlotasToolStripMenuItem
         '
         Me.ListaFlotasToolStripMenuItem.Image = Global.Parametro.My.Resources.Resources.list2
         Me.ListaFlotasToolStripMenuItem.Name = "ListaFlotasToolStripMenuItem"
-        Me.ListaFlotasToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ListaFlotasToolStripMenuItem.Size = New System.Drawing.Size(160, 28)
         Me.ListaFlotasToolStripMenuItem.Text = "Lista Flotas"
         '
         'ConfiguracionToolStripMenuItem1
         '
         Me.ConfiguracionToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PermisosToolStripMenuItem, Me.TipoDeUsuarioToolStripMenuItem})
         Me.ConfiguracionToolStripMenuItem1.Name = "ConfiguracionToolStripMenuItem1"
-        Me.ConfiguracionToolStripMenuItem1.Size = New System.Drawing.Size(106, 22)
+        Me.ConfiguracionToolStripMenuItem1.Size = New System.Drawing.Size(114, 27)
         Me.ConfiguracionToolStripMenuItem1.Text = "Configuración"
         '
         'PermisosToolStripMenuItem
@@ -317,14 +317,14 @@ Partial Class MDIPrincipal
         Me.PermisosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarToolStripMenuItem4})
         Me.PermisosToolStripMenuItem.Image = Global.Parametro.My.Resources.Resources.cog2
         Me.PermisosToolStripMenuItem.Name = "PermisosToolStripMenuItem"
-        Me.PermisosToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
+        Me.PermisosToolStripMenuItem.Size = New System.Drawing.Size(186, 28)
         Me.PermisosToolStripMenuItem.Text = "Permisos"
         '
         'AgregarToolStripMenuItem4
         '
         Me.AgregarToolStripMenuItem4.Image = Global.Parametro.My.Resources.Resources.plus1
         Me.AgregarToolStripMenuItem4.Name = "AgregarToolStripMenuItem4"
-        Me.AgregarToolStripMenuItem4.Size = New System.Drawing.Size(128, 22)
+        Me.AgregarToolStripMenuItem4.Size = New System.Drawing.Size(132, 28)
         Me.AgregarToolStripMenuItem4.Text = "Agregar"
         '
         'TipoDeUsuarioToolStripMenuItem
@@ -332,13 +332,13 @@ Partial Class MDIPrincipal
         Me.TipoDeUsuarioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarToolStripMenuItem5})
         Me.TipoDeUsuarioToolStripMenuItem.Image = Global.Parametro.My.Resources.Resources.users21
         Me.TipoDeUsuarioToolStripMenuItem.Name = "TipoDeUsuarioToolStripMenuItem"
-        Me.TipoDeUsuarioToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
+        Me.TipoDeUsuarioToolStripMenuItem.Size = New System.Drawing.Size(186, 28)
         Me.TipoDeUsuarioToolStripMenuItem.Text = "Tipo de Usuario"
         '
         'AgregarToolStripMenuItem5
         '
         Me.AgregarToolStripMenuItem5.Name = "AgregarToolStripMenuItem5"
-        Me.AgregarToolStripMenuItem5.Size = New System.Drawing.Size(128, 22)
+        Me.AgregarToolStripMenuItem5.Size = New System.Drawing.Size(132, 28)
         Me.AgregarToolStripMenuItem5.Text = "Agregar"
         '
         'Label1
