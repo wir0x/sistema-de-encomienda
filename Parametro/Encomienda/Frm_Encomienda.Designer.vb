@@ -218,9 +218,9 @@ Partial Class Frm_Encomienda
         Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label11.Location = New System.Drawing.Point(16, 101)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(79, 17)
+        Me.Label11.Size = New System.Drawing.Size(82, 17)
         Me.Label11.TabIndex = 32
-        Me.Label11.Text = "Destinatario:"
+        Me.Label11.Text = "Destinatario :"
         '
         'Label10
         '
@@ -229,9 +229,9 @@ Partial Class Frm_Encomienda
         Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label10.Location = New System.Drawing.Point(17, 68)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(69, 17)
+        Me.Label10.Size = New System.Drawing.Size(72, 17)
         Me.Label10.TabIndex = 29
-        Me.Label10.Text = "Remitente:"
+        Me.Label10.Text = "Remitente :"
         '
         'chb_pagado
         '
@@ -249,9 +249,9 @@ Partial Class Frm_Encomienda
         Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label9.Location = New System.Drawing.Point(16, 134)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(37, 17)
+        Me.Label9.Size = New System.Drawing.Size(40, 17)
         Me.Label9.TabIndex = 26
-        Me.Label9.Text = "Ruta:"
+        Me.Label9.Text = "Ruta :"
         '
         'nud_monto
         '
@@ -366,9 +366,9 @@ Partial Class Frm_Encomienda
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label3.Location = New System.Drawing.Point(16, 167)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(76, 17)
+        Me.Label3.Size = New System.Drawing.Size(79, 17)
         Me.Label3.TabIndex = 8
-        Me.Label3.Text = "Descripción:"
+        Me.Label3.Text = "Descripción :"
         '
         'Label2
         '
@@ -388,9 +388,9 @@ Partial Class Frm_Encomienda
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(16, 35)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(44, 17)
+        Me.Label1.Size = New System.Drawing.Size(47, 17)
         Me.Label1.TabIndex = 6
-        Me.Label1.Text = "Fecha:"
+        Me.Label1.Text = "Fecha :"
         '
         'GroupBox1
         '
@@ -467,9 +467,11 @@ Partial Class Frm_Encomienda
         '
         'Frm_Encomienda
         '
+        Me.AcceptButton = Me.btn_guardar
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.CancelButton = Me.btn_cancelar
         Me.ClientSize = New System.Drawing.Size(578, 430)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox3)

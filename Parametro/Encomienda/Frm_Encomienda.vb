@@ -22,7 +22,6 @@
     Private Sub btn_destinatario_Click(sender As Object, e As EventArgs) Handles btn_destinatario.Click
         Try
             Dim frm As New Frm_ListaClientes
-            Me.Close()
             frm.ShowDialog()
         Catch ex As Exception
             MsgBox(ex.Message)

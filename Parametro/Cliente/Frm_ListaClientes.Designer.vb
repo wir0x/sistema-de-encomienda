@@ -23,14 +23,20 @@ Partial Class Frm_ListaClientes
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.dgv_listaclientes = New System.Windows.Forms.DataGridView()
+        Me.NroDoc = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Telefono = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Activo = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.FechaAct = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.cmb_estado = New System.Windows.Forms.ComboBox()
         Me.txt_buscar = New System.Windows.Forms.TextBox()
@@ -39,19 +45,13 @@ Partial Class Frm_ListaClientes
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btn_cancelar = New System.Windows.Forms.Button()
-        Me.btn_guardar = New System.Windows.Forms.Button()
+        Me.btn_reporte = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.lbl_titulo = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ModificarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NroDoc = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Telefono = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Activo = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.FechaAct = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.lbl_titulo = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         CType(Me.dgv_listaclientes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
@@ -89,6 +89,70 @@ Partial Class Frm_ListaClientes
         Me.dgv_listaclientes.RowHeadersVisible = False
         Me.dgv_listaclientes.Size = New System.Drawing.Size(755, 333)
         Me.dgv_listaclientes.TabIndex = 6
+        '
+        'NroDoc
+        '
+        Me.NroDoc.DataPropertyName = "NroDoc"
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.NroDoc.DefaultCellStyle = DataGridViewCellStyle7
+        Me.NroDoc.HeaderText = "Nr. Doc. (CI)"
+        Me.NroDoc.Name = "NroDoc"
+        Me.NroDoc.ReadOnly = True
+        Me.NroDoc.Width = 80
+        '
+        'Nombre
+        '
+        Me.Nombre.DataPropertyName = "Nombre"
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Nombre.DefaultCellStyle = DataGridViewCellStyle8
+        Me.Nombre.HeaderText = "Nombres"
+        Me.Nombre.Name = "Nombre"
+        Me.Nombre.ReadOnly = True
+        Me.Nombre.Width = 200
+        '
+        'Telefono
+        '
+        Me.Telefono.DataPropertyName = "Telefono"
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Telefono.DefaultCellStyle = DataGridViewCellStyle9
+        Me.Telefono.HeaderText = "Telefono"
+        Me.Telefono.Name = "Telefono"
+        Me.Telefono.ReadOnly = True
+        Me.Telefono.Width = 80
+        '
+        'Direccion
+        '
+        Me.Direccion.DataPropertyName = "Direccion"
+        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Direccion.DefaultCellStyle = DataGridViewCellStyle10
+        Me.Direccion.HeaderText = "Dirección"
+        Me.Direccion.Name = "Direccion"
+        Me.Direccion.ReadOnly = True
+        Me.Direccion.Width = 200
+        '
+        'Activo
+        '
+        Me.Activo.DataPropertyName = "Activo"
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle11.NullValue = False
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Activo.DefaultCellStyle = DataGridViewCellStyle11
+        Me.Activo.HeaderText = "Activo"
+        Me.Activo.Name = "Activo"
+        Me.Activo.ReadOnly = True
+        Me.Activo.Width = 48
+        '
+        'FechaAct
+        '
+        Me.FechaAct.DataPropertyName = "FechaAct"
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.FechaAct.DefaultCellStyle = DataGridViewCellStyle12
+        Me.FechaAct.HeaderText = "Fecha Actualizado"
+        Me.FechaAct.Name = "FechaAct"
+        Me.FechaAct.ReadOnly = True
+        Me.FechaAct.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.FechaAct.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.FechaAct.Width = 135
         '
         'GroupBox3
         '
@@ -130,9 +194,9 @@ Partial Class Frm_ListaClientes
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label3.Location = New System.Drawing.Point(341, 28)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(51, 15)
+        Me.Label3.Size = New System.Drawing.Size(63, 15)
         Me.Label3.TabIndex = 8
-        Me.Label3.Text = "Buscar"
+        Me.Label3.Text = "Buscar : "
         '
         'Label1
         '
@@ -141,15 +205,15 @@ Partial Class Frm_ListaClientes
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(24, 27)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(51, 15)
+        Me.Label1.Size = New System.Drawing.Size(59, 15)
         Me.Label1.TabIndex = 6
-        Me.Label1.Text = "Estado"
+        Me.Label1.Text = "Estado :"
         '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Controls.Add(Me.btn_cancelar)
-        Me.GroupBox1.Controls.Add(Me.btn_guardar)
+        Me.GroupBox1.Controls.Add(Me.btn_reporte)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.AppWorkspace
         Me.GroupBox1.Location = New System.Drawing.Point(12, 532)
@@ -198,24 +262,24 @@ Partial Class Frm_ListaClientes
         Me.btn_cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btn_cancelar.UseVisualStyleBackColor = False
         '
-        'btn_guardar
+        'btn_reporte
         '
-        Me.btn_guardar.BackColor = System.Drawing.Color.Gainsboro
-        Me.btn_guardar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btn_guardar.FlatAppearance.BorderColor = System.Drawing.Color.Azure
-        Me.btn_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_guardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_guardar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.btn_guardar.Image = Global.Parametro.My.Resources.Resources.insert_template
-        Me.btn_guardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_guardar.Location = New System.Drawing.Point(497, 14)
-        Me.btn_guardar.Name = "btn_guardar"
-        Me.btn_guardar.Padding = New System.Windows.Forms.Padding(7, 0, 5, 0)
-        Me.btn_guardar.Size = New System.Drawing.Size(112, 33)
-        Me.btn_guardar.TabIndex = 3
-        Me.btn_guardar.Text = "Reporte"
-        Me.btn_guardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btn_guardar.UseVisualStyleBackColor = False
+        Me.btn_reporte.BackColor = System.Drawing.Color.Gainsboro
+        Me.btn_reporte.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btn_reporte.FlatAppearance.BorderColor = System.Drawing.Color.Azure
+        Me.btn_reporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_reporte.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_reporte.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btn_reporte.Image = Global.Parametro.My.Resources.Resources.insert_template
+        Me.btn_reporte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_reporte.Location = New System.Drawing.Point(497, 14)
+        Me.btn_reporte.Name = "btn_reporte"
+        Me.btn_reporte.Padding = New System.Windows.Forms.Padding(7, 0, 5, 0)
+        Me.btn_reporte.Size = New System.Drawing.Size(112, 33)
+        Me.btn_reporte.TabIndex = 3
+        Me.btn_reporte.Text = "Reporte"
+        Me.btn_reporte.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btn_reporte.UseVisualStyleBackColor = False
         '
         'Panel2
         '
@@ -226,6 +290,17 @@ Partial Class Frm_ListaClientes
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(868, 59)
         Me.Panel2.TabIndex = 22
+        '
+        'lbl_titulo
+        '
+        Me.lbl_titulo.AutoSize = True
+        Me.lbl_titulo.Font = New System.Drawing.Font("Ubuntu Condensed", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_titulo.ForeColor = System.Drawing.Color.White
+        Me.lbl_titulo.Location = New System.Drawing.Point(270, 9)
+        Me.lbl_titulo.Name = "lbl_titulo"
+        Me.lbl_titulo.Size = New System.Drawing.Size(192, 35)
+        Me.lbl_titulo.TabIndex = 3
+        Me.lbl_titulo.Text = "Lista de Clientes"
         '
         'PictureBox1
         '
@@ -256,85 +331,12 @@ Partial Class Frm_ListaClientes
         Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.EliminarToolStripMenuItem.Text = "Eliminar"
         '
-        'NroDoc
-        '
-        Me.NroDoc.DataPropertyName = "NroDoc"
-        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.NroDoc.DefaultCellStyle = DataGridViewCellStyle13
-        Me.NroDoc.HeaderText = "Nr. Doc. (CI)"
-        Me.NroDoc.Name = "NroDoc"
-        Me.NroDoc.ReadOnly = True
-        Me.NroDoc.Width = 80
-        '
-        'Nombre
-        '
-        Me.Nombre.DataPropertyName = "Nombre"
-        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Nombre.DefaultCellStyle = DataGridViewCellStyle14
-        Me.Nombre.HeaderText = "Nombres"
-        Me.Nombre.Name = "Nombre"
-        Me.Nombre.ReadOnly = True
-        Me.Nombre.Width = 200
-        '
-        'Telefono
-        '
-        Me.Telefono.DataPropertyName = "Telefono"
-        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Telefono.DefaultCellStyle = DataGridViewCellStyle15
-        Me.Telefono.HeaderText = "Telefono"
-        Me.Telefono.Name = "Telefono"
-        Me.Telefono.ReadOnly = True
-        Me.Telefono.Width = 80
-        '
-        'Direccion
-        '
-        Me.Direccion.DataPropertyName = "Direccion"
-        DataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Direccion.DefaultCellStyle = DataGridViewCellStyle16
-        Me.Direccion.HeaderText = "Dirección"
-        Me.Direccion.Name = "Direccion"
-        Me.Direccion.ReadOnly = True
-        Me.Direccion.Width = 200
-        '
-        'Activo
-        '
-        Me.Activo.DataPropertyName = "Activo"
-        DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle17.NullValue = False
-        DataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Activo.DefaultCellStyle = DataGridViewCellStyle17
-        Me.Activo.HeaderText = "Activo"
-        Me.Activo.Name = "Activo"
-        Me.Activo.ReadOnly = True
-        Me.Activo.Width = 48
-        '
-        'FechaAct
-        '
-        Me.FechaAct.DataPropertyName = "FechaAct"
-        DataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.FechaAct.DefaultCellStyle = DataGridViewCellStyle18
-        Me.FechaAct.HeaderText = "Fecha Actualizado"
-        Me.FechaAct.Name = "FechaAct"
-        Me.FechaAct.ReadOnly = True
-        Me.FechaAct.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.FechaAct.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.FechaAct.Width = 135
-        '
-        'lbl_titulo
-        '
-        Me.lbl_titulo.AutoSize = True
-        Me.lbl_titulo.Font = New System.Drawing.Font("Ubuntu Condensed", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_titulo.ForeColor = System.Drawing.Color.White
-        Me.lbl_titulo.Location = New System.Drawing.Point(270, 9)
-        Me.lbl_titulo.Name = "lbl_titulo"
-        Me.lbl_titulo.Size = New System.Drawing.Size(192, 35)
-        Me.lbl_titulo.TabIndex = 3
-        Me.lbl_titulo.Text = "Lista de Clientes"
-        '
         'Frm_ListaClientes
         '
+        Me.AcceptButton = Me.btn_reporte
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.CancelButton = Me.btn_cancelar
         Me.ClientSize = New System.Drawing.Size(792, 596)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.GroupBox1)
@@ -366,7 +368,7 @@ Partial Class Frm_ListaClientes
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents btn_cancelar As System.Windows.Forms.Button
-    Friend WithEvents btn_guardar As System.Windows.Forms.Button
+    Friend WithEvents btn_reporte As System.Windows.Forms.Button
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip

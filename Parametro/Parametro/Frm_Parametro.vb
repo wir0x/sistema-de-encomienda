@@ -156,4 +156,8 @@ Public Class Frm_Parametro
         CargarDataGrid()
         LimpiarFormulario()
     End Sub
+
+    Private Sub btn_cancelar_Click_1(sender As Object, e As EventArgs) Handles btn_cancelar.Click
+        Me.Close()
+    End Sub
 End Class

@@ -228,8 +228,10 @@ Partial Class Frm_Chofer
         '
         'Frm_Chofer
         '
+        Me.AcceptButton = Me.btn_guardar
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.CancelButton = Me.btn_cancelar
         Me.ClientSize = New System.Drawing.Size(405, 354)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.Panel2)

@@ -316,8 +316,10 @@ Partial Class Frm_Flota
         '
         'Frm_Flota
         '
+        Me.AcceptButton = Me.btn_guardar
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.CancelButton = Me.btn_cancelar
         Me.ClientSize = New System.Drawing.Size(425, 374)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.GroupBox1)

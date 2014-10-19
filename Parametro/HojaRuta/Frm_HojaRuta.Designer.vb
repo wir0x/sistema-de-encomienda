@@ -103,20 +103,20 @@ Partial Class Frm_HojaRuta
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.Label6)
+        Me.GroupBox3.Controls.Add(Me.Label11)
+        Me.GroupBox3.Controls.Add(Me.Label5)
+        Me.GroupBox3.Controls.Add(Me.Label4)
+        Me.GroupBox3.Controls.Add(Me.Label3)
+        Me.GroupBox3.Controls.Add(Me.Label2)
         Me.GroupBox3.Controls.Add(Me.txt_chofer)
         Me.GroupBox3.Controls.Add(Me.btn_chofer)
         Me.GroupBox3.Controls.Add(Me.btn_flota)
         Me.GroupBox3.Controls.Add(Me.txt_flota)
-        Me.GroupBox3.Controls.Add(Me.Label6)
-        Me.GroupBox3.Controls.Add(Me.Label11)
         Me.GroupBox3.Controls.Add(Me.cmb_destino)
-        Me.GroupBox3.Controls.Add(Me.Label5)
         Me.GroupBox3.Controls.Add(Me.cmb_origen)
-        Me.GroupBox3.Controls.Add(Me.Label4)
         Me.GroupBox3.Controls.Add(Me.dtp_fechallegada)
         Me.GroupBox3.Controls.Add(Me.dtp_fechasalida)
-        Me.GroupBox3.Controls.Add(Me.Label3)
-        Me.GroupBox3.Controls.Add(Me.Label2)
         Me.GroupBox3.Font = New System.Drawing.Font("Ubuntu Light", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.ForeColor = System.Drawing.Color.Gray
         Me.GroupBox3.Location = New System.Drawing.Point(11, 85)
@@ -185,7 +185,7 @@ Partial Class Frm_HojaRuta
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Ubuntu Light", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(24, 136)
+        Me.Label6.Location = New System.Drawing.Point(27, 137)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(53, 17)
         Me.Label6.TabIndex = 42
@@ -196,7 +196,7 @@ Partial Class Frm_HojaRuta
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Ubuntu Light", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label11.Location = New System.Drawing.Point(24, 103)
+        Me.Label11.Location = New System.Drawing.Point(27, 104)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(43, 17)
         Me.Label11.TabIndex = 39
@@ -215,11 +215,11 @@ Partial Class Frm_HojaRuta
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Ubuntu Light", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(22, 70)
+        Me.Label5.Location = New System.Drawing.Point(27, 71)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(51, 17)
+        Me.Label5.Size = New System.Drawing.Size(57, 17)
         Me.Label5.TabIndex = 27
-        Me.Label5.Text = "Destino"
+        Me.Label5.Text = "Destino :"
         '
         'cmb_origen
         '
@@ -234,11 +234,11 @@ Partial Class Frm_HojaRuta
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Ubuntu Light", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(22, 37)
+        Me.Label4.Location = New System.Drawing.Point(27, 38)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(49, 17)
+        Me.Label4.Size = New System.Drawing.Size(52, 17)
         Me.Label4.TabIndex = 25
-        Me.Label4.Text = "Origen "
+        Me.Label4.Text = "Origen :"
         '
         'dtp_fechallegada
         '
@@ -265,7 +265,7 @@ Partial Class Frm_HojaRuta
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Ubuntu Light", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(24, 170)
+        Me.Label3.Location = New System.Drawing.Point(27, 170)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(85, 17)
         Me.Label3.TabIndex = 8
@@ -276,7 +276,7 @@ Partial Class Frm_HojaRuta
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Ubuntu Light", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(24, 203)
+        Me.Label2.Location = New System.Drawing.Point(27, 203)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(93, 17)
         Me.Label2.TabIndex = 7
