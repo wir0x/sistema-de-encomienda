@@ -23,12 +23,12 @@ Partial Class Frm_Parametro
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.dgv_parametro = New System.Windows.Forms.DataGridView()
         Me.ParametroId = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PrecioMinimo = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -43,6 +43,8 @@ Partial Class Frm_Parametro
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btn_cancelar = New System.Windows.Forms.Button()
+        Me.btn_guardar = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.chb_activo = New System.Windows.Forms.CheckBox()
@@ -50,10 +52,8 @@ Partial Class Frm_Parametro
         Me.ModificarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.btn_cancelar = New System.Windows.Forms.Button()
-        Me.btn_guardar = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.dgv_parametro, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nud_precioMin, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nud_precioVol, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -76,6 +76,7 @@ Partial Class Frm_Parametro
         Me.dgv_parametro.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgv_parametro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.dgv_parametro.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ParametroId, Me.PrecioMinimo, Me.PrecioKilo, Me.PrecioVolumen, Me.Activo, Me.Fecha})
+        Me.dgv_parametro.GridColor = System.Drawing.Color.Gray
         Me.dgv_parametro.Location = New System.Drawing.Point(11, 33)
         Me.dgv_parametro.Name = "dgv_parametro"
         Me.dgv_parametro.ReadOnly = True
@@ -86,8 +87,8 @@ Partial Class Frm_Parametro
         'ParametroId
         '
         Me.ParametroId.DataPropertyName = "ParametroId"
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.ParametroId.DefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.ParametroId.DefaultCellStyle = DataGridViewCellStyle1
         Me.ParametroId.HeaderText = "ID"
         Me.ParametroId.Name = "ParametroId"
         Me.ParametroId.ReadOnly = True
@@ -96,8 +97,8 @@ Partial Class Frm_Parametro
         'PrecioMinimo
         '
         Me.PrecioMinimo.DataPropertyName = "PrecioMinimo"
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.PrecioMinimo.DefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.PrecioMinimo.DefaultCellStyle = DataGridViewCellStyle2
         Me.PrecioMinimo.HeaderText = "Precio Minimo"
         Me.PrecioMinimo.Name = "PrecioMinimo"
         Me.PrecioMinimo.ReadOnly = True
@@ -106,8 +107,8 @@ Partial Class Frm_Parametro
         'PrecioKilo
         '
         Me.PrecioKilo.DataPropertyName = "PrecioKilo"
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.PrecioKilo.DefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.PrecioKilo.DefaultCellStyle = DataGridViewCellStyle3
         Me.PrecioKilo.HeaderText = "Precio Kilo"
         Me.PrecioKilo.Name = "PrecioKilo"
         Me.PrecioKilo.ReadOnly = True
@@ -116,8 +117,8 @@ Partial Class Frm_Parametro
         'PrecioVolumen
         '
         Me.PrecioVolumen.DataPropertyName = "PrecioVolumen"
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.PrecioVolumen.DefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.PrecioVolumen.DefaultCellStyle = DataGridViewCellStyle4
         Me.PrecioVolumen.HeaderText = "Precio Volumen"
         Me.PrecioVolumen.Name = "PrecioVolumen"
         Me.PrecioVolumen.ReadOnly = True
@@ -126,10 +127,10 @@ Partial Class Frm_Parametro
         'Activo
         '
         Me.Activo.DataPropertyName = "Activo"
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle11.NullValue = False
-        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Activo.DefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle5.NullValue = False
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Activo.DefaultCellStyle = DataGridViewCellStyle5
         Me.Activo.HeaderText = "Activo"
         Me.Activo.Name = "Activo"
         Me.Activo.ReadOnly = True
@@ -138,8 +139,8 @@ Partial Class Frm_Parametro
         'Fecha
         '
         Me.Fecha.DataPropertyName = "Fecha"
-        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Fecha.DefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Fecha.DefaultCellStyle = DataGridViewCellStyle6
         Me.Fecha.HeaderText = "Fecha y Hora"
         Me.Fecha.Name = "Fecha"
         Me.Fecha.ReadOnly = True
@@ -226,6 +227,45 @@ Partial Class Frm_Parametro
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Operaciones"
         '
+        'btn_cancelar
+        '
+        Me.btn_cancelar.BackColor = System.Drawing.Color.Gainsboro
+        Me.btn_cancelar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btn_cancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.btn_cancelar.FlatAppearance.BorderColor = System.Drawing.Color.Azure
+        Me.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_cancelar.Font = New System.Drawing.Font("Ubuntu Light", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_cancelar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btn_cancelar.Image = Global.Parametro.My.Resources.Resources.cancel_circle
+        Me.btn_cancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_cancelar.Location = New System.Drawing.Point(417, 12)
+        Me.btn_cancelar.Name = "btn_cancelar"
+        Me.btn_cancelar.Padding = New System.Windows.Forms.Padding(7, 1, 5, 1)
+        Me.btn_cancelar.Size = New System.Drawing.Size(112, 34)
+        Me.btn_cancelar.TabIndex = 6
+        Me.btn_cancelar.Text = "Cancelar"
+        Me.btn_cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btn_cancelar.UseVisualStyleBackColor = False
+        '
+        'btn_guardar
+        '
+        Me.btn_guardar.BackColor = System.Drawing.Color.Gainsboro
+        Me.btn_guardar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btn_guardar.FlatAppearance.BorderColor = System.Drawing.Color.Azure
+        Me.btn_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_guardar.Font = New System.Drawing.Font("Ubuntu Light", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_guardar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btn_guardar.Image = Global.Parametro.My.Resources.Resources.box_add1
+        Me.btn_guardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_guardar.Location = New System.Drawing.Point(285, 12)
+        Me.btn_guardar.Name = "btn_guardar"
+        Me.btn_guardar.Padding = New System.Windows.Forms.Padding(7, 0, 5, 0)
+        Me.btn_guardar.Size = New System.Drawing.Size(112, 33)
+        Me.btn_guardar.TabIndex = 5
+        Me.btn_guardar.Text = "Guardar"
+        Me.btn_guardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btn_guardar.UseVisualStyleBackColor = False
+        '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.dgv_parametro)
@@ -297,17 +337,6 @@ Partial Class Frm_Parametro
         Me.Panel2.Size = New System.Drawing.Size(567, 59)
         Me.Panel2.TabIndex = 25
         '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Ubuntu Condensed", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(151, 10)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(268, 35)
-        Me.Label4.TabIndex = 0
-        Me.Label4.Text = "Registro de Parametros"
-        '
         'PictureBox1
         '
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.IBeam
@@ -319,44 +348,16 @@ Partial Class Frm_Parametro
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
         '
-        'btn_cancelar
+        'Label4
         '
-        Me.btn_cancelar.BackColor = System.Drawing.Color.Gainsboro
-        Me.btn_cancelar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btn_cancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.btn_cancelar.FlatAppearance.BorderColor = System.Drawing.Color.Azure
-        Me.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_cancelar.Font = New System.Drawing.Font("Ubuntu Light", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_cancelar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.btn_cancelar.Image = Global.Parametro.My.Resources.Resources.cancel_circle
-        Me.btn_cancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_cancelar.Location = New System.Drawing.Point(417, 12)
-        Me.btn_cancelar.Name = "btn_cancelar"
-        Me.btn_cancelar.Padding = New System.Windows.Forms.Padding(7, 1, 5, 1)
-        Me.btn_cancelar.Size = New System.Drawing.Size(112, 34)
-        Me.btn_cancelar.TabIndex = 6
-        Me.btn_cancelar.Text = "Cancelar"
-        Me.btn_cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btn_cancelar.UseVisualStyleBackColor = False
-        '
-        'btn_guardar
-        '
-        Me.btn_guardar.BackColor = System.Drawing.Color.Gainsboro
-        Me.btn_guardar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btn_guardar.FlatAppearance.BorderColor = System.Drawing.Color.Azure
-        Me.btn_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_guardar.Font = New System.Drawing.Font("Ubuntu Light", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_guardar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.btn_guardar.Image = Global.Parametro.My.Resources.Resources.box_add1
-        Me.btn_guardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_guardar.Location = New System.Drawing.Point(285, 12)
-        Me.btn_guardar.Name = "btn_guardar"
-        Me.btn_guardar.Padding = New System.Windows.Forms.Padding(7, 0, 5, 0)
-        Me.btn_guardar.Size = New System.Drawing.Size(112, 33)
-        Me.btn_guardar.TabIndex = 5
-        Me.btn_guardar.Text = "Guardar"
-        Me.btn_guardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btn_guardar.UseVisualStyleBackColor = False
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Ubuntu Condensed", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(151, 10)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(268, 35)
+        Me.Label4.TabIndex = 0
+        Me.Label4.Text = "Registro de Parametros"
         '
         'Frm_Parametro
         '

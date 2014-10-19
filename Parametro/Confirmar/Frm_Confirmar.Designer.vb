@@ -28,6 +28,9 @@ Partial Class Frm_Confirmar
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.dgv_parametro = New System.Windows.Forms.DataGridView()
+        Me.PrecioMinimo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Activo = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.Fecha = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
@@ -39,9 +42,6 @@ Partial Class Frm_Confirmar
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.txt_buscar = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.PrecioMinimo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Activo = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.Fecha = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox3.SuspendLayout()
         CType(Me.dgv_parametro, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -90,6 +90,40 @@ Partial Class Frm_Confirmar
         Me.dgv_parametro.RowHeadersVisible = False
         Me.dgv_parametro.Size = New System.Drawing.Size(454, 274)
         Me.dgv_parametro.TabIndex = 22
+        '
+        'PrecioMinimo
+        '
+        Me.PrecioMinimo.DataPropertyName = "PrecioMinimo"
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.PrecioMinimo.DefaultCellStyle = DataGridViewCellStyle1
+        Me.PrecioMinimo.HeaderText = "Nro. Guía"
+        Me.PrecioMinimo.Name = "PrecioMinimo"
+        Me.PrecioMinimo.ReadOnly = True
+        Me.PrecioMinimo.Width = 200
+        '
+        'Activo
+        '
+        Me.Activo.DataPropertyName = "Activo"
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.NullValue = False
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Activo.DefaultCellStyle = DataGridViewCellStyle2
+        Me.Activo.HeaderText = "Estado"
+        Me.Activo.Name = "Activo"
+        Me.Activo.ReadOnly = True
+        Me.Activo.Width = 60
+        '
+        'Fecha
+        '
+        Me.Fecha.DataPropertyName = "Fecha"
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Fecha.DefaultCellStyle = DataGridViewCellStyle3
+        Me.Fecha.HeaderText = "Fecha Actualizado"
+        Me.Fecha.Name = "Fecha"
+        Me.Fecha.ReadOnly = True
+        Me.Fecha.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Fecha.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.Fecha.Width = 135
         '
         'Label3
         '
@@ -229,45 +263,11 @@ Partial Class Frm_Confirmar
         Me.Label2.TabIndex = 8
         Me.Label2.Text = "Buscar"
         '
-        'PrecioMinimo
-        '
-        Me.PrecioMinimo.DataPropertyName = "PrecioMinimo"
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.PrecioMinimo.DefaultCellStyle = DataGridViewCellStyle1
-        Me.PrecioMinimo.HeaderText = "Nro. Guía"
-        Me.PrecioMinimo.Name = "PrecioMinimo"
-        Me.PrecioMinimo.ReadOnly = True
-        Me.PrecioMinimo.Width = 200
-        '
-        'Activo
-        '
-        Me.Activo.DataPropertyName = "Activo"
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.NullValue = False
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Activo.DefaultCellStyle = DataGridViewCellStyle2
-        Me.Activo.HeaderText = "Estado"
-        Me.Activo.Name = "Activo"
-        Me.Activo.ReadOnly = True
-        Me.Activo.Width = 60
-        '
-        'Fecha
-        '
-        Me.Fecha.DataPropertyName = "Fecha"
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Fecha.DefaultCellStyle = DataGridViewCellStyle3
-        Me.Fecha.HeaderText = "Fecha Actualizado"
-        Me.Fecha.Name = "Fecha"
-        Me.Fecha.ReadOnly = True
-        Me.Fecha.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Fecha.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.Fecha.Width = 135
-        '
         'Frm_Confirmar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(492, 535)
+        Me.ClientSize = New System.Drawing.Size(492, 531)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.GroupBox3)

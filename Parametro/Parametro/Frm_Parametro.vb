@@ -3,17 +3,6 @@
 
 Public Class Frm_Parametro
 
-    Private Sub PierdeFoco(ByVal sender As TextBox, ByVal e As System.EventArgs) Handles nud_precioMin.LostFocus, nud_precioKil.LostFocus, nud_precioVol.LostFocus
-        sender.BackColor = Color.White
-        sender.SelectAll()
-    End Sub
-
-    Private Sub AgarraFoco(ByVal sender As TextBox, ByVal e As System.EventArgs) Handles nud_precioMin.GotFocus, nud_precioKil.GotFocus, nud_precioVol.GotFocus
-
-        sender.BackColor = Color.LightCyan
-        sender.SelectAll()
-    End Sub
-
 
     '*Instancia de la Clase Parametro
     Dim parametro As New LCN.Parametro
@@ -151,7 +140,7 @@ Public Class Frm_Parametro
             chb_activo.Checked = Me.dgv_parametro.CurrentRow.Cells("Activo").Value
             nuevo = False
         Else
-            MsgBox("Solo puede modificar el parametro Activo")
+            MsgBox("No puedes modificar un Parametro no activo", MsgBoxStyle.Critical)
         End If
 
     End Sub

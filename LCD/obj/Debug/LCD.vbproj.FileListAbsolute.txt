@@ -14,3 +14,12 @@ d:\flash\Parametro_central\LCD\obj\Debug\LCD.vbproj.GenerateResource.Cache
 d:\flash\Parametro_central\LCD\obj\Debug\LCD.dll
 d:\flash\Parametro_central\LCD\obj\Debug\LCD.xml
 d:\flash\Parametro_central\LCD\obj\Debug\LCD.pdb
+D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\LCD\bin\Debug\LCD.dll
+D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\LCD\bin\Debug\LCD.pdb
+D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\LCD\bin\Debug\LCD.xml
+D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\LCD\obj\Debug\LCD.vbprojResolveAssemblyReference.cache
+D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\LCD\obj\Debug\LCD.Resources.resources
+D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\LCD\obj\Debug\LCD.vbproj.GenerateResource.Cache
+D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\LCD\obj\Debug\LCD.dll
+D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\LCD\obj\Debug\LCD.xml
+D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\LCD\obj\Debug\LCD.pdb

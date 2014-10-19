@@ -22,19 +22,15 @@ Partial Class Frm_ListaClientes
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.dgv_parametro = New System.Windows.Forms.DataGridView()
-        Me.ParametroId = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PrecioMinimo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PrecioVolumen = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Activo = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.Fecha = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgv_listaclientes = New System.Windows.Forms.DataGridView()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.cmb_estado = New System.Windows.Forms.ComboBox()
         Me.txt_buscar = New System.Windows.Forms.TextBox()
@@ -46,18 +42,28 @@ Partial Class Frm_ListaClientes
         Me.btn_guardar = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ModificarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NroDoc = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Telefono = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Activo = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.FechaAct = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.lbl_titulo = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
-        CType(Me.dgv_parametro, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgv_listaclientes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.dgv_parametro)
+        Me.GroupBox2.Controls.Add(Me.dgv_listaclientes)
         Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.SystemColors.AppWorkspace
         Me.GroupBox2.Location = New System.Drawing.Point(12, 143)
@@ -67,83 +73,22 @@ Partial Class Frm_ListaClientes
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Lista de Parametros"
         '
-        'dgv_parametro
+        'dgv_listaclientes
         '
-        Me.dgv_parametro.AllowUserToAddRows = False
-        Me.dgv_parametro.AllowUserToDeleteRows = False
-        Me.dgv_parametro.AllowUserToResizeColumns = False
-        Me.dgv_parametro.AllowUserToResizeRows = False
-        Me.dgv_parametro.BackgroundColor = System.Drawing.Color.Snow
-        Me.dgv_parametro.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.dgv_parametro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Me.dgv_parametro.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ParametroId, Me.PrecioMinimo, Me.PrecioVolumen, Me.Direccion, Me.Activo, Me.Fecha})
-        Me.dgv_parametro.Location = New System.Drawing.Point(8, 31)
-        Me.dgv_parametro.Name = "dgv_parametro"
-        Me.dgv_parametro.ReadOnly = True
-        Me.dgv_parametro.RowHeadersVisible = False
-        Me.dgv_parametro.Size = New System.Drawing.Size(755, 333)
-        Me.dgv_parametro.TabIndex = 6
-        '
-        'ParametroId
-        '
-        Me.ParametroId.DataPropertyName = "ParametroId"
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.ParametroId.DefaultCellStyle = DataGridViewCellStyle1
-        Me.ParametroId.HeaderText = "Nr. Doc. (CI)"
-        Me.ParametroId.Name = "ParametroId"
-        Me.ParametroId.ReadOnly = True
-        Me.ParametroId.Width = 80
-        '
-        'PrecioMinimo
-        '
-        Me.PrecioMinimo.DataPropertyName = "PrecioMinimo"
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.PrecioMinimo.DefaultCellStyle = DataGridViewCellStyle2
-        Me.PrecioMinimo.HeaderText = "Nombres"
-        Me.PrecioMinimo.Name = "PrecioMinimo"
-        Me.PrecioMinimo.ReadOnly = True
-        Me.PrecioMinimo.Width = 200
-        '
-        'PrecioVolumen
-        '
-        Me.PrecioVolumen.DataPropertyName = "PrecioVolumen"
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.PrecioVolumen.DefaultCellStyle = DataGridViewCellStyle3
-        Me.PrecioVolumen.HeaderText = "Telefono"
-        Me.PrecioVolumen.Name = "PrecioVolumen"
-        Me.PrecioVolumen.ReadOnly = True
-        Me.PrecioVolumen.Width = 80
-        '
-        'Direccion
-        '
-        Me.Direccion.HeaderText = "Direccion"
-        Me.Direccion.Name = "Direccion"
-        Me.Direccion.ReadOnly = True
-        Me.Direccion.Width = 200
-        '
-        'Activo
-        '
-        Me.Activo.DataPropertyName = "Activo"
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle4.NullValue = False
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Activo.DefaultCellStyle = DataGridViewCellStyle4
-        Me.Activo.HeaderText = "Activo"
-        Me.Activo.Name = "Activo"
-        Me.Activo.ReadOnly = True
-        Me.Activo.Width = 45
-        '
-        'Fecha
-        '
-        Me.Fecha.DataPropertyName = "Fecha"
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Fecha.DefaultCellStyle = DataGridViewCellStyle5
-        Me.Fecha.HeaderText = "Fecha Actualizado"
-        Me.Fecha.Name = "Fecha"
-        Me.Fecha.ReadOnly = True
-        Me.Fecha.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Fecha.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.Fecha.Width = 135
+        Me.dgv_listaclientes.AllowUserToAddRows = False
+        Me.dgv_listaclientes.AllowUserToDeleteRows = False
+        Me.dgv_listaclientes.AllowUserToResizeColumns = False
+        Me.dgv_listaclientes.AllowUserToResizeRows = False
+        Me.dgv_listaclientes.BackgroundColor = System.Drawing.Color.Snow
+        Me.dgv_listaclientes.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgv_listaclientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        Me.dgv_listaclientes.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NroDoc, Me.Nombre, Me.Telefono, Me.Direccion, Me.Activo, Me.FechaAct})
+        Me.dgv_listaclientes.Location = New System.Drawing.Point(8, 31)
+        Me.dgv_listaclientes.Name = "dgv_listaclientes"
+        Me.dgv_listaclientes.ReadOnly = True
+        Me.dgv_listaclientes.RowHeadersVisible = False
+        Me.dgv_listaclientes.Size = New System.Drawing.Size(755, 333)
+        Me.dgv_listaclientes.TabIndex = 6
         '
         'GroupBox3
         '
@@ -163,6 +108,7 @@ Partial Class Frm_ListaClientes
         'cmb_estado
         '
         Me.cmb_estado.FormattingEnabled = True
+        Me.cmb_estado.Items.AddRange(New Object() {"Inactivo", "Activo"})
         Me.cmb_estado.Location = New System.Drawing.Point(87, 23)
         Me.cmb_estado.Name = "cmb_estado"
         Me.cmb_estado.Size = New System.Drawing.Size(201, 23)
@@ -274,8 +220,8 @@ Partial Class Frm_ListaClientes
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.IndianRed
+        Me.Panel2.Controls.Add(Me.lbl_titulo)
         Me.Panel2.Controls.Add(Me.PictureBox1)
-        Me.Panel2.Controls.Add(Me.Label4)
         Me.Panel2.Location = New System.Drawing.Point(-1, 0)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(868, 59)
@@ -292,16 +238,98 @@ Partial Class Frm_ListaClientes
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
         '
-        'Label4
+        'ContextMenuStrip1
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(316, 9)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(231, 33)
-        Me.Label4.TabIndex = 0
-        Me.Label4.Text = "Lista de Clientes"
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ModificarToolStripMenuItem, Me.EliminarToolStripMenuItem})
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(126, 48)
+        '
+        'ModificarToolStripMenuItem
+        '
+        Me.ModificarToolStripMenuItem.Name = "ModificarToolStripMenuItem"
+        Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
+        Me.ModificarToolStripMenuItem.Text = "Modificar"
+        '
+        'EliminarToolStripMenuItem
+        '
+        Me.EliminarToolStripMenuItem.Name = "EliminarToolStripMenuItem"
+        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
+        Me.EliminarToolStripMenuItem.Text = "Eliminar"
+        '
+        'NroDoc
+        '
+        Me.NroDoc.DataPropertyName = "NroDoc"
+        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.NroDoc.DefaultCellStyle = DataGridViewCellStyle13
+        Me.NroDoc.HeaderText = "Nr. Doc. (CI)"
+        Me.NroDoc.Name = "NroDoc"
+        Me.NroDoc.ReadOnly = True
+        Me.NroDoc.Width = 80
+        '
+        'Nombre
+        '
+        Me.Nombre.DataPropertyName = "Nombre"
+        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Nombre.DefaultCellStyle = DataGridViewCellStyle14
+        Me.Nombre.HeaderText = "Nombres"
+        Me.Nombre.Name = "Nombre"
+        Me.Nombre.ReadOnly = True
+        Me.Nombre.Width = 200
+        '
+        'Telefono
+        '
+        Me.Telefono.DataPropertyName = "Telefono"
+        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Telefono.DefaultCellStyle = DataGridViewCellStyle15
+        Me.Telefono.HeaderText = "Telefono"
+        Me.Telefono.Name = "Telefono"
+        Me.Telefono.ReadOnly = True
+        Me.Telefono.Width = 80
+        '
+        'Direccion
+        '
+        Me.Direccion.DataPropertyName = "Direccion"
+        DataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Direccion.DefaultCellStyle = DataGridViewCellStyle16
+        Me.Direccion.HeaderText = "Dirección"
+        Me.Direccion.Name = "Direccion"
+        Me.Direccion.ReadOnly = True
+        Me.Direccion.Width = 200
+        '
+        'Activo
+        '
+        Me.Activo.DataPropertyName = "Activo"
+        DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle17.NullValue = False
+        DataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Activo.DefaultCellStyle = DataGridViewCellStyle17
+        Me.Activo.HeaderText = "Activo"
+        Me.Activo.Name = "Activo"
+        Me.Activo.ReadOnly = True
+        Me.Activo.Width = 48
+        '
+        'FechaAct
+        '
+        Me.FechaAct.DataPropertyName = "FechaAct"
+        DataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.FechaAct.DefaultCellStyle = DataGridViewCellStyle18
+        Me.FechaAct.HeaderText = "Fecha Actualizado"
+        Me.FechaAct.Name = "FechaAct"
+        Me.FechaAct.ReadOnly = True
+        Me.FechaAct.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.FechaAct.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.FechaAct.Width = 135
+        '
+        'lbl_titulo
+        '
+        Me.lbl_titulo.AutoSize = True
+        Me.lbl_titulo.Font = New System.Drawing.Font("Ubuntu Condensed", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_titulo.ForeColor = System.Drawing.Color.White
+        Me.lbl_titulo.Location = New System.Drawing.Point(270, 9)
+        Me.lbl_titulo.Name = "lbl_titulo"
+        Me.lbl_titulo.Size = New System.Drawing.Size(192, 35)
+        Me.lbl_titulo.TabIndex = 3
+        Me.lbl_titulo.Text = "Lista de Clientes"
         '
         'Frm_ListaClientes
         '
@@ -317,18 +345,19 @@ Partial Class Frm_ListaClientes
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Frm_ListaClientes"
         Me.GroupBox2.ResumeLayout(False)
-        CType(Me.dgv_parametro, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgv_listaclientes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ContextMenuStrip1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
-    Friend WithEvents dgv_parametro As System.Windows.Forms.DataGridView
+    Friend WithEvents dgv_listaclientes As System.Windows.Forms.DataGridView
     Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
     Friend WithEvents txt_buscar As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
@@ -340,11 +369,14 @@ Partial Class Frm_ListaClientes
     Friend WithEvents btn_guardar As System.Windows.Forms.Button
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents ParametroId As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents PrecioMinimo As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents PrecioVolumen As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
+    Friend WithEvents ModificarToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents EliminarToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents NroDoc As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Nombre As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Telefono As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Direccion As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Activo As System.Windows.Forms.DataGridViewCheckBoxColumn
-    Friend WithEvents Fecha As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents FechaAct As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents lbl_titulo As System.Windows.Forms.Label
 End Class

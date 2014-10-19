@@ -26,6 +26,8 @@ Partial Class Frm_Cliente
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txt_nombre = New System.Windows.Forms.TextBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.cmb_estado = New System.Windows.Forms.ComboBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.txt_telefono = New System.Windows.Forms.TextBox()
         Me.txt_direccion = New System.Windows.Forms.TextBox()
         Me.txt_nrodoc = New System.Windows.Forms.TextBox()
@@ -36,8 +38,8 @@ Partial Class Frm_Cliente
         Me.btn_guardar = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.txt_numerodoc = New System.Windows.Forms.TextBox()
+        Me.lbl_titulo = New System.Windows.Forms.Label()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -77,6 +79,8 @@ Partial Class Frm_Cliente
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.cmb_estado)
+        Me.GroupBox3.Controls.Add(Me.Label2)
         Me.GroupBox3.Controls.Add(Me.txt_telefono)
         Me.GroupBox3.Controls.Add(Me.txt_direccion)
         Me.GroupBox3.Controls.Add(Me.txt_nrodoc)
@@ -89,10 +93,33 @@ Partial Class Frm_Cliente
         Me.GroupBox3.ForeColor = System.Drawing.SystemColors.AppWorkspace
         Me.GroupBox3.Location = New System.Drawing.Point(12, 80)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(384, 189)
+        Me.GroupBox3.Size = New System.Drawing.Size(384, 219)
         Me.GroupBox3.TabIndex = 0
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Parametros Cliente"
+        '
+        'cmb_estado
+        '
+        Me.cmb_estado.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cmb_estado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmb_estado.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmb_estado.FormattingEnabled = True
+        Me.cmb_estado.Items.AddRange(New Object() {"Inactivo", "Activo"})
+        Me.cmb_estado.Location = New System.Drawing.Point(139, 184)
+        Me.cmb_estado.Name = "cmb_estado"
+        Me.cmb_estado.Size = New System.Drawing.Size(228, 23)
+        Me.cmb_estado.TabIndex = 16
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(18, 184)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(63, 15)
+        Me.Label2.TabIndex = 15
+        Me.Label2.Text = "Estado : "
         '
         'txt_telefono
         '
@@ -149,7 +176,7 @@ Partial Class Frm_Cliente
         Me.GroupBox1.Controls.Add(Me.btn_guardar)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 290)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 319)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(384, 56)
         Me.GroupBox1.TabIndex = 2
@@ -198,8 +225,8 @@ Partial Class Frm_Cliente
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.IndianRed
+        Me.Panel2.Controls.Add(Me.lbl_titulo)
         Me.Panel2.Controls.Add(Me.PictureBox1)
-        Me.Panel2.Controls.Add(Me.Label4)
         Me.Panel2.Location = New System.Drawing.Point(-1, 0)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(435, 59)
@@ -216,17 +243,6 @@ Partial Class Frm_Cliente
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
         '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(130, 9)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(223, 33)
-        Me.Label4.TabIndex = 0
-        Me.Label4.Text = "Registro Cliente"
-        '
         'txt_numerodoc
         '
         Me.txt_numerodoc.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
@@ -236,11 +252,24 @@ Partial Class Frm_Cliente
         Me.txt_numerodoc.Size = New System.Drawing.Size(228, 24)
         Me.txt_numerodoc.TabIndex = 18
         '
+        'lbl_titulo
+        '
+        Me.lbl_titulo.AutoSize = True
+        Me.lbl_titulo.Font = New System.Drawing.Font("Ubuntu Condensed", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_titulo.ForeColor = System.Drawing.Color.White
+        Me.lbl_titulo.Location = New System.Drawing.Point(105, 9)
+        Me.lbl_titulo.Name = "lbl_titulo"
+        Me.lbl_titulo.Size = New System.Drawing.Size(231, 35)
+        Me.lbl_titulo.TabIndex = 3
+        Me.lbl_titulo.Text = "Registro de Clientes"
+        '
         'Frm_Cliente
         '
+        Me.AcceptButton = Me.btn_guardar
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(408, 356)
+        Me.CancelButton = Me.btn_cancelar
+        Me.ClientSize = New System.Drawing.Size(404, 387)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox1)
@@ -269,8 +298,10 @@ Partial Class Frm_Cliente
     Friend WithEvents txt_nrodoc As System.Windows.Forms.TextBox
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents btn_cancelar As System.Windows.Forms.Button
     Friend WithEvents btn_guardar As System.Windows.Forms.Button
     Friend WithEvents txt_numerodoc As System.Windows.Forms.TextBox
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents cmb_estado As System.Windows.Forms.ComboBox
+    Friend WithEvents lbl_titulo As System.Windows.Forms.Label
 End Class
