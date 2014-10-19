@@ -103,7 +103,7 @@ Partial Class MDIPrincipal
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(897, 26)
-        Me.MenuStrip1.TabIndex = 1
+        Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'ArchivoToolStripMenuItem
@@ -194,7 +194,7 @@ Partial Class MDIPrincipal
         Me.UsuarioToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarToolStripMenuItem1, Me.ListaDeUsuariosToolStripMenuItem})
         Me.UsuarioToolStripMenuItem1.Image = Global.Parametro.My.Resources.Resources.user4
         Me.UsuarioToolStripMenuItem1.Name = "UsuarioToolStripMenuItem1"
-        Me.UsuarioToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.UsuarioToolStripMenuItem1.Size = New System.Drawing.Size(125, 22)
         Me.UsuarioToolStripMenuItem1.Text = "Usuario"
         '
         'AgregarToolStripMenuItem1
@@ -216,7 +216,7 @@ Partial Class MDIPrincipal
         Me.ChoferToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarToolStripMenuItem3, Me.ListaDeChoferesToolStripMenuItem})
         Me.ChoferToolStripMenuItem1.Image = Global.Parametro.My.Resources.Resources.user41
         Me.ChoferToolStripMenuItem1.Name = "ChoferToolStripMenuItem1"
-        Me.ChoferToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ChoferToolStripMenuItem1.Size = New System.Drawing.Size(125, 22)
         Me.ChoferToolStripMenuItem1.Text = "Chofer"
         '
         'AgregarToolStripMenuItem3

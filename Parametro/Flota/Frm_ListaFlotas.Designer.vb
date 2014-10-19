@@ -22,12 +22,12 @@ Partial Class Frm_ListaFlotas
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.cmb_estado = New System.Windows.Forms.ComboBox()
         Me.dgv_parametro = New System.Windows.Forms.DataGridView()
         Me.ParametroId = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -66,7 +66,7 @@ Partial Class Frm_ListaFlotas
         Me.cmb_estado.Location = New System.Drawing.Point(87, 30)
         Me.cmb_estado.Name = "cmb_estado"
         Me.cmb_estado.Size = New System.Drawing.Size(201, 25)
-        Me.cmb_estado.TabIndex = 10
+        Me.cmb_estado.TabIndex = 0
         '
         'dgv_parametro
         '
@@ -83,13 +83,13 @@ Partial Class Frm_ListaFlotas
         Me.dgv_parametro.ReadOnly = True
         Me.dgv_parametro.RowHeadersVisible = False
         Me.dgv_parametro.Size = New System.Drawing.Size(673, 277)
-        Me.dgv_parametro.TabIndex = 6
+        Me.dgv_parametro.TabIndex = 0
         '
         'ParametroId
         '
         Me.ParametroId.DataPropertyName = "ParametroId"
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.ParametroId.DefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.ParametroId.DefaultCellStyle = DataGridViewCellStyle1
         Me.ParametroId.HeaderText = "ID. Flota"
         Me.ParametroId.Name = "ParametroId"
         Me.ParametroId.ReadOnly = True
@@ -98,8 +98,8 @@ Partial Class Frm_ListaFlotas
         'PrecioMinimo
         '
         Me.PrecioMinimo.DataPropertyName = "PrecioMinimo"
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.PrecioMinimo.DefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.PrecioMinimo.DefaultCellStyle = DataGridViewCellStyle2
         Me.PrecioMinimo.HeaderText = "Marca"
         Me.PrecioMinimo.Name = "PrecioMinimo"
         Me.PrecioMinimo.ReadOnly = True
@@ -108,8 +108,8 @@ Partial Class Frm_ListaFlotas
         'PrecioKilo
         '
         Me.PrecioKilo.DataPropertyName = "PrecioKilo"
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.PrecioKilo.DefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.PrecioKilo.DefaultCellStyle = DataGridViewCellStyle3
         Me.PrecioKilo.HeaderText = "Modelo"
         Me.PrecioKilo.Name = "PrecioKilo"
         Me.PrecioKilo.ReadOnly = True
@@ -118,8 +118,8 @@ Partial Class Frm_ListaFlotas
         'PrecioVolumen
         '
         Me.PrecioVolumen.DataPropertyName = "PrecioVolumen"
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.PrecioVolumen.DefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.PrecioVolumen.DefaultCellStyle = DataGridViewCellStyle4
         Me.PrecioVolumen.HeaderText = "Año"
         Me.PrecioVolumen.Name = "PrecioVolumen"
         Me.PrecioVolumen.ReadOnly = True
@@ -149,10 +149,10 @@ Partial Class Frm_ListaFlotas
         'Activo
         '
         Me.Activo.DataPropertyName = "Activo"
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle11.NullValue = False
-        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Activo.DefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle5.NullValue = False
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Activo.DefaultCellStyle = DataGridViewCellStyle5
         Me.Activo.HeaderText = "Activo"
         Me.Activo.Name = "Activo"
         Me.Activo.ReadOnly = True
@@ -161,8 +161,8 @@ Partial Class Frm_ListaFlotas
         'Fecha
         '
         Me.Fecha.DataPropertyName = "Fecha"
-        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Fecha.DefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Fecha.DefaultCellStyle = DataGridViewCellStyle6
         Me.Fecha.HeaderText = "Fecha Actualizado"
         Me.Fecha.Name = "Fecha"
         Me.Fecha.ReadOnly = True
@@ -177,7 +177,7 @@ Partial Class Frm_ListaFlotas
         Me.txt_buscar.Multiline = True
         Me.txt_buscar.Name = "txt_buscar"
         Me.txt_buscar.Size = New System.Drawing.Size(228, 24)
-        Me.txt_buscar.TabIndex = 9
+        Me.txt_buscar.TabIndex = 1
         '
         'GroupBox3
         '
@@ -190,7 +190,7 @@ Partial Class Frm_ListaFlotas
         Me.GroupBox3.Location = New System.Drawing.Point(12, 77)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(693, 68)
-        Me.GroupBox3.TabIndex = 24
+        Me.GroupBox3.TabIndex = 0
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Parametros de Buscqueda"
         '
@@ -226,7 +226,7 @@ Partial Class Frm_ListaFlotas
         Me.GroupBox1.Location = New System.Drawing.Point(12, 497)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(693, 56)
-        Me.GroupBox1.TabIndex = 25
+        Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Operaciones"
         '
@@ -244,7 +244,7 @@ Partial Class Frm_ListaFlotas
         Me.btn_nuevo.Name = "btn_nuevo"
         Me.btn_nuevo.Padding = New System.Windows.Forms.Padding(7, 0, 5, 0)
         Me.btn_nuevo.Size = New System.Drawing.Size(112, 33)
-        Me.btn_nuevo.TabIndex = 8
+        Me.btn_nuevo.TabIndex = 1
         Me.btn_nuevo.Text = "Nuevo"
         Me.btn_nuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btn_nuevo.UseVisualStyleBackColor = False
@@ -264,7 +264,7 @@ Partial Class Frm_ListaFlotas
         Me.btn_cancelar.Name = "btn_cancelar"
         Me.btn_cancelar.Padding = New System.Windows.Forms.Padding(7, 1, 5, 1)
         Me.btn_cancelar.Size = New System.Drawing.Size(112, 34)
-        Me.btn_cancelar.TabIndex = 7
+        Me.btn_cancelar.TabIndex = 2
         Me.btn_cancelar.Text = "Salir"
         Me.btn_cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btn_cancelar.UseVisualStyleBackColor = False
@@ -283,7 +283,7 @@ Partial Class Frm_ListaFlotas
         Me.btn_reporte.Name = "btn_reporte"
         Me.btn_reporte.Padding = New System.Windows.Forms.Padding(7, 0, 5, 0)
         Me.btn_reporte.Size = New System.Drawing.Size(112, 33)
-        Me.btn_reporte.TabIndex = 6
+        Me.btn_reporte.TabIndex = 0
         Me.btn_reporte.Text = "Reporte"
         Me.btn_reporte.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btn_reporte.UseVisualStyleBackColor = False
@@ -296,7 +296,7 @@ Partial Class Frm_ListaFlotas
         Me.GroupBox2.Location = New System.Drawing.Point(12, 161)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(693, 319)
-        Me.GroupBox2.TabIndex = 21
+        Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Lista de Flotas"
         '

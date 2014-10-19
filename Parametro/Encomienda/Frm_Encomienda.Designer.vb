@@ -126,7 +126,7 @@ Partial Class Frm_Encomienda
         Me.GroupBox3.Location = New System.Drawing.Point(12, 91)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(553, 244)
-        Me.GroupBox3.TabIndex = 14
+        Me.GroupBox3.TabIndex = 0
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Parametros Encomienda"
         '
@@ -138,7 +138,7 @@ Partial Class Frm_Encomienda
         Me.txt_ruta.Multiline = True
         Me.txt_ruta.Name = "txt_ruta"
         Me.txt_ruta.Size = New System.Drawing.Size(189, 23)
-        Me.txt_ruta.TabIndex = 43
+        Me.txt_ruta.TabIndex = 5
         '
         'txt_destinatario
         '
@@ -148,7 +148,7 @@ Partial Class Frm_Encomienda
         Me.txt_destinatario.Multiline = True
         Me.txt_destinatario.Name = "txt_destinatario"
         Me.txt_destinatario.Size = New System.Drawing.Size(189, 23)
-        Me.txt_destinatario.TabIndex = 42
+        Me.txt_destinatario.TabIndex = 3
         '
         'btn_destinatario
         '
@@ -164,7 +164,7 @@ Partial Class Frm_Encomienda
         Me.btn_destinatario.Name = "btn_destinatario"
         Me.btn_destinatario.Padding = New System.Windows.Forms.Padding(1)
         Me.btn_destinatario.Size = New System.Drawing.Size(29, 27)
-        Me.btn_destinatario.TabIndex = 41
+        Me.btn_destinatario.TabIndex = 4
         Me.btn_destinatario.UseVisualStyleBackColor = False
         '
         'btn_remitente
@@ -181,7 +181,7 @@ Partial Class Frm_Encomienda
         Me.btn_remitente.Name = "btn_remitente"
         Me.btn_remitente.Padding = New System.Windows.Forms.Padding(1)
         Me.btn_remitente.Size = New System.Drawing.Size(29, 27)
-        Me.btn_remitente.TabIndex = 40
+        Me.btn_remitente.TabIndex = 2
         Me.btn_remitente.UseVisualStyleBackColor = False
         '
         'btn_ruta
@@ -198,7 +198,7 @@ Partial Class Frm_Encomienda
         Me.btn_ruta.Name = "btn_ruta"
         Me.btn_ruta.Padding = New System.Windows.Forms.Padding(1)
         Me.btn_ruta.Size = New System.Drawing.Size(29, 27)
-        Me.btn_ruta.TabIndex = 39
+        Me.btn_ruta.TabIndex = 6
         Me.btn_ruta.UseVisualStyleBackColor = False
         '
         'txt_remitente
@@ -209,7 +209,7 @@ Partial Class Frm_Encomienda
         Me.txt_remitente.Multiline = True
         Me.txt_remitente.Name = "txt_remitente"
         Me.txt_remitente.Size = New System.Drawing.Size(189, 23)
-        Me.txt_remitente.TabIndex = 37
+        Me.txt_remitente.TabIndex = 1
         '
         'Label11
         '
@@ -239,7 +239,7 @@ Partial Class Frm_Encomienda
         Me.chb_pagado.Location = New System.Drawing.Point(478, 145)
         Me.chb_pagado.Name = "chb_pagado"
         Me.chb_pagado.Size = New System.Drawing.Size(15, 14)
-        Me.chb_pagado.TabIndex = 23
+        Me.chb_pagado.TabIndex = 11
         Me.chb_pagado.UseVisualStyleBackColor = True
         '
         'Label9
@@ -262,7 +262,7 @@ Partial Class Frm_Encomienda
         Me.nud_monto.Location = New System.Drawing.Point(478, 107)
         Me.nud_monto.Name = "nud_monto"
         Me.nud_monto.Size = New System.Drawing.Size(62, 21)
-        Me.nud_monto.TabIndex = 22
+        Me.nud_monto.TabIndex = 10
         '
         'nud_peso
         '
@@ -273,7 +273,7 @@ Partial Class Frm_Encomienda
         Me.nud_peso.Location = New System.Drawing.Point(478, 76)
         Me.nud_peso.Name = "nud_peso"
         Me.nud_peso.Size = New System.Drawing.Size(62, 21)
-        Me.nud_peso.TabIndex = 20
+        Me.nud_peso.TabIndex = 9
         '
         'nud_vol
         '
@@ -284,7 +284,7 @@ Partial Class Frm_Encomienda
         Me.nud_vol.Location = New System.Drawing.Point(478, 41)
         Me.nud_vol.Name = "nud_vol"
         Me.nud_vol.Size = New System.Drawing.Size(62, 21)
-        Me.nud_vol.TabIndex = 19
+        Me.nud_vol.TabIndex = 8
         '
         'chb_fragil
         '
@@ -292,7 +292,7 @@ Partial Class Frm_Encomienda
         Me.chb_fragil.Location = New System.Drawing.Point(478, 175)
         Me.chb_fragil.Name = "chb_fragil"
         Me.chb_fragil.Size = New System.Drawing.Size(15, 14)
-        Me.chb_fragil.TabIndex = 18
+        Me.chb_fragil.TabIndex = 12
         Me.chb_fragil.UseVisualStyleBackColor = True
         '
         'DateTimePicker1
@@ -304,7 +304,7 @@ Partial Class Frm_Encomienda
         Me.DateTimePicker1.Location = New System.Drawing.Point(117, 41)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(228, 21)
-        Me.DateTimePicker1.TabIndex = 17
+        Me.DateTimePicker1.TabIndex = 0
         '
         'Label8
         '
@@ -357,7 +357,7 @@ Partial Class Frm_Encomienda
         Me.txt_descripcion.Multiline = True
         Me.txt_descripcion.Name = "txt_descripcion"
         Me.txt_descripcion.Size = New System.Drawing.Size(228, 57)
-        Me.txt_descripcion.TabIndex = 9
+        Me.txt_descripcion.TabIndex = 7
         '
         'Label3
         '
@@ -401,7 +401,7 @@ Partial Class Frm_Encomienda
         Me.GroupBox1.Location = New System.Drawing.Point(12, 361)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(553, 56)
-        Me.GroupBox1.TabIndex = 15
+        Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Operaciones"
         '
@@ -420,7 +420,7 @@ Partial Class Frm_Encomienda
         Me.btn_cancelar.Name = "btn_cancelar"
         Me.btn_cancelar.Padding = New System.Windows.Forms.Padding(7, 1, 5, 1)
         Me.btn_cancelar.Size = New System.Drawing.Size(112, 34)
-        Me.btn_cancelar.TabIndex = 4
+        Me.btn_cancelar.TabIndex = 1
         Me.btn_cancelar.Text = "Cancelar"
         Me.btn_cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btn_cancelar.UseVisualStyleBackColor = False
@@ -439,7 +439,7 @@ Partial Class Frm_Encomienda
         Me.btn_guardar.Name = "btn_guardar"
         Me.btn_guardar.Padding = New System.Windows.Forms.Padding(7, 0, 5, 0)
         Me.btn_guardar.Size = New System.Drawing.Size(112, 33)
-        Me.btn_guardar.TabIndex = 3
+        Me.btn_guardar.TabIndex = 0
         Me.btn_guardar.Text = "Guardar"
         Me.btn_guardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btn_guardar.UseVisualStyleBackColor = False

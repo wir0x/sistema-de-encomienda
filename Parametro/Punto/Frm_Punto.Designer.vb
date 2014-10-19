@@ -50,7 +50,7 @@ Partial Class Frm_Punto
         Me.txt_instancia.Multiline = True
         Me.txt_instancia.Name = "txt_instancia"
         Me.txt_instancia.Size = New System.Drawing.Size(228, 24)
-        Me.txt_instancia.TabIndex = 21
+        Me.txt_instancia.TabIndex = 1
         '
         'txt_descripcion
         '
@@ -59,7 +59,7 @@ Partial Class Frm_Punto
         Me.txt_descripcion.Multiline = True
         Me.txt_descripcion.Name = "txt_descripcion"
         Me.txt_descripcion.Size = New System.Drawing.Size(228, 47)
-        Me.txt_descripcion.TabIndex = 19
+        Me.txt_descripcion.TabIndex = 3
         '
         'GroupBox1
         '
@@ -70,7 +70,7 @@ Partial Class Frm_Punto
         Me.GroupBox1.Location = New System.Drawing.Point(11, 305)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(371, 56)
-        Me.GroupBox1.TabIndex = 23
+        Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Operacion"
         '
@@ -89,7 +89,7 @@ Partial Class Frm_Punto
         Me.btn_cancelar.Name = "btn_cancelar"
         Me.btn_cancelar.Padding = New System.Windows.Forms.Padding(7, 1, 5, 1)
         Me.btn_cancelar.Size = New System.Drawing.Size(112, 34)
-        Me.btn_cancelar.TabIndex = 3
+        Me.btn_cancelar.TabIndex = 1
         Me.btn_cancelar.Text = "Cancelar"
         Me.btn_cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btn_cancelar.UseVisualStyleBackColor = False
@@ -108,7 +108,7 @@ Partial Class Frm_Punto
         Me.btn_guardar.Name = "btn_guardar"
         Me.btn_guardar.Padding = New System.Windows.Forms.Padding(7, 0, 5, 0)
         Me.btn_guardar.Size = New System.Drawing.Size(112, 33)
-        Me.btn_guardar.TabIndex = 2
+        Me.btn_guardar.TabIndex = 0
         Me.btn_guardar.Text = "Guardar"
         Me.btn_guardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btn_guardar.UseVisualStyleBackColor = False
@@ -131,7 +131,7 @@ Partial Class Frm_Punto
         Me.txt_idpunto.Multiline = True
         Me.txt_idpunto.Name = "txt_idpunto"
         Me.txt_idpunto.Size = New System.Drawing.Size(228, 24)
-        Me.txt_idpunto.TabIndex = 9
+        Me.txt_idpunto.TabIndex = 0
         '
         'Label1
         '
@@ -159,7 +159,7 @@ Partial Class Frm_Punto
         Me.GroupBox3.Location = New System.Drawing.Point(11, 83)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(371, 197)
-        Me.GroupBox3.TabIndex = 22
+        Me.GroupBox3.TabIndex = 0
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Parametros Punto"
         '
@@ -170,7 +170,7 @@ Partial Class Frm_Punto
         Me.txt_basededatos.Multiline = True
         Me.txt_basededatos.Name = "txt_basededatos"
         Me.txt_basededatos.Size = New System.Drawing.Size(228, 24)
-        Me.txt_basededatos.TabIndex = 20
+        Me.txt_basededatos.TabIndex = 2
         '
         'Label3
         '

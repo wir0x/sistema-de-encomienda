@@ -23,12 +23,12 @@ Partial Class Frm_Parametro
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.dgv_parametro = New System.Windows.Forms.DataGridView()
         Me.ParametroId = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PrecioMinimo = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -82,13 +82,13 @@ Partial Class Frm_Parametro
         Me.dgv_parametro.ReadOnly = True
         Me.dgv_parametro.RowHeadersVisible = False
         Me.dgv_parametro.Size = New System.Drawing.Size(518, 209)
-        Me.dgv_parametro.TabIndex = 6
+        Me.dgv_parametro.TabIndex = 0
         '
         'ParametroId
         '
         Me.ParametroId.DataPropertyName = "ParametroId"
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.ParametroId.DefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.ParametroId.DefaultCellStyle = DataGridViewCellStyle1
         Me.ParametroId.HeaderText = "ID"
         Me.ParametroId.Name = "ParametroId"
         Me.ParametroId.ReadOnly = True
@@ -97,8 +97,8 @@ Partial Class Frm_Parametro
         'PrecioMinimo
         '
         Me.PrecioMinimo.DataPropertyName = "PrecioMinimo"
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.PrecioMinimo.DefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.PrecioMinimo.DefaultCellStyle = DataGridViewCellStyle2
         Me.PrecioMinimo.HeaderText = "Precio Minimo"
         Me.PrecioMinimo.Name = "PrecioMinimo"
         Me.PrecioMinimo.ReadOnly = True
@@ -107,8 +107,8 @@ Partial Class Frm_Parametro
         'PrecioKilo
         '
         Me.PrecioKilo.DataPropertyName = "PrecioKilo"
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.PrecioKilo.DefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.PrecioKilo.DefaultCellStyle = DataGridViewCellStyle3
         Me.PrecioKilo.HeaderText = "Precio Kilo"
         Me.PrecioKilo.Name = "PrecioKilo"
         Me.PrecioKilo.ReadOnly = True
@@ -117,8 +117,8 @@ Partial Class Frm_Parametro
         'PrecioVolumen
         '
         Me.PrecioVolumen.DataPropertyName = "PrecioVolumen"
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.PrecioVolumen.DefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.PrecioVolumen.DefaultCellStyle = DataGridViewCellStyle4
         Me.PrecioVolumen.HeaderText = "Precio Volumen"
         Me.PrecioVolumen.Name = "PrecioVolumen"
         Me.PrecioVolumen.ReadOnly = True
@@ -127,10 +127,10 @@ Partial Class Frm_Parametro
         'Activo
         '
         Me.Activo.DataPropertyName = "Activo"
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle11.NullValue = False
-        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Activo.DefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle5.NullValue = False
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Activo.DefaultCellStyle = DataGridViewCellStyle5
         Me.Activo.HeaderText = "Activo"
         Me.Activo.Name = "Activo"
         Me.Activo.ReadOnly = True
@@ -139,8 +139,8 @@ Partial Class Frm_Parametro
         'Fecha
         '
         Me.Fecha.DataPropertyName = "Fecha"
-        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Fecha.DefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Fecha.DefaultCellStyle = DataGridViewCellStyle6
         Me.Fecha.HeaderText = "Fecha y Hora"
         Me.Fecha.Name = "Fecha"
         Me.Fecha.ReadOnly = True
@@ -223,7 +223,7 @@ Partial Class Frm_Parametro
         Me.GroupBox1.Location = New System.Drawing.Point(13, 458)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(541, 52)
-        Me.GroupBox1.TabIndex = 9
+        Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Operaciones"
         '
@@ -242,7 +242,7 @@ Partial Class Frm_Parametro
         Me.btn_cancelar.Name = "btn_cancelar"
         Me.btn_cancelar.Padding = New System.Windows.Forms.Padding(7, 1, 5, 1)
         Me.btn_cancelar.Size = New System.Drawing.Size(112, 34)
-        Me.btn_cancelar.TabIndex = 6
+        Me.btn_cancelar.TabIndex = 1
         Me.btn_cancelar.Text = "Cancelar"
         Me.btn_cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btn_cancelar.UseVisualStyleBackColor = False
@@ -261,7 +261,7 @@ Partial Class Frm_Parametro
         Me.btn_guardar.Name = "btn_guardar"
         Me.btn_guardar.Padding = New System.Windows.Forms.Padding(7, 0, 5, 0)
         Me.btn_guardar.Size = New System.Drawing.Size(112, 33)
-        Me.btn_guardar.TabIndex = 5
+        Me.btn_guardar.TabIndex = 0
         Me.btn_guardar.Text = "Guardar"
         Me.btn_guardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btn_guardar.UseVisualStyleBackColor = False
@@ -274,7 +274,7 @@ Partial Class Frm_Parametro
         Me.GroupBox2.Location = New System.Drawing.Point(13, 184)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(541, 257)
-        Me.GroupBox2.TabIndex = 10
+        Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Lista de Parametros"
         '
@@ -292,7 +292,7 @@ Partial Class Frm_Parametro
         Me.GroupBox3.Location = New System.Drawing.Point(11, 79)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(541, 84)
-        Me.GroupBox3.TabIndex = 11
+        Me.GroupBox3.TabIndex = 0
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Atributos Parametro"
         '

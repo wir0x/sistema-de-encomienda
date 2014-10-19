@@ -50,7 +50,7 @@ Partial Class Frm_Usuario
         Me.txt_idusuario.Multiline = True
         Me.txt_idusuario.Name = "txt_idusuario"
         Me.txt_idusuario.Size = New System.Drawing.Size(216, 24)
-        Me.txt_idusuario.TabIndex = 21
+        Me.txt_idusuario.TabIndex = 0
         '
         'txt_contrasena
         '
@@ -59,7 +59,7 @@ Partial Class Frm_Usuario
         Me.txt_contrasena.Multiline = True
         Me.txt_contrasena.Name = "txt_contrasena"
         Me.txt_contrasena.Size = New System.Drawing.Size(216, 24)
-        Me.txt_contrasena.TabIndex = 20
+        Me.txt_contrasena.TabIndex = 3
         '
         'GroupBox1
         '
@@ -70,7 +70,7 @@ Partial Class Frm_Usuario
         Me.GroupBox1.Location = New System.Drawing.Point(11, 292)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(359, 56)
-        Me.GroupBox1.TabIndex = 23
+        Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Operacion"
         '
@@ -89,7 +89,7 @@ Partial Class Frm_Usuario
         Me.btn_cancelar.Name = "btn_cancelar"
         Me.btn_cancelar.Padding = New System.Windows.Forms.Padding(7, 1, 5, 1)
         Me.btn_cancelar.Size = New System.Drawing.Size(112, 34)
-        Me.btn_cancelar.TabIndex = 2
+        Me.btn_cancelar.TabIndex = 1
         Me.btn_cancelar.Text = "Cancelar"
         Me.btn_cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btn_cancelar.UseVisualStyleBackColor = False
@@ -108,7 +108,7 @@ Partial Class Frm_Usuario
         Me.btn_guardar.Name = "btn_guardar"
         Me.btn_guardar.Padding = New System.Windows.Forms.Padding(7, 0, 5, 0)
         Me.btn_guardar.Size = New System.Drawing.Size(112, 33)
-        Me.btn_guardar.TabIndex = 1
+        Me.btn_guardar.TabIndex = 0
         Me.btn_guardar.Text = "Guardar"
         Me.btn_guardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btn_guardar.UseVisualStyleBackColor = False
@@ -120,7 +120,7 @@ Partial Class Frm_Usuario
         Me.txt_usuario.Multiline = True
         Me.txt_usuario.Name = "txt_usuario"
         Me.txt_usuario.Size = New System.Drawing.Size(216, 24)
-        Me.txt_usuario.TabIndex = 9
+        Me.txt_usuario.TabIndex = 2
         '
         'Label1
         '
@@ -148,7 +148,7 @@ Partial Class Frm_Usuario
         Me.GroupBox3.Location = New System.Drawing.Point(11, 83)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(359, 184)
-        Me.GroupBox3.TabIndex = 22
+        Me.GroupBox3.TabIndex = 0
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Parametros Usuario"
         '
@@ -169,7 +169,7 @@ Partial Class Frm_Usuario
         Me.cmb_tipousuario.Location = New System.Drawing.Point(133, 71)
         Me.cmb_tipousuario.Name = "cmb_tipousuario"
         Me.cmb_tipousuario.Size = New System.Drawing.Size(216, 25)
-        Me.cmb_tipousuario.TabIndex = 27
+        Me.cmb_tipousuario.TabIndex = 1
         '
         'Label3
         '

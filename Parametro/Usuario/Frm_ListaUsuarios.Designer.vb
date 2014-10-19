@@ -22,11 +22,11 @@ Partial Class Frm_ListaUsuarios
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.txt_buscar = New System.Windows.Forms.TextBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.cmb_estado = New System.Windows.Forms.ComboBox()
@@ -61,7 +61,7 @@ Partial Class Frm_ListaUsuarios
         Me.txt_buscar.Multiline = True
         Me.txt_buscar.Name = "txt_buscar"
         Me.txt_buscar.Size = New System.Drawing.Size(141, 25)
-        Me.txt_buscar.TabIndex = 9
+        Me.txt_buscar.TabIndex = 1
         '
         'GroupBox3
         '
@@ -74,7 +74,7 @@ Partial Class Frm_ListaUsuarios
         Me.GroupBox3.Location = New System.Drawing.Point(12, 78)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(488, 68)
-        Me.GroupBox3.TabIndex = 34
+        Me.GroupBox3.TabIndex = 0
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Parametros de Buscqueda"
         '
@@ -84,7 +84,7 @@ Partial Class Frm_ListaUsuarios
         Me.cmb_estado.Location = New System.Drawing.Point(81, 30)
         Me.cmb_estado.Name = "cmb_estado"
         Me.cmb_estado.Size = New System.Drawing.Size(136, 25)
-        Me.cmb_estado.TabIndex = 10
+        Me.cmb_estado.TabIndex = 0
         '
         'Label3
         '
@@ -118,7 +118,7 @@ Partial Class Frm_ListaUsuarios
         Me.GroupBox1.Location = New System.Drawing.Point(12, 492)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(488, 56)
-        Me.GroupBox1.TabIndex = 35
+        Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Operaciones"
         '
@@ -136,7 +136,7 @@ Partial Class Frm_ListaUsuarios
         Me.btn_nuevo.Name = "btn_nuevo"
         Me.btn_nuevo.Padding = New System.Windows.Forms.Padding(7, 0, 5, 0)
         Me.btn_nuevo.Size = New System.Drawing.Size(112, 33)
-        Me.btn_nuevo.TabIndex = 8
+        Me.btn_nuevo.TabIndex = 1
         Me.btn_nuevo.Text = "Nuevo"
         Me.btn_nuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btn_nuevo.UseVisualStyleBackColor = False
@@ -156,7 +156,7 @@ Partial Class Frm_ListaUsuarios
         Me.btn_cancelar.Name = "btn_cancelar"
         Me.btn_cancelar.Padding = New System.Windows.Forms.Padding(7, 1, 5, 1)
         Me.btn_cancelar.Size = New System.Drawing.Size(112, 34)
-        Me.btn_cancelar.TabIndex = 7
+        Me.btn_cancelar.TabIndex = 2
         Me.btn_cancelar.Text = "Salir"
         Me.btn_cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btn_cancelar.UseVisualStyleBackColor = False
@@ -175,7 +175,7 @@ Partial Class Frm_ListaUsuarios
         Me.btn_reporte.Name = "btn_reporte"
         Me.btn_reporte.Padding = New System.Windows.Forms.Padding(7, 0, 5, 0)
         Me.btn_reporte.Size = New System.Drawing.Size(112, 33)
-        Me.btn_reporte.TabIndex = 6
+        Me.btn_reporte.TabIndex = 0
         Me.btn_reporte.Text = "Reporte"
         Me.btn_reporte.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btn_reporte.UseVisualStyleBackColor = False
@@ -188,7 +188,7 @@ Partial Class Frm_ListaUsuarios
         Me.GroupBox2.Location = New System.Drawing.Point(12, 161)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(488, 311)
-        Me.GroupBox2.TabIndex = 31
+        Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Lista de Usuarios"
         '
@@ -207,13 +207,13 @@ Partial Class Frm_ListaUsuarios
         Me.dgv_lista.ReadOnly = True
         Me.dgv_lista.RowHeadersVisible = False
         Me.dgv_lista.Size = New System.Drawing.Size(471, 272)
-        Me.dgv_lista.TabIndex = 6
+        Me.dgv_lista.TabIndex = 0
         '
         'ParametroId
         '
         Me.ParametroId.DataPropertyName = "ParametroId"
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.ParametroId.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.ParametroId.DefaultCellStyle = DataGridViewCellStyle1
         Me.ParametroId.HeaderText = "ID. "
         Me.ParametroId.Name = "ParametroId"
         Me.ParametroId.ReadOnly = True
@@ -222,8 +222,8 @@ Partial Class Frm_ListaUsuarios
         'PrecioMinimo
         '
         Me.PrecioMinimo.DataPropertyName = "PrecioMinimo"
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.PrecioMinimo.DefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.PrecioMinimo.DefaultCellStyle = DataGridViewCellStyle2
         Me.PrecioMinimo.HeaderText = "Usuario"
         Me.PrecioMinimo.Name = "PrecioMinimo"
         Me.PrecioMinimo.ReadOnly = True
@@ -231,8 +231,8 @@ Partial Class Frm_ListaUsuarios
         'PrecioKilo
         '
         Me.PrecioKilo.DataPropertyName = "PrecioKilo"
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.PrecioKilo.DefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.PrecioKilo.DefaultCellStyle = DataGridViewCellStyle3
         Me.PrecioKilo.HeaderText = "Contraseña"
         Me.PrecioKilo.Name = "PrecioKilo"
         Me.PrecioKilo.ReadOnly = True
@@ -240,10 +240,10 @@ Partial Class Frm_ListaUsuarios
         'Activo
         '
         Me.Activo.DataPropertyName = "Activo"
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle9.NullValue = False
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Activo.DefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle4.NullValue = False
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Activo.DefaultCellStyle = DataGridViewCellStyle4
         Me.Activo.HeaderText = "Activo"
         Me.Activo.Name = "Activo"
         Me.Activo.ReadOnly = True
@@ -252,8 +252,8 @@ Partial Class Frm_ListaUsuarios
         'Fecha
         '
         Me.Fecha.DataPropertyName = "Fecha"
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Fecha.DefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Fecha.DefaultCellStyle = DataGridViewCellStyle5
         Me.Fecha.HeaderText = "Fecha Actualizado"
         Me.Fecha.Name = "Fecha"
         Me.Fecha.ReadOnly = True

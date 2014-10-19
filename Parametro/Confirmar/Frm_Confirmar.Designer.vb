@@ -22,9 +22,9 @@ Partial Class Frm_Confirmar
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.dgv_parametro = New System.Windows.Forms.DataGridView()
@@ -70,7 +70,7 @@ Partial Class Frm_Confirmar
         Me.GroupBox3.Location = New System.Drawing.Point(9, 150)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(471, 300)
-        Me.GroupBox3.TabIndex = 22
+        Me.GroupBox3.TabIndex = 1
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Parametros de Confirmacion"
         '
@@ -89,13 +89,13 @@ Partial Class Frm_Confirmar
         Me.dgv_parametro.ReadOnly = True
         Me.dgv_parametro.RowHeadersVisible = False
         Me.dgv_parametro.Size = New System.Drawing.Size(454, 274)
-        Me.dgv_parametro.TabIndex = 22
+        Me.dgv_parametro.TabIndex = 1
         '
         'PrecioMinimo
         '
         Me.PrecioMinimo.DataPropertyName = "PrecioMinimo"
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.PrecioMinimo.DefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.PrecioMinimo.DefaultCellStyle = DataGridViewCellStyle1
         Me.PrecioMinimo.HeaderText = "Nro. Guía"
         Me.PrecioMinimo.Name = "PrecioMinimo"
         Me.PrecioMinimo.ReadOnly = True
@@ -104,10 +104,10 @@ Partial Class Frm_Confirmar
         'Activo
         '
         Me.Activo.DataPropertyName = "Activo"
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle8.NullValue = False
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Activo.DefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.NullValue = False
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Activo.DefaultCellStyle = DataGridViewCellStyle2
         Me.Activo.HeaderText = "Estado"
         Me.Activo.Name = "Activo"
         Me.Activo.ReadOnly = True
@@ -116,8 +116,8 @@ Partial Class Frm_Confirmar
         'Fecha
         '
         Me.Fecha.DataPropertyName = "Fecha"
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Fecha.DefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Fecha.DefaultCellStyle = DataGridViewCellStyle3
         Me.Fecha.HeaderText = "Fecha Actualizado"
         Me.Fecha.Name = "Fecha"
         Me.Fecha.ReadOnly = True
@@ -155,7 +155,7 @@ Partial Class Frm_Confirmar
         Me.GroupBox1.Location = New System.Drawing.Point(9, 465)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(471, 56)
-        Me.GroupBox1.TabIndex = 23
+        Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Operaciones"
         '
@@ -174,7 +174,7 @@ Partial Class Frm_Confirmar
         Me.btn_cancelar.Name = "btn_cancelar"
         Me.btn_cancelar.Padding = New System.Windows.Forms.Padding(7, 1, 5, 1)
         Me.btn_cancelar.Size = New System.Drawing.Size(112, 34)
-        Me.btn_cancelar.TabIndex = 8
+        Me.btn_cancelar.TabIndex = 0
         Me.btn_cancelar.Text = "Cancelar"
         Me.btn_cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btn_cancelar.UseVisualStyleBackColor = False
@@ -193,7 +193,7 @@ Partial Class Frm_Confirmar
         Me.btn_guardar.Name = "btn_guardar"
         Me.btn_guardar.Padding = New System.Windows.Forms.Padding(7, 0, 5, 0)
         Me.btn_guardar.Size = New System.Drawing.Size(112, 33)
-        Me.btn_guardar.TabIndex = 7
+        Me.btn_guardar.TabIndex = 1
         Me.btn_guardar.Text = "Guardar"
         Me.btn_guardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btn_guardar.UseVisualStyleBackColor = False
@@ -239,7 +239,7 @@ Partial Class Frm_Confirmar
         Me.GroupBox2.Location = New System.Drawing.Point(9, 75)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(471, 60)
-        Me.GroupBox2.TabIndex = 27
+        Me.GroupBox2.TabIndex = 0
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Parametros de Buscqueda"
         '
@@ -250,7 +250,7 @@ Partial Class Frm_Confirmar
         Me.txt_buscar.Multiline = True
         Me.txt_buscar.Name = "txt_buscar"
         Me.txt_buscar.Size = New System.Drawing.Size(199, 24)
-        Me.txt_buscar.TabIndex = 9
+        Me.txt_buscar.TabIndex = 0
         '
         'Label2
         '

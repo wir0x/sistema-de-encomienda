@@ -26,20 +26,20 @@ Partial Class Frm_HojaRuta
         Me.btn_cancelar = New System.Windows.Forms.Button()
         Me.btn_guardar = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.txt_chofer = New System.Windows.Forms.TextBox()
         Me.btn_chofer = New System.Windows.Forms.Button()
         Me.btn_flota = New System.Windows.Forms.Button()
         Me.txt_flota = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
         Me.cmb_destino = New System.Windows.Forms.ComboBox()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.cmb_origen = New System.Windows.Forms.ComboBox()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.dtp_fechallegada = New System.Windows.Forms.DateTimePicker()
         Me.dtp_fechasalida = New System.Windows.Forms.DateTimePicker()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -58,7 +58,7 @@ Partial Class Frm_HojaRuta
         Me.GroupBox1.Location = New System.Drawing.Point(12, 347)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(392, 56)
-        Me.GroupBox1.TabIndex = 23
+        Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Operaciones"
         '
@@ -77,7 +77,7 @@ Partial Class Frm_HojaRuta
         Me.btn_cancelar.Name = "btn_cancelar"
         Me.btn_cancelar.Padding = New System.Windows.Forms.Padding(7, 1, 5, 1)
         Me.btn_cancelar.Size = New System.Drawing.Size(112, 34)
-        Me.btn_cancelar.TabIndex = 6
+        Me.btn_cancelar.TabIndex = 1
         Me.btn_cancelar.Text = "Cancelar"
         Me.btn_cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btn_cancelar.UseVisualStyleBackColor = False
@@ -96,7 +96,7 @@ Partial Class Frm_HojaRuta
         Me.btn_guardar.Name = "btn_guardar"
         Me.btn_guardar.Padding = New System.Windows.Forms.Padding(7, 0, 5, 0)
         Me.btn_guardar.Size = New System.Drawing.Size(112, 33)
-        Me.btn_guardar.TabIndex = 5
+        Me.btn_guardar.TabIndex = 0
         Me.btn_guardar.Text = "Guardar"
         Me.btn_guardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btn_guardar.UseVisualStyleBackColor = False
@@ -122,63 +122,9 @@ Partial Class Frm_HojaRuta
         Me.GroupBox3.Location = New System.Drawing.Point(11, 85)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(393, 239)
-        Me.GroupBox3.TabIndex = 22
+        Me.GroupBox3.TabIndex = 0
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Parametros Hoja de Ruta"
-        '
-        'txt_chofer
-        '
-        Me.txt_chofer.Enabled = False
-        Me.txt_chofer.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txt_chofer.Location = New System.Drawing.Point(144, 139)
-        Me.txt_chofer.Multiline = True
-        Me.txt_chofer.Name = "txt_chofer"
-        Me.txt_chofer.Size = New System.Drawing.Size(189, 23)
-        Me.txt_chofer.TabIndex = 50
-        '
-        'btn_chofer
-        '
-        Me.btn_chofer.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.btn_chofer.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.btn_chofer.FlatAppearance.BorderColor = System.Drawing.Color.Azure
-        Me.btn_chofer.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_chofer.Font = New System.Drawing.Font("Ubuntu Light", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_chofer.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.btn_chofer.Image = Global.Parametro.My.Resources.Resources.menu2
-        Me.btn_chofer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_chofer.Location = New System.Drawing.Point(343, 137)
-        Me.btn_chofer.Name = "btn_chofer"
-        Me.btn_chofer.Padding = New System.Windows.Forms.Padding(1)
-        Me.btn_chofer.Size = New System.Drawing.Size(29, 27)
-        Me.btn_chofer.TabIndex = 49
-        Me.btn_chofer.UseVisualStyleBackColor = False
-        '
-        'btn_flota
-        '
-        Me.btn_flota.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.btn_flota.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.btn_flota.FlatAppearance.BorderColor = System.Drawing.Color.Azure
-        Me.btn_flota.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_flota.Font = New System.Drawing.Font("Ubuntu Light", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_flota.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.btn_flota.Image = Global.Parametro.My.Resources.Resources.menu2
-        Me.btn_flota.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_flota.Location = New System.Drawing.Point(343, 107)
-        Me.btn_flota.Name = "btn_flota"
-        Me.btn_flota.Padding = New System.Windows.Forms.Padding(1)
-        Me.btn_flota.Size = New System.Drawing.Size(29, 27)
-        Me.btn_flota.TabIndex = 48
-        Me.btn_flota.UseVisualStyleBackColor = False
-        '
-        'txt_flota
-        '
-        Me.txt_flota.Enabled = False
-        Me.txt_flota.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txt_flota.Location = New System.Drawing.Point(144, 108)
-        Me.txt_flota.Multiline = True
-        Me.txt_flota.Name = "txt_flota"
-        Me.txt_flota.Size = New System.Drawing.Size(189, 23)
-        Me.txt_flota.TabIndex = 46
         '
         'Label6
         '
@@ -202,14 +148,6 @@ Partial Class Frm_HojaRuta
         Me.Label11.TabIndex = 39
         Me.Label11.Text = "Flota :"
         '
-        'cmb_destino
-        '
-        Me.cmb_destino.FormattingEnabled = True
-        Me.cmb_destino.Location = New System.Drawing.Point(144, 75)
-        Me.cmb_destino.Name = "cmb_destino"
-        Me.cmb_destino.Size = New System.Drawing.Size(228, 25)
-        Me.cmb_destino.TabIndex = 28
-        '
         'Label5
         '
         Me.Label5.AutoSize = True
@@ -221,14 +159,6 @@ Partial Class Frm_HojaRuta
         Me.Label5.TabIndex = 27
         Me.Label5.Text = "Destino :"
         '
-        'cmb_origen
-        '
-        Me.cmb_origen.FormattingEnabled = True
-        Me.cmb_origen.Location = New System.Drawing.Point(144, 42)
-        Me.cmb_origen.Name = "cmb_origen"
-        Me.cmb_origen.Size = New System.Drawing.Size(228, 25)
-        Me.cmb_origen.TabIndex = 26
-        '
         'Label4
         '
         Me.Label4.AutoSize = True
@@ -239,26 +169,6 @@ Partial Class Frm_HojaRuta
         Me.Label4.Size = New System.Drawing.Size(52, 17)
         Me.Label4.TabIndex = 25
         Me.Label4.Text = "Origen :"
-        '
-        'dtp_fechallegada
-        '
-        Me.dtp_fechallegada.CalendarFont = New System.Drawing.Font("Ubuntu Light", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dtp_fechallegada.CalendarForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.dtp_fechallegada.CalendarTitleForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.dtp_fechallegada.Location = New System.Drawing.Point(144, 199)
-        Me.dtp_fechallegada.Name = "dtp_fechallegada"
-        Me.dtp_fechallegada.Size = New System.Drawing.Size(228, 21)
-        Me.dtp_fechallegada.TabIndex = 24
-        '
-        'dtp_fechasalida
-        '
-        Me.dtp_fechasalida.CalendarFont = New System.Drawing.Font("Ubuntu Light", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dtp_fechasalida.CalendarForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.dtp_fechasalida.CalendarTitleForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.dtp_fechasalida.Location = New System.Drawing.Point(144, 170)
-        Me.dtp_fechasalida.Name = "dtp_fechasalida"
-        Me.dtp_fechasalida.Size = New System.Drawing.Size(228, 21)
-        Me.dtp_fechasalida.TabIndex = 23
         '
         'Label3
         '
@@ -281,6 +191,96 @@ Partial Class Frm_HojaRuta
         Me.Label2.Size = New System.Drawing.Size(93, 17)
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "Fecha Llegada :"
+        '
+        'txt_chofer
+        '
+        Me.txt_chofer.Enabled = False
+        Me.txt_chofer.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txt_chofer.Location = New System.Drawing.Point(144, 139)
+        Me.txt_chofer.Multiline = True
+        Me.txt_chofer.Name = "txt_chofer"
+        Me.txt_chofer.Size = New System.Drawing.Size(189, 23)
+        Me.txt_chofer.TabIndex = 4
+        '
+        'btn_chofer
+        '
+        Me.btn_chofer.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.btn_chofer.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.btn_chofer.FlatAppearance.BorderColor = System.Drawing.Color.Azure
+        Me.btn_chofer.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_chofer.Font = New System.Drawing.Font("Ubuntu Light", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_chofer.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btn_chofer.Image = Global.Parametro.My.Resources.Resources.menu2
+        Me.btn_chofer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_chofer.Location = New System.Drawing.Point(343, 137)
+        Me.btn_chofer.Name = "btn_chofer"
+        Me.btn_chofer.Padding = New System.Windows.Forms.Padding(1)
+        Me.btn_chofer.Size = New System.Drawing.Size(29, 27)
+        Me.btn_chofer.TabIndex = 5
+        Me.btn_chofer.UseVisualStyleBackColor = False
+        '
+        'btn_flota
+        '
+        Me.btn_flota.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.btn_flota.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.btn_flota.FlatAppearance.BorderColor = System.Drawing.Color.Azure
+        Me.btn_flota.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_flota.Font = New System.Drawing.Font("Ubuntu Light", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_flota.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btn_flota.Image = Global.Parametro.My.Resources.Resources.menu2
+        Me.btn_flota.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_flota.Location = New System.Drawing.Point(343, 107)
+        Me.btn_flota.Name = "btn_flota"
+        Me.btn_flota.Padding = New System.Windows.Forms.Padding(1)
+        Me.btn_flota.Size = New System.Drawing.Size(29, 27)
+        Me.btn_flota.TabIndex = 3
+        Me.btn_flota.UseVisualStyleBackColor = False
+        '
+        'txt_flota
+        '
+        Me.txt_flota.Enabled = False
+        Me.txt_flota.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txt_flota.Location = New System.Drawing.Point(144, 108)
+        Me.txt_flota.Multiline = True
+        Me.txt_flota.Name = "txt_flota"
+        Me.txt_flota.Size = New System.Drawing.Size(189, 23)
+        Me.txt_flota.TabIndex = 2
+        '
+        'cmb_destino
+        '
+        Me.cmb_destino.FormattingEnabled = True
+        Me.cmb_destino.Location = New System.Drawing.Point(144, 75)
+        Me.cmb_destino.Name = "cmb_destino"
+        Me.cmb_destino.Size = New System.Drawing.Size(228, 25)
+        Me.cmb_destino.TabIndex = 1
+        '
+        'cmb_origen
+        '
+        Me.cmb_origen.FormattingEnabled = True
+        Me.cmb_origen.Location = New System.Drawing.Point(144, 42)
+        Me.cmb_origen.Name = "cmb_origen"
+        Me.cmb_origen.Size = New System.Drawing.Size(228, 25)
+        Me.cmb_origen.TabIndex = 0
+        '
+        'dtp_fechallegada
+        '
+        Me.dtp_fechallegada.CalendarFont = New System.Drawing.Font("Ubuntu Light", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtp_fechallegada.CalendarForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.dtp_fechallegada.CalendarTitleForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.dtp_fechallegada.Location = New System.Drawing.Point(144, 199)
+        Me.dtp_fechallegada.Name = "dtp_fechallegada"
+        Me.dtp_fechallegada.Size = New System.Drawing.Size(228, 21)
+        Me.dtp_fechallegada.TabIndex = 7
+        '
+        'dtp_fechasalida
+        '
+        Me.dtp_fechasalida.CalendarFont = New System.Drawing.Font("Ubuntu Light", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtp_fechasalida.CalendarForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.dtp_fechasalida.CalendarTitleForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.dtp_fechasalida.Location = New System.Drawing.Point(144, 170)
+        Me.dtp_fechasalida.Name = "dtp_fechasalida"
+        Me.dtp_fechasalida.Size = New System.Drawing.Size(228, 21)
+        Me.dtp_fechasalida.TabIndex = 6
         '
         'Panel2
         '

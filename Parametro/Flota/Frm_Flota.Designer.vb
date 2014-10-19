@@ -99,7 +99,7 @@ Partial Class Frm_Flota
         Me.GroupBox1.Location = New System.Drawing.Point(12, 311)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(401, 56)
-        Me.GroupBox1.TabIndex = 23
+        Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Operacion"
         '
@@ -118,7 +118,7 @@ Partial Class Frm_Flota
         Me.btn_cancelar.Name = "btn_cancelar"
         Me.btn_cancelar.Padding = New System.Windows.Forms.Padding(7, 1, 5, 1)
         Me.btn_cancelar.Size = New System.Drawing.Size(112, 34)
-        Me.btn_cancelar.TabIndex = 6
+        Me.btn_cancelar.TabIndex = 1
         Me.btn_cancelar.Text = "Cancelar"
         Me.btn_cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btn_cancelar.UseVisualStyleBackColor = False
@@ -137,7 +137,7 @@ Partial Class Frm_Flota
         Me.btn_guardar.Name = "btn_guardar"
         Me.btn_guardar.Padding = New System.Windows.Forms.Padding(7, 0, 5, 0)
         Me.btn_guardar.Size = New System.Drawing.Size(112, 33)
-        Me.btn_guardar.TabIndex = 5
+        Me.btn_guardar.TabIndex = 0
         Me.btn_guardar.Text = "Guardar"
         Me.btn_guardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btn_guardar.UseVisualStyleBackColor = False
@@ -194,7 +194,7 @@ Partial Class Frm_Flota
         Me.GroupBox3.Location = New System.Drawing.Point(12, 90)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(401, 203)
-        Me.GroupBox3.TabIndex = 22
+        Me.GroupBox3.TabIndex = 0
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Parametros Flota"
         '
@@ -207,7 +207,7 @@ Partial Class Frm_Flota
         Me.nud_pescarga.Location = New System.Drawing.Point(321, 130)
         Me.nud_pescarga.Name = "nud_pescarga"
         Me.nud_pescarga.Size = New System.Drawing.Size(62, 21)
-        Me.nud_pescarga.TabIndex = 30
+        Me.nud_pescarga.TabIndex = 5
         '
         'Label2
         '
@@ -229,7 +229,7 @@ Partial Class Frm_Flota
         Me.nud_volcarga.Location = New System.Drawing.Point(321, 159)
         Me.nud_volcarga.Name = "nud_volcarga"
         Me.nud_volcarga.Size = New System.Drawing.Size(62, 21)
-        Me.nud_volcarga.TabIndex = 29
+        Me.nud_volcarga.TabIndex = 6
         '
         'txt_placa
         '
@@ -238,7 +238,7 @@ Partial Class Frm_Flota
         Me.txt_placa.Multiline = True
         Me.txt_placa.Name = "txt_placa"
         Me.txt_placa.Size = New System.Drawing.Size(87, 24)
-        Me.txt_placa.TabIndex = 25
+        Me.txt_placa.TabIndex = 4
         '
         'Label3
         '

@@ -78,7 +78,7 @@ Partial Class Frm_Login
         Me.txt_username.Multiline = True
         Me.txt_username.Name = "txt_username"
         Me.txt_username.Size = New System.Drawing.Size(228, 26)
-        Me.txt_username.TabIndex = 21
+        Me.txt_username.TabIndex = 0
         Me.txt_username.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'GroupBox3
@@ -90,7 +90,7 @@ Partial Class Frm_Login
         Me.GroupBox3.Location = New System.Drawing.Point(12, 71)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(264, 99)
-        Me.GroupBox3.TabIndex = 22
+        Me.GroupBox3.TabIndex = 0
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Usuario y Contraseña"
         '
@@ -103,7 +103,7 @@ Partial Class Frm_Login
         Me.txt_password.Name = "txt_password"
         Me.txt_password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txt_password.Size = New System.Drawing.Size(228, 26)
-        Me.txt_password.TabIndex = 22
+        Me.txt_password.TabIndex = 1
         Me.txt_password.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'GroupBox1
@@ -131,7 +131,7 @@ Partial Class Frm_Login
         Me.btn_cancelar.Name = "btn_cancelar"
         Me.btn_cancelar.Padding = New System.Windows.Forms.Padding(7, 1, 5, 1)
         Me.btn_cancelar.Size = New System.Drawing.Size(112, 33)
-        Me.btn_cancelar.TabIndex = 4
+        Me.btn_cancelar.TabIndex = 1
         Me.btn_cancelar.Text = "Cancelar"
         Me.btn_cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btn_cancelar.UseVisualStyleBackColor = False
@@ -150,7 +150,7 @@ Partial Class Frm_Login
         Me.btn_guardar.Name = "btn_guardar"
         Me.btn_guardar.Padding = New System.Windows.Forms.Padding(7, 0, 5, 0)
         Me.btn_guardar.Size = New System.Drawing.Size(112, 33)
-        Me.btn_guardar.TabIndex = 3
+        Me.btn_guardar.TabIndex = 0
         Me.btn_guardar.Text = "Ingresar"
         Me.btn_guardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btn_guardar.UseVisualStyleBackColor = False

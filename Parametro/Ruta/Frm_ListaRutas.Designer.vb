@@ -22,8 +22,8 @@ Partial Class Frm_ListaRutas
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.dgv_parametro = New System.Windows.Forms.DataGridView()
         Me.ParametroId = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Activo = New System.Windows.Forms.DataGridViewCheckBoxColumn()
@@ -62,13 +62,13 @@ Partial Class Frm_ListaRutas
         Me.dgv_parametro.ReadOnly = True
         Me.dgv_parametro.RowHeadersVisible = False
         Me.dgv_parametro.Size = New System.Drawing.Size(263, 247)
-        Me.dgv_parametro.TabIndex = 6
+        Me.dgv_parametro.TabIndex = 0
         '
         'ParametroId
         '
         Me.ParametroId.DataPropertyName = "ParametroId"
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.ParametroId.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.ParametroId.DefaultCellStyle = DataGridViewCellStyle1
         Me.ParametroId.HeaderText = "Nro. de guia"
         Me.ParametroId.Name = "ParametroId"
         Me.ParametroId.ReadOnly = True
@@ -77,10 +77,10 @@ Partial Class Frm_ListaRutas
         'Activo
         '
         Me.Activo.DataPropertyName = "Activo"
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle4.NullValue = False
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Activo.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.NullValue = False
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Activo.DefaultCellStyle = DataGridViewCellStyle2
         Me.Activo.HeaderText = "Verificado"
         Me.Activo.Name = "Activo"
         Me.Activo.ReadOnly = True
@@ -92,7 +92,7 @@ Partial Class Frm_ListaRutas
         Me.cmb_ruta.Location = New System.Drawing.Point(87, 30)
         Me.cmb_ruta.Name = "cmb_ruta"
         Me.cmb_ruta.Size = New System.Drawing.Size(201, 25)
-        Me.cmb_ruta.TabIndex = 10
+        Me.cmb_ruta.TabIndex = 0
         '
         'GroupBox3
         '
@@ -105,7 +105,7 @@ Partial Class Frm_ListaRutas
         Me.GroupBox3.Location = New System.Drawing.Point(12, 76)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(297, 97)
-        Me.GroupBox3.TabIndex = 29
+        Me.GroupBox3.TabIndex = 0
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Parametros de Buscqueda"
         '
@@ -126,7 +126,7 @@ Partial Class Frm_ListaRutas
         Me.ComboBox1.Location = New System.Drawing.Point(87, 61)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(201, 25)
-        Me.ComboBox1.TabIndex = 11
+        Me.ComboBox1.TabIndex = 1
         '
         'Label1
         '
@@ -148,7 +148,7 @@ Partial Class Frm_ListaRutas
         Me.GroupBox1.Location = New System.Drawing.Point(12, 492)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(297, 56)
-        Me.GroupBox1.TabIndex = 30
+        Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Operaciones"
         '
@@ -167,7 +167,7 @@ Partial Class Frm_ListaRutas
         Me.btn_cancelar.Name = "btn_cancelar"
         Me.btn_cancelar.Padding = New System.Windows.Forms.Padding(7, 1, 5, 1)
         Me.btn_cancelar.Size = New System.Drawing.Size(112, 34)
-        Me.btn_cancelar.TabIndex = 8
+        Me.btn_cancelar.TabIndex = 1
         Me.btn_cancelar.Text = "Salir"
         Me.btn_cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btn_cancelar.UseVisualStyleBackColor = False
@@ -186,7 +186,7 @@ Partial Class Frm_ListaRutas
         Me.btn_guardar.Name = "btn_guardar"
         Me.btn_guardar.Padding = New System.Windows.Forms.Padding(7, 0, 5, 0)
         Me.btn_guardar.Size = New System.Drawing.Size(112, 33)
-        Me.btn_guardar.TabIndex = 5
+        Me.btn_guardar.TabIndex = 0
         Me.btn_guardar.Text = "Guardar"
         Me.btn_guardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btn_guardar.UseVisualStyleBackColor = False
@@ -199,7 +199,7 @@ Partial Class Frm_ListaRutas
         Me.GroupBox2.Location = New System.Drawing.Point(12, 199)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(297, 273)
-        Me.GroupBox2.TabIndex = 26
+        Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Lista de Rutas"
         '
@@ -235,7 +235,7 @@ Partial Class Frm_ListaRutas
         Me.lbl_titulo.TabIndex = 0
         Me.lbl_titulo.Text = "Lista de Rutas"
         '
-        'Form1
+        'Frm_ListaRutas
         '
         Me.AcceptButton = Me.btn_guardar
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -247,7 +247,7 @@ Partial Class Frm_ListaRutas
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Form1"
+        Me.Name = "Frm_ListaRutas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "lista de ruta"
         CType(Me.dgv_parametro, System.ComponentModel.ISupportInitialize).EndInit()

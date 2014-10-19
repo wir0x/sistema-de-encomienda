@@ -22,11 +22,11 @@ Partial Class Frm_ListaChoferes
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.dgv_parametro = New System.Windows.Forms.DataGridView()
@@ -95,8 +95,8 @@ Partial Class Frm_ListaChoferes
         'ParametroId
         '
         Me.ParametroId.DataPropertyName = "ParametroId"
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.ParametroId.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.ParametroId.DefaultCellStyle = DataGridViewCellStyle1
         Me.ParametroId.HeaderText = "Nr. Doc. (CI)"
         Me.ParametroId.Name = "ParametroId"
         Me.ParametroId.ReadOnly = True
@@ -105,8 +105,8 @@ Partial Class Frm_ListaChoferes
         'PrecioMinimo
         '
         Me.PrecioMinimo.DataPropertyName = "PrecioMinimo"
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.PrecioMinimo.DefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.PrecioMinimo.DefaultCellStyle = DataGridViewCellStyle2
         Me.PrecioMinimo.HeaderText = "Nombres"
         Me.PrecioMinimo.Name = "PrecioMinimo"
         Me.PrecioMinimo.ReadOnly = True
@@ -115,8 +115,8 @@ Partial Class Frm_ListaChoferes
         'PrecioVolumen
         '
         Me.PrecioVolumen.DataPropertyName = "PrecioVolumen"
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.PrecioVolumen.DefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.PrecioVolumen.DefaultCellStyle = DataGridViewCellStyle3
         Me.PrecioVolumen.HeaderText = "Telefono"
         Me.PrecioVolumen.Name = "PrecioVolumen"
         Me.PrecioVolumen.ReadOnly = True
@@ -125,10 +125,10 @@ Partial Class Frm_ListaChoferes
         'Activo
         '
         Me.Activo.DataPropertyName = "Activo"
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle9.NullValue = False
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Activo.DefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle4.NullValue = False
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Activo.DefaultCellStyle = DataGridViewCellStyle4
         Me.Activo.HeaderText = "Activo"
         Me.Activo.Name = "Activo"
         Me.Activo.ReadOnly = True
@@ -137,8 +137,8 @@ Partial Class Frm_ListaChoferes
         'Fecha
         '
         Me.Fecha.DataPropertyName = "Fecha"
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Fecha.DefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Fecha.DefaultCellStyle = DataGridViewCellStyle5
         Me.Fecha.HeaderText = "Fecha Actualizado"
         Me.Fecha.Name = "Fecha"
         Me.Fecha.ReadOnly = True
@@ -184,7 +184,7 @@ Partial Class Frm_ListaChoferes
         Me.cmb_estado.Location = New System.Drawing.Point(87, 23)
         Me.cmb_estado.Name = "cmb_estado"
         Me.cmb_estado.Size = New System.Drawing.Size(201, 25)
-        Me.cmb_estado.TabIndex = 10
+        Me.cmb_estado.TabIndex = 0
         '
         'GroupBox3
         '
@@ -197,7 +197,7 @@ Partial Class Frm_ListaChoferes
         Me.GroupBox3.Location = New System.Drawing.Point(12, 77)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(770, 60)
-        Me.GroupBox3.TabIndex = 25
+        Me.GroupBox3.TabIndex = 0
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Parametros de Buscqueda"
         '
@@ -208,7 +208,7 @@ Partial Class Frm_ListaChoferes
         Me.txt_buscar.Multiline = True
         Me.txt_buscar.Name = "txt_buscar"
         Me.txt_buscar.Size = New System.Drawing.Size(191, 24)
-        Me.txt_buscar.TabIndex = 9
+        Me.txt_buscar.TabIndex = 1
         '
         'Label3
         '
@@ -251,7 +251,7 @@ Partial Class Frm_ListaChoferes
         Me.GroupBox1.Location = New System.Drawing.Point(12, 532)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(770, 56)
-        Me.GroupBox1.TabIndex = 26
+        Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Operaciones"
         '
@@ -269,7 +269,7 @@ Partial Class Frm_ListaChoferes
         Me.btn_nuevo.Name = "btn_nuevo"
         Me.btn_nuevo.Padding = New System.Windows.Forms.Padding(7, 0, 5, 0)
         Me.btn_nuevo.Size = New System.Drawing.Size(112, 33)
-        Me.btn_nuevo.TabIndex = 5
+        Me.btn_nuevo.TabIndex = 2
         Me.btn_nuevo.Text = "Nuevo"
         Me.btn_nuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btn_nuevo.UseVisualStyleBackColor = False
@@ -289,7 +289,7 @@ Partial Class Frm_ListaChoferes
         Me.btn_cancelar.Name = "btn_cancelar"
         Me.btn_cancelar.Padding = New System.Windows.Forms.Padding(7, 1, 5, 1)
         Me.btn_cancelar.Size = New System.Drawing.Size(112, 34)
-        Me.btn_cancelar.TabIndex = 4
+        Me.btn_cancelar.TabIndex = 0
         Me.btn_cancelar.Text = "Salir"
         Me.btn_cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btn_cancelar.UseVisualStyleBackColor = False
@@ -308,7 +308,7 @@ Partial Class Frm_ListaChoferes
         Me.btn_reporte.Name = "btn_reporte"
         Me.btn_reporte.Padding = New System.Windows.Forms.Padding(7, 0, 5, 0)
         Me.btn_reporte.Size = New System.Drawing.Size(112, 33)
-        Me.btn_reporte.TabIndex = 3
+        Me.btn_reporte.TabIndex = 1
         Me.btn_reporte.Text = "Reporte"
         Me.btn_reporte.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btn_reporte.UseVisualStyleBackColor = False
