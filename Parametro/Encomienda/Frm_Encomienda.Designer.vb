@@ -132,7 +132,6 @@ Partial Class Frm_Encomienda
         '
         'txt_ruta
         '
-        Me.txt_ruta.Enabled = False
         Me.txt_ruta.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.txt_ruta.Location = New System.Drawing.Point(117, 132)
         Me.txt_ruta.Multiline = True
@@ -142,7 +141,6 @@ Partial Class Frm_Encomienda
         '
         'txt_destinatario
         '
-        Me.txt_destinatario.Enabled = False
         Me.txt_destinatario.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.txt_destinatario.Location = New System.Drawing.Point(117, 101)
         Me.txt_destinatario.Multiline = True
@@ -203,7 +201,6 @@ Partial Class Frm_Encomienda
         '
         'txt_remitente
         '
-        Me.txt_remitente.Enabled = False
         Me.txt_remitente.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.txt_remitente.Location = New System.Drawing.Point(117, 70)
         Me.txt_remitente.Multiline = True

@@ -1,11 +1,11 @@
 ﻿Public Class Frm_Encomienda
 
-    Private Sub PierdeFoco(ByVal sender As TextBox, ByVal e As System.EventArgs) Handles txt_remitente.LostFocus, txt_destinatario.LostFocus, txt_ruta.LostFocus, txt_descripcion.LostFocus, nud_vol.LostFocus, nud_peso.LostFocus, nud_monto.LostFocus
+    Private Sub PierdeFoco(ByVal sender As TextBox, ByVal e As System.EventArgs) Handles txt_remitente.LostFocus, txt_destinatario.LostFocus, txt_ruta.LostFocus, txt_descripcion.LostFocus
         sender.BackColor = Color.White
         sender.SelectAll()
     End Sub
 
-    Private Sub AgarraFoco(ByVal sender As TextBox, ByVal e As System.EventArgs) Handles txt_remitente.GotFocus, txt_destinatario.GotFocus, txt_ruta.GotFocus, txt_descripcion.GotFocus, nud_vol.GotFocus, nud_peso.GotFocus, nud_monto.GotFocus
+    Private Sub AgarraFoco(ByVal sender As TextBox, ByVal e As System.EventArgs) Handles txt_remitente.GotFocus, txt_destinatario.GotFocus, txt_ruta.GotFocus, txt_descripcion.GotFocus
         sender.BackColor = Color.LightCyan
         sender.SelectAll()
     End Sub
