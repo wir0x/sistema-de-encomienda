@@ -1,4 +1,3 @@
-D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.exe
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Parametro\bin\Debug\Parametro.exe
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Parametro\bin\Debug\Parametro.pdb
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Parametro\bin\Debug\Parametro.xml
@@ -7,13 +6,12 @@ D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Parametro\bin\Debug\LCD.dll
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Parametro\bin\Debug\LCN.pdb
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Parametro\bin\Debug\LCN.xml
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Parametro\bin\Debug\LCD.pdb
-D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Parametro\bin\Debug\LCD.xml
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Presentacion.vbprojResolveAssemblyReference.cache
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_Chofer.resources
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_Cliente.resources
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_ListaClientes.resources
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_Confirmar.resources
-D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Form1.resources
+D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_ListaRutas.resources
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_Encomienda.resources
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_Flota.resources
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_ListaFlotas.resources
@@ -29,5 +27,6 @@ D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parame
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_ListaUsuarios.resources
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_Usuario.resources
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Presentacion.vbproj.GenerateResource.Cache
+D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.exe
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.xml
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.pdb
