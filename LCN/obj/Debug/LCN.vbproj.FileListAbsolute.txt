@@ -27,7 +27,6 @@ D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\LCN\bin\Debug\LCN.pdb
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\LCN\bin\Debug\LCN.xml
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\LCN\bin\Debug\LCD.dll
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\LCN\bin\Debug\LCD.pdb
-D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\LCN\bin\Debug\LCD.xml
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\LCN\obj\Debug\LCN.vbprojResolveAssemblyReference.cache
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\LCN\obj\Debug\LCN.Resources.resources
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\LCN\obj\Debug\LCN.vbproj.GenerateResource.Cache
