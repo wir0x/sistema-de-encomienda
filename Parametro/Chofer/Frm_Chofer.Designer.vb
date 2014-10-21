@@ -37,6 +37,7 @@ Partial Class Frm_Chofer
         Me.txt_nombre = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -129,6 +130,7 @@ Partial Class Frm_Chofer
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.Label2)
         Me.GroupBox3.Controls.Add(Me.txt_telefono)
         Me.GroupBox3.Controls.Add(Me.txt_direccion)
         Me.GroupBox3.Controls.Add(Me.txt_nrodoc)
@@ -226,6 +228,17 @@ Partial Class Frm_Chofer
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Nro. Documento :"
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(89, 15)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(119, 15)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "Nro. Documento :"
+        '
         'Frm_Chofer
         '
         Me.AcceptButton = Me.btn_guardar
@@ -264,4 +277,5 @@ Partial Class Frm_Chofer
     Friend WithEvents txt_nombre As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
 End Class
