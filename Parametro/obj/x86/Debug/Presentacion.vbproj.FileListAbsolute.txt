@@ -31,3 +31,6 @@ D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parame
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Presentacion.vbproj.GenerateResource.Cache
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.xml
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.pdb
+D:\GitHub\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.exe
+D:\GitHub\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.xml
+D:\GitHub\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.pdb
