@@ -72,6 +72,7 @@ Partial Class Frm_Flota
         '
         'txt_id
         '
+        Me.txt_id.Enabled = False
         Me.txt_id.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.txt_id.Location = New System.Drawing.Point(99, 32)
         Me.txt_id.Multiline = True
