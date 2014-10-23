@@ -70,5 +70,3 @@
 #End Region
 
 End Class
-
-End Class
