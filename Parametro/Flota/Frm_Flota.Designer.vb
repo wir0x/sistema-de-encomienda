@@ -257,18 +257,18 @@ Partial Class Frm_Flota
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(217, 163)
+        Me.Label6.Location = New System.Drawing.Point(206, 163)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(113, 15)
+        Me.Label6.Size = New System.Drawing.Size(102, 15)
         Me.Label6.TabIndex = 24
-        Me.Label6.Text = "Volumen Carga :"
+        Me.Label6.Text = "Volumen cm3 :"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(217, 131)
+        Me.Label5.Location = New System.Drawing.Point(206, 131)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(89, 15)
         Me.Label5.TabIndex = 23
