@@ -24,14 +24,10 @@ Partial Class Frm_Encomienda
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lbl_titulo = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.txt_ruta = New System.Windows.Forms.TextBox()
         Me.txt_destinatario = New System.Windows.Forms.TextBox()
-        Me.btn_destinatario = New System.Windows.Forms.Button()
-        Me.btn_remitente = New System.Windows.Forms.Button()
-        Me.btn_ruta = New System.Windows.Forms.Button()
         Me.txt_remitente = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -48,8 +44,6 @@ Partial Class Frm_Encomienda
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lbl_datetime = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.btn_cancelar = New System.Windows.Forms.Button()
-        Me.btn_guardar = New System.Windows.Forms.Button()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.nud_precioKil = New System.Windows.Forms.NumericUpDown()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
@@ -62,8 +56,13 @@ Partial Class Frm_Encomienda
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Num_base = New System.Windows.Forms.NumericUpDown()
         Me.Label12 = New System.Windows.Forms.Label()
+        Me.btn_guardar = New System.Windows.Forms.Button()
+        Me.btn_cancelar = New System.Windows.Forms.Button()
+        Me.btn_destinatario = New System.Windows.Forms.Button()
+        Me.btn_remitente = New System.Windows.Forms.Button()
+        Me.btn_ruta = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
         CType(Me.nud_monto, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nud_peso, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -74,6 +73,7 @@ Partial Class Frm_Encomienda
         CType(Me.Num_alto, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Num_ancho, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Num_base, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -85,17 +85,6 @@ Partial Class Frm_Encomienda
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(630, 59)
         Me.Panel1.TabIndex = 13
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.PictureBox1.Image = Global.Parametro.My.Resources.Resources.archive201
-        Me.PictureBox1.Location = New System.Drawing.Point(22, 5)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(51, 47)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 3
-        Me.PictureBox1.TabStop = False
         '
         'lbl_titulo
         '
@@ -157,57 +146,6 @@ Partial Class Frm_Encomienda
         Me.txt_destinatario.Size = New System.Drawing.Size(189, 23)
         Me.txt_destinatario.TabIndex = 3
         '
-        'btn_destinatario
-        '
-        Me.btn_destinatario.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.btn_destinatario.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.btn_destinatario.FlatAppearance.BorderColor = System.Drawing.Color.Azure
-        Me.btn_destinatario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_destinatario.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_destinatario.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.btn_destinatario.Image = Global.Parametro.My.Resources.Resources.menu2
-        Me.btn_destinatario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_destinatario.Location = New System.Drawing.Point(312, 58)
-        Me.btn_destinatario.Name = "btn_destinatario"
-        Me.btn_destinatario.Padding = New System.Windows.Forms.Padding(1)
-        Me.btn_destinatario.Size = New System.Drawing.Size(29, 27)
-        Me.btn_destinatario.TabIndex = 4
-        Me.btn_destinatario.UseVisualStyleBackColor = False
-        '
-        'btn_remitente
-        '
-        Me.btn_remitente.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.btn_remitente.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.btn_remitente.FlatAppearance.BorderColor = System.Drawing.Color.Azure
-        Me.btn_remitente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_remitente.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_remitente.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.btn_remitente.Image = Global.Parametro.My.Resources.Resources.menu2
-        Me.btn_remitente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_remitente.Location = New System.Drawing.Point(312, 29)
-        Me.btn_remitente.Name = "btn_remitente"
-        Me.btn_remitente.Padding = New System.Windows.Forms.Padding(1)
-        Me.btn_remitente.Size = New System.Drawing.Size(29, 27)
-        Me.btn_remitente.TabIndex = 2
-        Me.btn_remitente.UseVisualStyleBackColor = False
-        '
-        'btn_ruta
-        '
-        Me.btn_ruta.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.btn_ruta.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.btn_ruta.FlatAppearance.BorderColor = System.Drawing.Color.Azure
-        Me.btn_ruta.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_ruta.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_ruta.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.btn_ruta.Image = Global.Parametro.My.Resources.Resources.menu2
-        Me.btn_ruta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_ruta.Location = New System.Drawing.Point(312, 88)
-        Me.btn_ruta.Name = "btn_ruta"
-        Me.btn_ruta.Padding = New System.Windows.Forms.Padding(1)
-        Me.btn_ruta.Size = New System.Drawing.Size(29, 27)
-        Me.btn_ruta.TabIndex = 6
-        Me.btn_ruta.UseVisualStyleBackColor = False
-        '
         'txt_remitente
         '
         Me.txt_remitente.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
@@ -262,12 +200,14 @@ Partial Class Frm_Encomienda
         'nud_monto
         '
         Me.nud_monto.DecimalPlaces = 2
+        Me.nud_monto.Enabled = False
         Me.nud_monto.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.nud_monto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.nud_monto.Increment = New Decimal(New Integer() {1, 0, 0, 131072})
         Me.nud_monto.Location = New System.Drawing.Point(469, 155)
+        Me.nud_monto.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
         Me.nud_monto.Name = "nud_monto"
-        Me.nud_monto.Size = New System.Drawing.Size(62, 21)
+        Me.nud_monto.Size = New System.Drawing.Size(78, 21)
         Me.nud_monto.TabIndex = 10
         '
         'nud_peso
@@ -277,8 +217,9 @@ Partial Class Frm_Encomienda
         Me.nud_peso.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.nud_peso.Increment = New Decimal(New Integer() {1, 0, 0, 131072})
         Me.nud_peso.Location = New System.Drawing.Point(113, 190)
+        Me.nud_peso.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
         Me.nud_peso.Name = "nud_peso"
-        Me.nud_peso.Size = New System.Drawing.Size(62, 21)
+        Me.nud_peso.Size = New System.Drawing.Size(75, 21)
         Me.nud_peso.TabIndex = 9
         '
         'chb_fragil
@@ -378,45 +319,6 @@ Partial Class Frm_Encomienda
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Operaciones"
         '
-        'btn_cancelar
-        '
-        Me.btn_cancelar.BackColor = System.Drawing.Color.Gainsboro
-        Me.btn_cancelar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btn_cancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.btn_cancelar.FlatAppearance.BorderColor = System.Drawing.Color.Azure
-        Me.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_cancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_cancelar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.btn_cancelar.Image = Global.Parametro.My.Resources.Resources.cancel_circle
-        Me.btn_cancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_cancelar.Location = New System.Drawing.Point(428, 16)
-        Me.btn_cancelar.Name = "btn_cancelar"
-        Me.btn_cancelar.Padding = New System.Windows.Forms.Padding(7, 1, 5, 1)
-        Me.btn_cancelar.Size = New System.Drawing.Size(112, 34)
-        Me.btn_cancelar.TabIndex = 1
-        Me.btn_cancelar.Text = "Cancelar"
-        Me.btn_cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btn_cancelar.UseVisualStyleBackColor = False
-        '
-        'btn_guardar
-        '
-        Me.btn_guardar.BackColor = System.Drawing.Color.Gainsboro
-        Me.btn_guardar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btn_guardar.FlatAppearance.BorderColor = System.Drawing.Color.Azure
-        Me.btn_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_guardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_guardar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.btn_guardar.Image = Global.Parametro.My.Resources.Resources.box_add1
-        Me.btn_guardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_guardar.Location = New System.Drawing.Point(296, 16)
-        Me.btn_guardar.Name = "btn_guardar"
-        Me.btn_guardar.Padding = New System.Windows.Forms.Padding(7, 0, 5, 0)
-        Me.btn_guardar.Size = New System.Drawing.Size(112, 33)
-        Me.btn_guardar.TabIndex = 0
-        Me.btn_guardar.Text = "Guardar"
-        Me.btn_guardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btn_guardar.UseVisualStyleBackColor = False
-        '
         'TextBox2
         '
         Me.TextBox2.Enabled = False
@@ -464,14 +366,15 @@ Partial Class Frm_Encomienda
         '
         'nud_vol
         '
-        Me.nud_vol.DecimalPlaces = 2
+        Me.nud_vol.DecimalPlaces = 3
         Me.nud_vol.Enabled = False
         Me.nud_vol.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.nud_vol.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.nud_vol.Increment = New Decimal(New Integer() {1, 0, 0, 131072})
         Me.nud_vol.Location = New System.Drawing.Point(122, 100)
+        Me.nud_vol.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
         Me.nud_vol.Name = "nud_vol"
-        Me.nud_vol.Size = New System.Drawing.Size(62, 21)
+        Me.nud_vol.Size = New System.Drawing.Size(78, 21)
         Me.nud_vol.TabIndex = 15
         '
         'Label8
@@ -481,9 +384,9 @@ Partial Class Frm_Encomienda
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label8.Location = New System.Drawing.Point(29, 102)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(67, 15)
+        Me.Label8.Size = New System.Drawing.Size(59, 15)
         Me.Label8.TabIndex = 16
-        Me.Label8.Text = "Volumen:"
+        Me.Label8.Text = "Vol. m3:"
         '
         'Num_alto
         '
@@ -492,8 +395,9 @@ Partial Class Frm_Encomienda
         Me.Num_alto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Num_alto.Increment = New Decimal(New Integer() {1, 0, 0, 131072})
         Me.Num_alto.Location = New System.Drawing.Point(122, 20)
+        Me.Num_alto.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
         Me.Num_alto.Name = "Num_alto"
-        Me.Num_alto.Size = New System.Drawing.Size(62, 21)
+        Me.Num_alto.Size = New System.Drawing.Size(78, 21)
         Me.Num_alto.TabIndex = 17
         '
         'Label1
@@ -503,9 +407,9 @@ Partial Class Frm_Encomienda
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(29, 22)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(35, 15)
+        Me.Label1.Size = New System.Drawing.Size(58, 15)
         Me.Label1.TabIndex = 18
-        Me.Label1.Text = "Alto:"
+        Me.Label1.Text = "Alto cm:"
         '
         'Num_ancho
         '
@@ -514,8 +418,9 @@ Partial Class Frm_Encomienda
         Me.Num_ancho.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Num_ancho.Increment = New Decimal(New Integer() {1, 0, 0, 131072})
         Me.Num_ancho.Location = New System.Drawing.Point(122, 47)
+        Me.Num_ancho.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
         Me.Num_ancho.Name = "Num_ancho"
-        Me.Num_ancho.Size = New System.Drawing.Size(62, 21)
+        Me.Num_ancho.Size = New System.Drawing.Size(78, 21)
         Me.Num_ancho.TabIndex = 19
         '
         'Label4
@@ -525,9 +430,9 @@ Partial Class Frm_Encomienda
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label4.Location = New System.Drawing.Point(29, 49)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(50, 15)
+        Me.Label4.Size = New System.Drawing.Size(73, 15)
         Me.Label4.TabIndex = 20
-        Me.Label4.Text = "Ancho:"
+        Me.Label4.Text = "Ancho cm:"
         '
         'Num_base
         '
@@ -536,8 +441,9 @@ Partial Class Frm_Encomienda
         Me.Num_base.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Num_base.Increment = New Decimal(New Integer() {1, 0, 0, 131072})
         Me.Num_base.Location = New System.Drawing.Point(122, 74)
+        Me.Num_base.Maximum = New Decimal(New Integer() {10000, 0, 0, 0})
         Me.Num_base.Name = "Num_base"
-        Me.Num_base.Size = New System.Drawing.Size(62, 21)
+        Me.Num_base.Size = New System.Drawing.Size(78, 21)
         Me.Num_base.TabIndex = 21
         '
         'Label12
@@ -547,9 +453,110 @@ Partial Class Frm_Encomienda
         Me.Label12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label12.Location = New System.Drawing.Point(29, 76)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(43, 15)
+        Me.Label12.Size = New System.Drawing.Size(66, 15)
         Me.Label12.TabIndex = 22
-        Me.Label12.Text = "Base:"
+        Me.Label12.Text = "Base cm:"
+        '
+        'btn_guardar
+        '
+        Me.btn_guardar.BackColor = System.Drawing.Color.Gainsboro
+        Me.btn_guardar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btn_guardar.FlatAppearance.BorderColor = System.Drawing.Color.Azure
+        Me.btn_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_guardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_guardar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btn_guardar.Image = Global.Parametro.My.Resources.Resources.box_add1
+        Me.btn_guardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_guardar.Location = New System.Drawing.Point(296, 16)
+        Me.btn_guardar.Name = "btn_guardar"
+        Me.btn_guardar.Padding = New System.Windows.Forms.Padding(7, 0, 5, 0)
+        Me.btn_guardar.Size = New System.Drawing.Size(112, 33)
+        Me.btn_guardar.TabIndex = 0
+        Me.btn_guardar.Text = "Guardar"
+        Me.btn_guardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btn_guardar.UseVisualStyleBackColor = False
+        '
+        'btn_cancelar
+        '
+        Me.btn_cancelar.BackColor = System.Drawing.Color.Gainsboro
+        Me.btn_cancelar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btn_cancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.btn_cancelar.FlatAppearance.BorderColor = System.Drawing.Color.Azure
+        Me.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_cancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_cancelar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btn_cancelar.Image = Global.Parametro.My.Resources.Resources.cancel_circle
+        Me.btn_cancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_cancelar.Location = New System.Drawing.Point(428, 16)
+        Me.btn_cancelar.Name = "btn_cancelar"
+        Me.btn_cancelar.Padding = New System.Windows.Forms.Padding(7, 1, 5, 1)
+        Me.btn_cancelar.Size = New System.Drawing.Size(112, 34)
+        Me.btn_cancelar.TabIndex = 1
+        Me.btn_cancelar.Text = "Cancelar"
+        Me.btn_cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btn_cancelar.UseVisualStyleBackColor = False
+        '
+        'btn_destinatario
+        '
+        Me.btn_destinatario.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.btn_destinatario.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.btn_destinatario.FlatAppearance.BorderColor = System.Drawing.Color.Azure
+        Me.btn_destinatario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_destinatario.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_destinatario.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btn_destinatario.Image = Global.Parametro.My.Resources.Resources.menu2
+        Me.btn_destinatario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_destinatario.Location = New System.Drawing.Point(312, 58)
+        Me.btn_destinatario.Name = "btn_destinatario"
+        Me.btn_destinatario.Padding = New System.Windows.Forms.Padding(1)
+        Me.btn_destinatario.Size = New System.Drawing.Size(29, 27)
+        Me.btn_destinatario.TabIndex = 4
+        Me.btn_destinatario.UseVisualStyleBackColor = False
+        '
+        'btn_remitente
+        '
+        Me.btn_remitente.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.btn_remitente.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.btn_remitente.FlatAppearance.BorderColor = System.Drawing.Color.Azure
+        Me.btn_remitente.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_remitente.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_remitente.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btn_remitente.Image = Global.Parametro.My.Resources.Resources.menu2
+        Me.btn_remitente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_remitente.Location = New System.Drawing.Point(312, 29)
+        Me.btn_remitente.Name = "btn_remitente"
+        Me.btn_remitente.Padding = New System.Windows.Forms.Padding(1)
+        Me.btn_remitente.Size = New System.Drawing.Size(29, 27)
+        Me.btn_remitente.TabIndex = 2
+        Me.btn_remitente.UseVisualStyleBackColor = False
+        '
+        'btn_ruta
+        '
+        Me.btn_ruta.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.btn_ruta.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.btn_ruta.FlatAppearance.BorderColor = System.Drawing.Color.Azure
+        Me.btn_ruta.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_ruta.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_ruta.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btn_ruta.Image = Global.Parametro.My.Resources.Resources.menu2
+        Me.btn_ruta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_ruta.Location = New System.Drawing.Point(312, 88)
+        Me.btn_ruta.Name = "btn_ruta"
+        Me.btn_ruta.Padding = New System.Windows.Forms.Padding(1)
+        Me.btn_ruta.Size = New System.Drawing.Size(29, 27)
+        Me.btn_ruta.TabIndex = 6
+        Me.btn_ruta.UseVisualStyleBackColor = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.PictureBox1.Image = Global.Parametro.My.Resources.Resources.archive201
+        Me.PictureBox1.Location = New System.Drawing.Point(22, 5)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(51, 47)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 3
+        Me.PictureBox1.TabStop = False
         '
         'Frm_Encomienda
         '
@@ -569,7 +576,6 @@ Partial Class Frm_Encomienda
         Me.Text = "Frm_Encomienda"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
         CType(Me.nud_monto, System.ComponentModel.ISupportInitialize).EndInit()
@@ -582,6 +588,7 @@ Partial Class Frm_Encomienda
         CType(Me.Num_alto, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Num_ancho, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Num_base, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
