@@ -1,4 +1,7 @@
 ﻿Public Class Frm_Encomienda
+    Private idsucursal As Integer
+    Private idremitente As String
+    Private iddestinatario As String
 
     Private Sub PierdeFoco(ByVal sender As TextBox, ByVal e As System.EventArgs) Handles txt_remitente.LostFocus, txt_destinatario.LostFocus, txt_ruta.LostFocus, txt_descripcion.LostFocus
         sender.BackColor = Color.White
@@ -12,7 +15,8 @@
 
     Private Sub btn_remitente_Click(sender As Object, e As EventArgs) Handles btn_remitente.Click
         Try
-            Dim frm As New Frm_ListaClientes
+            Dim frm As New Frm_Lista_Sel_Clientes
+            frm.lbl_titulo.Text = "Lista de Remitentes"
             frm.ShowDialog()
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -21,7 +25,8 @@
 
     Private Sub btn_destinatario_Click(sender As Object, e As EventArgs) Handles btn_destinatario.Click
         Try
-            Dim frm As New Frm_ListaClientes
+            Dim frm As New Frm_Lista_Sel_Clientes
+            frm.lbl_titulo.Text = "Lista de Destinatarios"
             frm.ShowDialog()
         Catch ex As Exception
             MsgBox(ex.Message)
