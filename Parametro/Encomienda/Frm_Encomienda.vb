@@ -113,4 +113,16 @@ Public Class Frm_Encomienda
         Me.cal_kilo()
         Me.cal_precio()
     End Sub
+
+    Private Sub btn_guardar_Click(sender As Object, e As EventArgs) Handles btn_guardar.Click
+        Dim tablaguia As DataTable
+        Dim guia As New LCN.Encomienda_año
+        Dim codigo As String
+
+        tablaguia = guia.Obtenercodigo(10)
+
+        codigo = tablaguia.Rows(0).Item(0).ToString
+
+        MsgBox(codigo)
+    End Sub
 End Class
