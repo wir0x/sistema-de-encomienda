@@ -14,6 +14,7 @@ Public Class Frm_Cliente
     End Sub
 
     Private Sub btn_cancelar_Click(sender As Object, e As EventArgs) Handles btn_cancelar.Click
+        MsgBox("prueba")
         Me.Close()
     End Sub
 
