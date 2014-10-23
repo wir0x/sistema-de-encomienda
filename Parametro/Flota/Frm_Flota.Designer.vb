@@ -58,7 +58,7 @@ Partial Class Frm_Flota
         Me.txt_modelo.Location = New System.Drawing.Point(99, 96)
         Me.txt_modelo.Multiline = True
         Me.txt_modelo.Name = "txt_modelo"
-        Me.txt_modelo.Size = New System.Drawing.Size(284, 24)
+        Me.txt_modelo.Size = New System.Drawing.Size(318, 24)
         Me.txt_modelo.TabIndex = 2
         '
         'txt_anio
@@ -99,7 +99,7 @@ Partial Class Frm_Flota
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.AppWorkspace
         Me.GroupBox1.Location = New System.Drawing.Point(12, 311)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(401, 56)
+        Me.GroupBox1.Size = New System.Drawing.Size(433, 56)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Operacion"
@@ -160,7 +160,7 @@ Partial Class Frm_Flota
         Me.txt_marca.Location = New System.Drawing.Point(99, 64)
         Me.txt_marca.Multiline = True
         Me.txt_marca.Name = "txt_marca"
-        Me.txt_marca.Size = New System.Drawing.Size(284, 24)
+        Me.txt_marca.Size = New System.Drawing.Size(318, 24)
         Me.txt_marca.TabIndex = 1
         '
         'Label1
@@ -194,7 +194,7 @@ Partial Class Frm_Flota
         Me.GroupBox3.ForeColor = System.Drawing.SystemColors.AppWorkspace
         Me.GroupBox3.Location = New System.Drawing.Point(12, 90)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(401, 203)
+        Me.GroupBox3.Size = New System.Drawing.Size(433, 203)
         Me.GroupBox3.TabIndex = 0
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Parametros Flota"
@@ -205,9 +205,9 @@ Partial Class Frm_Flota
         Me.nud_pescarga.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.nud_pescarga.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.nud_pescarga.Increment = New Decimal(New Integer() {1, 0, 0, 131072})
-        Me.nud_pescarga.Location = New System.Drawing.Point(321, 130)
+        Me.nud_pescarga.Location = New System.Drawing.Point(311, 130)
         Me.nud_pescarga.Name = "nud_pescarga"
-        Me.nud_pescarga.Size = New System.Drawing.Size(62, 21)
+        Me.nud_pescarga.Size = New System.Drawing.Size(106, 21)
         Me.nud_pescarga.TabIndex = 5
         '
         'Label2
@@ -223,13 +223,14 @@ Partial Class Frm_Flota
         '
         'nud_volcarga
         '
-        Me.nud_volcarga.DecimalPlaces = 2
+        Me.nud_volcarga.DecimalPlaces = 3
         Me.nud_volcarga.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.nud_volcarga.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.nud_volcarga.Increment = New Decimal(New Integer() {1, 0, 0, 131072})
-        Me.nud_volcarga.Location = New System.Drawing.Point(321, 159)
+        Me.nud_volcarga.Location = New System.Drawing.Point(311, 159)
+        Me.nud_volcarga.Maximum = New Decimal(New Integer() {1000, 0, 0, 0})
         Me.nud_volcarga.Name = "nud_volcarga"
-        Me.nud_volcarga.Size = New System.Drawing.Size(62, 21)
+        Me.nud_volcarga.Size = New System.Drawing.Size(106, 21)
         Me.nud_volcarga.TabIndex = 6
         '
         'txt_placa
@@ -259,9 +260,9 @@ Partial Class Frm_Flota
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label6.Location = New System.Drawing.Point(206, 163)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(102, 15)
+        Me.Label6.Size = New System.Drawing.Size(95, 15)
         Me.Label6.TabIndex = 24
-        Me.Label6.Text = "Volumen cm3 :"
+        Me.Label6.Text = "Volumen m3 :"
         '
         'Label5
         '
@@ -281,7 +282,7 @@ Partial Class Frm_Flota
         Me.Panel1.Controls.Add(Me.lbl_titulo)
         Me.Panel1.Location = New System.Drawing.Point(-1, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(452, 59)
+        Me.Panel1.Size = New System.Drawing.Size(458, 59)
         Me.Panel1.TabIndex = 24
         '
         'PictureBox1
@@ -321,7 +322,7 @@ Partial Class Frm_Flota
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.btn_cancelar
-        Me.ClientSize = New System.Drawing.Size(425, 374)
+        Me.ClientSize = New System.Drawing.Size(457, 374)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox3)
