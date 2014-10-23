@@ -114,4 +114,13 @@ Public Class Frm_Cliente
         End If
 
     End Sub
+
+    Private Sub txtID_KeyPress(sender As Object, e As System.Windows.Forms.KeyPressEventArgs)
+        e.Handled = Not IsNumeric(e.KeyChar) And Not Char.IsControl(e.KeyChar)
+
+        If e.KeyChar = Chr(13) Then
+            e.Handled = True
+            SendKeys.Send("{TAB}")
+        End If
+    End Sub
 End Class

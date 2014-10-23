@@ -37,9 +37,9 @@ Partial Class Frm_Cliente
         Me.btn_cancelar = New System.Windows.Forms.Button()
         Me.btn_guardar = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.lbl_titulo = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.txt_numerodoc = New System.Windows.Forms.TextBox()
-        Me.lbl_titulo = New System.Windows.Forms.Label()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -232,6 +232,17 @@ Partial Class Frm_Cliente
         Me.Panel2.Size = New System.Drawing.Size(435, 59)
         Me.Panel2.TabIndex = 1
         '
+        'lbl_titulo
+        '
+        Me.lbl_titulo.AutoSize = True
+        Me.lbl_titulo.Font = New System.Drawing.Font("Ubuntu Condensed", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_titulo.ForeColor = System.Drawing.Color.White
+        Me.lbl_titulo.Location = New System.Drawing.Point(105, 9)
+        Me.lbl_titulo.Name = "lbl_titulo"
+        Me.lbl_titulo.Size = New System.Drawing.Size(231, 35)
+        Me.lbl_titulo.TabIndex = 3
+        Me.lbl_titulo.Text = "Registro de Clientes"
+        '
         'PictureBox1
         '
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.IBeam
@@ -251,17 +262,6 @@ Partial Class Frm_Cliente
         Me.txt_numerodoc.Name = "txt_numerodoc"
         Me.txt_numerodoc.Size = New System.Drawing.Size(228, 24)
         Me.txt_numerodoc.TabIndex = 18
-        '
-        'lbl_titulo
-        '
-        Me.lbl_titulo.AutoSize = True
-        Me.lbl_titulo.Font = New System.Drawing.Font("Ubuntu Condensed", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_titulo.ForeColor = System.Drawing.Color.White
-        Me.lbl_titulo.Location = New System.Drawing.Point(105, 9)
-        Me.lbl_titulo.Name = "lbl_titulo"
-        Me.lbl_titulo.Size = New System.Drawing.Size(231, 35)
-        Me.lbl_titulo.TabIndex = 3
-        Me.lbl_titulo.Text = "Registro de Clientes"
         '
         'Frm_Cliente
         '

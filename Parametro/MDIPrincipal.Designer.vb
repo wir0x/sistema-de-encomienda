@@ -64,7 +64,6 @@ Partial Class MDIPrincipal
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.StatusStrip1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -381,18 +380,6 @@ Partial Class MDIPrincipal
         'Timer1
         '
         '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Copperplate Gothic Light", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.SystemColors.InfoText
-        Me.Label4.Location = New System.Drawing.Point(300, 276)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(390, 69)
-        Me.Label4.TabIndex = 5
-        Me.Label4.Text = "Hola jhon"
-        '
         'MDIPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -401,7 +388,6 @@ Partial Class MDIPrincipal
         Me.BackgroundImage = Global.Parametro.My.Resources.Resources.Thumbnail
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(897, 621)
-        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -464,5 +450,4 @@ Partial Class MDIPrincipal
     Friend WithEvents ListaFlotasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents ToolStripStatusLabel2 As System.Windows.Forms.ToolStripStatusLabel
-    Friend WithEvents Label4 As System.Windows.Forms.Label
 End Class
