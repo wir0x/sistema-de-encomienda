@@ -223,7 +223,7 @@ Partial Class Frm_Flota
         '
         'nud_volcarga
         '
-        Me.nud_volcarga.DecimalPlaces = 3
+        Me.nud_volcarga.DecimalPlaces = 2
         Me.nud_volcarga.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.nud_volcarga.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.nud_volcarga.Increment = New Decimal(New Integer() {1, 0, 0, 131072})
