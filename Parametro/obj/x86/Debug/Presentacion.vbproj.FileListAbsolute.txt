@@ -98,3 +98,4 @@ C:\Users\DANIEL\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Para
 C:\Users\DANIEL\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_ListaUsuarios.resources
 C:\Users\DANIEL\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_Usuario.resources
 C:\Users\DANIEL\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Presentacion.vbproj.GenerateResource.Cache
+C:\Users\wgarcia\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_lista_ruta_Origen.resources

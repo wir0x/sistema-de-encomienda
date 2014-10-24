@@ -3,12 +3,15 @@
 Imports System.Data.SqlClient
 Public Class Frm_Encomienda
     Private idsucursal As Integer
-    Public idremitente As String
+    Private idremitente As String
     Private iddestinatario As String
+    Private idhojaruta As Integer
     Private pre_minimo As Integer
     Private pre_kilo As Integer
     Private pre_vol As Integer
     Private kilo As Double
+    Private peso_dis As Double
+    Private vol_dis As Double
     Private volumen As Double
 
     Private Sub traer_parametros()
@@ -50,10 +53,11 @@ Public Class Frm_Encomienda
     End Sub
 
     Private Sub Frm_Encomienda_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.idsucursal = 1
         Me.lbl_datetime.Text = DateAndTime.Now
         Me.traer_parametros()
-        Me.cal_kilo()
-        Me.cal_vol()
+        'Me.cal_kilo()
+        'Me.cal_vol()
         Me.cal_precio()
     End Sub
 
@@ -115,7 +119,6 @@ Public Class Frm_Encomienda
         Dim año As Integer
         Dim nroguia As String
 
-        Me.idsucursal = 1
         año = Mid(Now.Year, 2, 4)
 
 
@@ -156,6 +159,20 @@ Public Class Frm_Encomienda
             frm.ShowDialog()
             Me.txt_destinatario.Text = frm.Cliente
             Me.iddestinatario = frm.ID_CLiente
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Try
+            Dim frm As New Frm_lista_ruta_Origen
+            frm.idSucursal = Me.idsucursal
+            frm.ShowDialog()
+            Me.txt_ruta.Text = frm.ori_des
+            Me.idhojaruta = frm.id_hoja_ruta
+            Me.peso_dis = frm.peso_dis_h
+            Me.vol_dis = frm.vol_dis_h
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
