@@ -79,10 +79,18 @@
     End Sub
 
     Private Sub btm_Seleccionar_Click(sender As Object, e As EventArgs) Handles btm_Seleccionar.Click
-      
+
     End Sub
 
     Private Sub dgv_listaclientes_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_listaclientes.CellContentClick
+
+    End Sub
+
+    Private Sub PierdeFoco(sender As Object, e As EventArgs) Handles txt_buscar.LostFocus
+
+    End Sub
+
+    Private Sub AgarraFoco(sender As Object, e As EventArgs) Handles txt_buscar.GotFocus
 
     End Sub
 End Class
