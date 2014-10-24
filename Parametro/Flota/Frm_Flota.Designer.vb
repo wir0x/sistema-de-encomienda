@@ -44,6 +44,8 @@ Partial Class Frm_Flota
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lbl_titulo = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.cmbUbicacion = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         CType(Me.nud_pescarga, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -97,7 +99,7 @@ Partial Class Frm_Flota
         Me.GroupBox1.Controls.Add(Me.btn_guardar)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 311)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 322)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(433, 56)
         Me.GroupBox1.TabIndex = 1
@@ -176,6 +178,7 @@ Partial Class Frm_Flota
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.cmbUbicacion)
         Me.GroupBox3.Controls.Add(Me.nud_pescarga)
         Me.GroupBox3.Controls.Add(Me.Label2)
         Me.GroupBox3.Controls.Add(Me.txt_modelo)
@@ -184,6 +187,7 @@ Partial Class Frm_Flota
         Me.GroupBox3.Controls.Add(Me.txt_marca)
         Me.GroupBox3.Controls.Add(Me.txt_placa)
         Me.GroupBox3.Controls.Add(Me.Label3)
+        Me.GroupBox3.Controls.Add(Me.Label4)
         Me.GroupBox3.Controls.Add(Me.Label7)
         Me.GroupBox3.Controls.Add(Me.Label1)
         Me.GroupBox3.Controls.Add(Me.Label6)
@@ -194,7 +198,7 @@ Partial Class Frm_Flota
         Me.GroupBox3.ForeColor = System.Drawing.SystemColors.AppWorkspace
         Me.GroupBox3.Location = New System.Drawing.Point(12, 90)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(433, 203)
+        Me.GroupBox3.Size = New System.Drawing.Size(433, 223)
         Me.GroupBox3.TabIndex = 0
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Parametros Flota"
@@ -316,13 +320,33 @@ Partial Class Frm_Flota
         Me.TextBox2.Size = New System.Drawing.Size(87, 24)
         Me.TextBox2.TabIndex = 0
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label4.Location = New System.Drawing.Point(14, 193)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(79, 15)
+        Me.Label4.TabIndex = 13
+        Me.Label4.Text = "Ubicacion :"
+        '
+        'cmbUbicacion
+        '
+        Me.cmbUbicacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmbUbicacion.FormattingEnabled = True
+        Me.cmbUbicacion.Location = New System.Drawing.Point(99, 190)
+        Me.cmbUbicacion.Name = "cmbUbicacion"
+        Me.cmbUbicacion.Size = New System.Drawing.Size(230, 23)
+        Me.cmbUbicacion.TabIndex = 25
+        '
         'Frm_Flota
         '
         Me.AcceptButton = Me.btn_guardar
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.btn_cancelar
-        Me.ClientSize = New System.Drawing.Size(457, 374)
+        Me.ClientSize = New System.Drawing.Size(457, 392)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox3)
@@ -363,4 +387,6 @@ Partial Class Frm_Flota
     Friend WithEvents nud_pescarga As System.Windows.Forms.NumericUpDown
     Friend WithEvents nud_volcarga As System.Windows.Forms.NumericUpDown
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents cmbUbicacion As System.Windows.Forms.ComboBox
+    Friend WithEvents Label4 As System.Windows.Forms.Label
 End Class

@@ -14,6 +14,8 @@ Public Class Flota
     Private _peso_carga As Double
     Private _activo As Boolean
     Private _fecha_act As DateTime
+    Private _Ubicacion As Integer
+
 #End Region
 
 #Region "PROPIEDADES"
@@ -98,6 +100,15 @@ Public Class Flota
         End Set
     End Property
 
+    Public Property Ubicacion() As Integer
+        Get
+            Return _Ubicacion
+        End Get
+        Set(ByVal value As Integer)
+            _Ubicacion = value
+        End Set
+    End Property
+
 #End Region
 
 #Region "METODOS"
@@ -114,7 +125,8 @@ Public Class Flota
                    ByVal Volumen_carga As Double,
                    ByVal Peso_carga As Double,
                    ByVal Activo As Boolean,
-                   ByVal fecha_act As DateTime)
+                   ByVal fecha_act As DateTime,
+                   ByVal Ubicacion As Integer)
         'CONSTRUCTOR 2
         Me.id_Flota = id_Flota
         Me.Marca = Marca
@@ -125,6 +137,8 @@ Public Class Flota
         Me.PesoCarga = Peso_carga
         Me.Activo = Activo
         Me.fecha_act = fecha_act
+        Me.Ubicacion = Ubicacion
+
     End Sub
 
     ''' <summary>
@@ -141,6 +155,8 @@ Public Class Flota
             AddParametro("@VolumenCarga", VolumenCarga)
             AddParametro("@PesoCarga", PesoCarga)
             AddParametro("@Activo", Activo)
+            AddParametro("@Ubicacion", Ubicacion)
+
 
             If EjecutarTransaccion() = True Then
                 Return True
@@ -168,6 +184,8 @@ Public Class Flota
             AddParametro("@Volumen", VolumenCarga)
             AddParametro("@Peso", PesoCarga)
             AddParametro("@Activo", Activo)
+            AddParametro("@Ubicacion", Ubicacion)
+
 
             If EjecutarTransaccion() = True Then
                 Return True

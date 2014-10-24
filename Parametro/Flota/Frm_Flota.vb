@@ -17,7 +17,7 @@ Public Class Frm_Flota
     Private Sub btn_guardar_Click(sender As Object, e As EventArgs) Handles btn_guardar.Click
         Try
 
-            Dim Flota As New Flota(0, Me.txt_marca.Text, Me.txt_modelo.Text, Me.txt_anio.Text, Me.txt_placa.Text, Me.nud_volcarga.Text, Me.nud_pescarga.Text, True, DateTime.Now)
+            Dim Flota As New Flota(0, Me.txt_marca.Text, Me.txt_modelo.Text, Me.txt_anio.Text, Me.txt_placa.Text, Me.nud_volcarga.Text, Me.nud_pescarga.Text, True, DateTime.Now, Me.cmbUbicacion.SelectedValue)
 
             If Flota.Guardar() = True Then
                 MsgBox("ok")
@@ -28,5 +28,20 @@ Public Class Frm_Flota
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
+    End Sub
+
+    Private Sub Frm_Flota_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Llenar_cmbUbicacion()
+    End Sub
+
+    Public Sub Llenar_cmbUbicacion()
+        Dim Tabla As New DataTable
+        Dim Punto As New LCN.Puntos
+
+        Tabla = Punto.Obtener(True, "")
+
+        Me.cmbUbicacion.DataSource = Tabla
+        Me.cmbUbicacion.DisplayMember = "Descripcion"
+        Me.cmbUbicacion.ValueMember = "ID_Punto"
     End Sub
 End Class

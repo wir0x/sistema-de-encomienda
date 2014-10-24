@@ -31,15 +31,6 @@ Partial Class Frm_ListaFlotas
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.cmbEstado = New System.Windows.Forms.ComboBox()
         Me.dgFlotas = New System.Windows.Forms.DataGridView()
-        Me.ParametroId = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PrecioMinimo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PrecioKilo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PrecioVolumen = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.VolumenCarga = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Peso = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Activo = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.Fecha = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.txt_buscar = New System.Windows.Forms.TextBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -56,6 +47,16 @@ Partial Class Frm_ListaFlotas
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.tsmiModificar = New System.Windows.Forms.ToolStripMenuItem()
         Me.EliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ParametroId = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PrecioMinimo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PrecioKilo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PrecioVolumen = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.VolumenCarga = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Peso = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Activo = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.Fecha = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Ubicacion = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.dgFlotas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -83,102 +84,13 @@ Partial Class Frm_ListaFlotas
         Me.dgFlotas.BackgroundColor = System.Drawing.Color.Snow
         Me.dgFlotas.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgFlotas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Me.dgFlotas.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ParametroId, Me.PrecioMinimo, Me.PrecioKilo, Me.PrecioVolumen, Me.Direccion, Me.VolumenCarga, Me.Peso, Me.Activo, Me.Fecha})
+        Me.dgFlotas.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ParametroId, Me.PrecioMinimo, Me.PrecioKilo, Me.PrecioVolumen, Me.Direccion, Me.VolumenCarga, Me.Peso, Me.Activo, Me.Fecha, Me.Ubicacion})
         Me.dgFlotas.Location = New System.Drawing.Point(8, 31)
         Me.dgFlotas.Name = "dgFlotas"
         Me.dgFlotas.ReadOnly = True
         Me.dgFlotas.RowHeadersVisible = False
         Me.dgFlotas.Size = New System.Drawing.Size(643, 277)
         Me.dgFlotas.TabIndex = 0
-        '
-        'ParametroId
-        '
-        Me.ParametroId.DataPropertyName = "ID_flota"
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.ParametroId.DefaultCellStyle = DataGridViewCellStyle1
-        Me.ParametroId.HeaderText = "ID. Flota"
-        Me.ParametroId.Name = "ParametroId"
-        Me.ParametroId.ReadOnly = True
-        Me.ParametroId.Width = 80
-        '
-        'PrecioMinimo
-        '
-        Me.PrecioMinimo.DataPropertyName = "Marca"
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.PrecioMinimo.DefaultCellStyle = DataGridViewCellStyle2
-        Me.PrecioMinimo.HeaderText = "Marca"
-        Me.PrecioMinimo.Name = "PrecioMinimo"
-        Me.PrecioMinimo.ReadOnly = True
-        Me.PrecioMinimo.Width = 120
-        '
-        'PrecioKilo
-        '
-        Me.PrecioKilo.DataPropertyName = "Modelo"
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.PrecioKilo.DefaultCellStyle = DataGridViewCellStyle3
-        Me.PrecioKilo.HeaderText = "Modelo"
-        Me.PrecioKilo.Name = "PrecioKilo"
-        Me.PrecioKilo.ReadOnly = True
-        Me.PrecioKilo.Width = 80
-        '
-        'PrecioVolumen
-        '
-        Me.PrecioVolumen.DataPropertyName = "Año"
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.PrecioVolumen.DefaultCellStyle = DataGridViewCellStyle4
-        Me.PrecioVolumen.HeaderText = "Año"
-        Me.PrecioVolumen.Name = "PrecioVolumen"
-        Me.PrecioVolumen.ReadOnly = True
-        Me.PrecioVolumen.Width = 50
-        '
-        'Direccion
-        '
-        Me.Direccion.DataPropertyName = "Placa"
-        Me.Direccion.HeaderText = "Placa"
-        Me.Direccion.Name = "Direccion"
-        Me.Direccion.ReadOnly = True
-        Me.Direccion.Width = 50
-        '
-        'VolumenCarga
-        '
-        Me.VolumenCarga.DataPropertyName = "VolumenCarga"
-        Me.VolumenCarga.HeaderText = "Vol Carga"
-        Me.VolumenCarga.Name = "VolumenCarga"
-        Me.VolumenCarga.ReadOnly = True
-        Me.VolumenCarga.Width = 50
-        '
-        'Peso
-        '
-        Me.Peso.DataPropertyName = "PesoCarga"
-        Me.Peso.HeaderText = "Peso Carga"
-        Me.Peso.Name = "Peso"
-        Me.Peso.ReadOnly = True
-        Me.Peso.Width = 50
-        '
-        'Activo
-        '
-        Me.Activo.DataPropertyName = "Activo"
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle5.NullValue = False
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Activo.DefaultCellStyle = DataGridViewCellStyle5
-        Me.Activo.HeaderText = "Activo"
-        Me.Activo.Name = "Activo"
-        Me.Activo.ReadOnly = True
-        Me.Activo.Visible = False
-        Me.Activo.Width = 45
-        '
-        'Fecha
-        '
-        Me.Fecha.DataPropertyName = "Fecha_Act"
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Fecha.DefaultCellStyle = DataGridViewCellStyle6
-        Me.Fecha.HeaderText = "Fecha Actualizado"
-        Me.Fecha.Name = "Fecha"
-        Me.Fecha.ReadOnly = True
-        Me.Fecha.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Fecha.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.Fecha.Width = 135
         '
         'txt_buscar
         '
@@ -368,6 +280,102 @@ Partial Class Frm_ListaFlotas
         Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.EliminarToolStripMenuItem.Text = "Eliminar"
         '
+        'ParametroId
+        '
+        Me.ParametroId.DataPropertyName = "ID_flota"
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.ParametroId.DefaultCellStyle = DataGridViewCellStyle1
+        Me.ParametroId.HeaderText = "ID. Flota"
+        Me.ParametroId.Name = "ParametroId"
+        Me.ParametroId.ReadOnly = True
+        Me.ParametroId.Width = 80
+        '
+        'PrecioMinimo
+        '
+        Me.PrecioMinimo.DataPropertyName = "Marca"
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.PrecioMinimo.DefaultCellStyle = DataGridViewCellStyle2
+        Me.PrecioMinimo.HeaderText = "Marca"
+        Me.PrecioMinimo.Name = "PrecioMinimo"
+        Me.PrecioMinimo.ReadOnly = True
+        Me.PrecioMinimo.Width = 120
+        '
+        'PrecioKilo
+        '
+        Me.PrecioKilo.DataPropertyName = "Modelo"
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.PrecioKilo.DefaultCellStyle = DataGridViewCellStyle3
+        Me.PrecioKilo.HeaderText = "Modelo"
+        Me.PrecioKilo.Name = "PrecioKilo"
+        Me.PrecioKilo.ReadOnly = True
+        Me.PrecioKilo.Width = 80
+        '
+        'PrecioVolumen
+        '
+        Me.PrecioVolumen.DataPropertyName = "Año"
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.PrecioVolumen.DefaultCellStyle = DataGridViewCellStyle4
+        Me.PrecioVolumen.HeaderText = "Año"
+        Me.PrecioVolumen.Name = "PrecioVolumen"
+        Me.PrecioVolumen.ReadOnly = True
+        Me.PrecioVolumen.Width = 50
+        '
+        'Direccion
+        '
+        Me.Direccion.DataPropertyName = "Placa"
+        Me.Direccion.HeaderText = "Placa"
+        Me.Direccion.Name = "Direccion"
+        Me.Direccion.ReadOnly = True
+        Me.Direccion.Width = 50
+        '
+        'VolumenCarga
+        '
+        Me.VolumenCarga.DataPropertyName = "VolumenCarga"
+        Me.VolumenCarga.HeaderText = "Vol Carga"
+        Me.VolumenCarga.Name = "VolumenCarga"
+        Me.VolumenCarga.ReadOnly = True
+        Me.VolumenCarga.Width = 50
+        '
+        'Peso
+        '
+        Me.Peso.DataPropertyName = "PesoCarga"
+        Me.Peso.HeaderText = "Peso Carga"
+        Me.Peso.Name = "Peso"
+        Me.Peso.ReadOnly = True
+        Me.Peso.Width = 50
+        '
+        'Activo
+        '
+        Me.Activo.DataPropertyName = "Activo"
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle5.NullValue = False
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Activo.DefaultCellStyle = DataGridViewCellStyle5
+        Me.Activo.HeaderText = "Activo"
+        Me.Activo.Name = "Activo"
+        Me.Activo.ReadOnly = True
+        Me.Activo.Visible = False
+        Me.Activo.Width = 45
+        '
+        'Fecha
+        '
+        Me.Fecha.DataPropertyName = "Fecha_Act"
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Fecha.DefaultCellStyle = DataGridViewCellStyle6
+        Me.Fecha.HeaderText = "Fecha Actualizado"
+        Me.Fecha.Name = "Fecha"
+        Me.Fecha.ReadOnly = True
+        Me.Fecha.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Fecha.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.Fecha.Width = 135
+        '
+        'Ubicacion
+        '
+        Me.Ubicacion.DataPropertyName = "Ubicacion"
+        Me.Ubicacion.HeaderText = "Ubicacion"
+        Me.Ubicacion.Name = "Ubicacion"
+        Me.Ubicacion.ReadOnly = True
+        '
         'Frm_ListaFlotas
         '
         Me.AcceptButton = Me.btn_reporte
@@ -410,6 +418,9 @@ Partial Class Frm_ListaFlotas
     Friend WithEvents btn_cancelar As System.Windows.Forms.Button
     Friend WithEvents btn_reporte As System.Windows.Forms.Button
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
+    Friend WithEvents tsmiModificar As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents EliminarToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ParametroId As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents PrecioMinimo As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents PrecioKilo As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -419,7 +430,5 @@ Partial Class Frm_ListaFlotas
     Friend WithEvents Peso As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Activo As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents Fecha As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
-    Friend WithEvents tsmiModificar As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents EliminarToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Ubicacion As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class
