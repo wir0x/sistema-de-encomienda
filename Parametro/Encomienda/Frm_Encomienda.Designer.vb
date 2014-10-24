@@ -27,6 +27,7 @@ Partial Class Frm_Encomienda
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lbl_titulo = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Num_base = New System.Windows.Forms.NumericUpDown()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -61,7 +62,6 @@ Partial Class Frm_Encomienda
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.nud_precioKil = New System.Windows.Forms.NumericUpDown()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
@@ -138,6 +138,17 @@ Partial Class Frm_Encomienda
         Me.GroupBox3.TabIndex = 0
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Parametros Encomienda"
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Image = Global.Parametro.My.Resources.Resources.menu2
+        Me.Button1.Location = New System.Drawing.Point(312, 29)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(28, 26)
+        Me.Button1.TabIndex = 14
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'GroupBox2
         '
@@ -540,17 +551,6 @@ Partial Class Frm_Encomienda
         '
         Me.Timer1.Enabled = True
         Me.Timer1.Interval = 1000
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Image = Global.Parametro.My.Resources.Resources.menu2
-        Me.Button1.Location = New System.Drawing.Point(312, 29)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(28, 26)
-        Me.Button1.TabIndex = 14
-        Me.Button1.UseVisualStyleBackColor = False
         '
         'Frm_Encomienda
         '

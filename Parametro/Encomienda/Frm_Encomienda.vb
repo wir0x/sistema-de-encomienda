@@ -3,7 +3,7 @@
 Imports System.Data.SqlClient
 Public Class Frm_Encomienda
     Private idsucursal As Integer
-    Private idremitente As String
+    Public idremitente As String
     Private iddestinatario As String
     Private pre_minimo As Integer
     Private pre_kilo As Integer
@@ -125,8 +125,13 @@ Public Class Frm_Encomienda
             Dim frm As New Frm_Lista_Sel_Clientes
             frm.lbl_titulo.Text = "Lista de Remitentes"
             frm.ShowDialog()
+            Me.txt_remitente.Text = frm.Cliente
+            Me.idremitente = frm.ID_CLiente
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
+    End Sub
+
+    Private Sub chb_fragil_CheckedChanged(sender As Object, e As EventArgs) Handles chb_fragil.CheckedChanged
     End Sub
 End Class

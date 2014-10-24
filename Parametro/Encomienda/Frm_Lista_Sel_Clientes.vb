@@ -1,5 +1,7 @@
 ﻿Public Class Frm_Lista_Sel_Clientes
 
+    Public Cliente As String = ""
+    Public ID_CLiente As String = ""
     Private Sub PierdeFoco(ByVal sender As TextBox, ByVal e As System.EventArgs) Handles txt_buscar.LostFocus
         sender.BackColor = Color.White
         sender.SelectAll()
@@ -49,6 +51,14 @@
         Me.Close()
     End Sub
 
+    Private Sub dgv_listaclientes_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_listaclientes.CellDoubleClick
+        If Me.dgv_listaclientes.CurrentRow.Selected = True Then
+            Me.Cliente = Me.dgv_listaclientes.CurrentRow.Cells("Nombre").Value
+            Me.ID_CLiente = Me.dgv_listaclientes.CurrentRow.Cells("NroDoc").Value
+            Me.Close()
+        End If
+    End Sub
+
 
 
     Private Sub dgv_listaclientes_MouseDown(sender As Object, e As MouseEventArgs) Handles dgv_listaclientes.MouseDown
@@ -70,5 +80,9 @@
 
     Private Sub btm_Seleccionar_Click(sender As Object, e As EventArgs) Handles btm_Seleccionar.Click
       
+    End Sub
+
+    Private Sub dgv_listaclientes_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_listaclientes.CellContentClick
+
     End Sub
 End Class

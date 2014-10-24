@@ -23,12 +23,12 @@ Partial Class Frm_Lista_Sel_Clientes
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.dgv_listaclientes = New System.Windows.Forms.DataGridView()
         Me.NroDoc = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -83,14 +83,15 @@ Partial Class Frm_Lista_Sel_Clientes
         Me.dgv_listaclientes.Name = "dgv_listaclientes"
         Me.dgv_listaclientes.ReadOnly = True
         Me.dgv_listaclientes.RowHeadersVisible = False
+        Me.dgv_listaclientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgv_listaclientes.Size = New System.Drawing.Size(405, 333)
         Me.dgv_listaclientes.TabIndex = 0
         '
         'NroDoc
         '
         Me.NroDoc.DataPropertyName = "NroDoc"
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.NroDoc.DefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.NroDoc.DefaultCellStyle = DataGridViewCellStyle7
         Me.NroDoc.HeaderText = "Nr. Doc. (CI)"
         Me.NroDoc.Name = "NroDoc"
         Me.NroDoc.ReadOnly = True
@@ -99,8 +100,8 @@ Partial Class Frm_Lista_Sel_Clientes
         'Nombre
         '
         Me.Nombre.DataPropertyName = "Nombre"
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Nombre.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Nombre.DefaultCellStyle = DataGridViewCellStyle8
         Me.Nombre.HeaderText = "Nombre"
         Me.Nombre.Name = "Nombre"
         Me.Nombre.ReadOnly = True
@@ -109,8 +110,8 @@ Partial Class Frm_Lista_Sel_Clientes
         'Telefono
         '
         Me.Telefono.DataPropertyName = "Telefono"
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Telefono.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Telefono.DefaultCellStyle = DataGridViewCellStyle9
         Me.Telefono.HeaderText = "Telefono"
         Me.Telefono.Name = "Telefono"
         Me.Telefono.ReadOnly = True
@@ -120,8 +121,8 @@ Partial Class Frm_Lista_Sel_Clientes
         'Direccion
         '
         Me.Direccion.DataPropertyName = "Direccion"
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Direccion.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Direccion.DefaultCellStyle = DataGridViewCellStyle10
         Me.Direccion.HeaderText = "Dirección"
         Me.Direccion.Name = "Direccion"
         Me.Direccion.ReadOnly = True
@@ -131,10 +132,10 @@ Partial Class Frm_Lista_Sel_Clientes
         'Activo
         '
         Me.Activo.DataPropertyName = "Activo"
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle5.NullValue = False
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Activo.DefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle11.NullValue = False
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Activo.DefaultCellStyle = DataGridViewCellStyle11
         Me.Activo.HeaderText = "Activo"
         Me.Activo.Name = "Activo"
         Me.Activo.ReadOnly = True
@@ -144,8 +145,8 @@ Partial Class Frm_Lista_Sel_Clientes
         'FechaAct
         '
         Me.FechaAct.DataPropertyName = "FechaAct"
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.FechaAct.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.FechaAct.DefaultCellStyle = DataGridViewCellStyle12
         Me.FechaAct.HeaderText = "Fecha Actualizado"
         Me.FechaAct.Name = "FechaAct"
         Me.FechaAct.ReadOnly = True
