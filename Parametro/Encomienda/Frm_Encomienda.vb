@@ -34,15 +34,6 @@ Public Class Frm_Encomienda
         sender.SelectAll()
     End Sub
 
-    Private Sub btn_remitente_Click(sender As Object, e As EventArgs) Handles btn_remitente.Click
-        Try
-            Dim frm As New Frm_Lista_Sel_Clientes
-            frm.lbl_titulo.Text = "Lista de Remitentes"
-            frm.ShowDialog()
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
-    End Sub
 
     Private Sub btn_destinatario_Click(sender As Object, e As EventArgs) Handles btn_destinatario.Click
         Try
@@ -127,5 +118,15 @@ Public Class Frm_Encomienda
         Guia.ActualizarCorrelativo(19)
 
         MsgBox(codigo)
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Try
+            Dim frm As New Frm_Lista_Sel_Clientes
+            frm.lbl_titulo.Text = "Lista de Remitentes"
+            frm.ShowDialog()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
     End Sub
 End Class
