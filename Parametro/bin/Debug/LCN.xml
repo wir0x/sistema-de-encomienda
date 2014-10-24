@@ -6,7 +6,109 @@ LCN
 </name>
 </assembly>
 <members>
-<member name="P:LCN.Parametro.IdParam">
+<member name="P:LCN.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:LCN.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:LCN.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:LCN.Clientes.Guardar">
+	<summary>
+ Guarda todos los datos de un cliente
+ </summary>
+</member><member name="M:LCN.Clientes.Obtener(System.Boolean,System.String)">
+	<summary>
+ Obtiene todos los clientes segun su nombre
+ </summary>
+	<param name="Estado">Estado del cliente (Activo/Inactivo)</param>
+	<param name="Nombre">Cliente que desea buscar</param>
+</member><member name="M:LCN.Clientes.ClienteGetByID(System.Int32)">
+	<summary>
+ Obtiene un cliente por su ID
+ </summary>
+	<param name="ID_Cliente">ID del cliente</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LCN.Clientes.Actualizar(System.String)">
+	<summary>
+ Actualiza los datos de un cliente incluyendo si ID
+ </summary>
+	<param name="NroDoc_Anterior">ID Anterior del cliente</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LCN.Flota.Guardar">
+	<summary>
+ Guarda todos los datos de un cliente
+ </summary>
+</member><member name="M:LCN.Flota.Editar">
+	<summary>
+ Guarda todos los datos de un cliente
+ </summary>
+</member><member name="M:LCN.Flota.Obtener(System.String,System.Boolean)">
+	<summary>
+ Obtiene todos las Flotas segun su placa
+ </summary>
+	<param name="Placa">Flota que desea buscar</param>
+</member><member name="M:LCN.Flota.ClienteGetByID(System.Int32)">
+	<summary>
+ Obtiene un cliente por su ID
+ </summary>
+	<param name="id_Flota">ID del cliente</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LCN.Puntos.Guardar">
+	<summary>
+ Guarda un Punto
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LCN.Puntos.Actualizar(System.Int32)">
+	<summary>
+ Actualiza los datos de un punto incluso su ID
+ </summary>
+	<param name="ID_Anterior"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LCN.Puntos.CambiarEstado(System.Int32,System.Boolean)">
+	<summary>
+ Actualiza el estado de un punto a inactivo
+ </summary>
+	<param name="ID_Punto">ID del punto</param>
+	<param name="EstadoNuevo">Estado a cambiar</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LCN.Puntos.Obtener(System.Int32)">
+	<summary>
+ Obtiene un punto por su ID
+ </summary>
+	<param name="ID_Punto">ID del punto</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LCN.Puntos.Obtener(System.Boolean,System.String)">
+	<summary>
+ Obtiene todos los puntos segun su estado y su descripcion
+ </summary>
+	<param name="Activo">Estado</param>
+	<param name="Descripcion">Descripcion</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LCN.Encomienda.Guardar">
+	<summary>
+ Guarda todos los datos de un cliente
+ </summary>
+</member><member name="M:LCN.Encomienda.Obtener(System.String,System.Boolean)">
+	<summary>
+ Obtiene todos las Flotas segun su placa
+ </summary>
+	<param name="Placa">Flota que desea buscar</param>
+</member><member name="P:LCN.Parametro.IdParam">
 	<summary>
  Identificador del la tabla Parametro 
  </summary>
@@ -75,108 +177,6 @@ LCN
  </summary>
 	<returns>Retorna el ultimo parametro modificado</returns>
 	<remarks></remarks>
-</member><member name="M:LCN.Clientes.Guardar">
-	<summary>
- Guarda todos los datos de un cliente
- </summary>
-</member><member name="M:LCN.Clientes.Obtener(System.Boolean,System.String)">
-	<summary>
- Obtiene todos los clientes segun su nombre
- </summary>
-	<param name="Estado">Estado del cliente (Activo/Inactivo)</param>
-	<param name="Nombre">Cliente que desea buscar</param>
-</member><member name="M:LCN.Clientes.ClienteGetByID(System.Int32)">
-	<summary>
- Obtiene un cliente por su ID
- </summary>
-	<param name="ID_Cliente">ID del cliente</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:LCN.Clientes.Actualizar(System.String)">
-	<summary>
- Actualiza los datos de un cliente incluyendo si ID
- </summary>
-	<param name="NroDoc_Anterior">ID Anterior del cliente</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:LCN.Puntos.Guardar">
-	<summary>
- Guarda un Punto
- </summary>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:LCN.Puntos.Actualizar(System.Int32)">
-	<summary>
- Actualiza los datos de un punto incluso su ID
- </summary>
-	<param name="ID_Anterior"></param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:LCN.Puntos.CambiarEstado(System.Int32,System.Boolean)">
-	<summary>
- Actualiza el estado de un punto a inactivo
- </summary>
-	<param name="ID_Punto">ID del punto</param>
-	<param name="EstadoNuevo">Estado a cambiar</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:LCN.Puntos.Obtener(System.Int32)">
-	<summary>
- Obtiene un punto por su ID
- </summary>
-	<param name="ID_Punto">ID del punto</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:LCN.Puntos.Obtener(System.Boolean,System.String)">
-	<summary>
- Obtiene todos los puntos segun su estado y su descripcion
- </summary>
-	<param name="Activo">Estado</param>
-	<param name="Descripcion">Descripcion</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:LCN.Encomienda.Guardar">
-	<summary>
- Guarda todos los datos de un cliente
- </summary>
-</member><member name="M:LCN.Encomienda.Obtener(System.String,System.Boolean)">
-	<summary>
- Obtiene todos las Flotas segun su placa
- </summary>
-	<param name="Placa">Flota que desea buscar</param>
-</member><member name="M:LCN.Flota.Guardar">
-	<summary>
- Guarda todos los datos de un cliente
- </summary>
-</member><member name="M:LCN.Flota.Editar">
-	<summary>
- Guarda todos los datos de un cliente
- </summary>
-</member><member name="M:LCN.Flota.Obtener(System.String,System.Boolean)">
-	<summary>
- Obtiene todos las Flotas segun su placa
- </summary>
-	<param name="Placa">Flota que desea buscar</param>
-</member><member name="M:LCN.Flota.ClienteGetByID(System.Int32)">
-	<summary>
- Obtiene un cliente por su ID
- </summary>
-	<param name="id_Flota">ID del cliente</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="P:LCN.My.Resources.Resources.ResourceManager">
-	<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member><member name="P:LCN.My.Resources.Resources.Culture">
-	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="T:LCN.My.Resources.Resources">
-	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
-</summary>
 </member>
 </members>
 </doc>

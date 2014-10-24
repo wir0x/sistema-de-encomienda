@@ -111,6 +111,12 @@
     <Compile Include="Confirmar\Frm_Confirmar.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Encomienda\FRM_lista_hojaRuta_orige.Designer.vb">
+      <DependentUpon>FRM_lista_hojaRuta_orige.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Encomienda\FRM_lista_hojaRuta_orige.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Encomienda\Frm_Lista_Sel_Clientes.Designer.vb">
       <DependentUpon>Frm_Lista_Sel_Clientes.vb</DependentUpon>
     </Compile>
@@ -230,6 +236,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Confirmar\Frm_Confirmar.resx">
       <DependentUpon>Frm_Confirmar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Encomienda\FRM_lista_hojaRuta_orige.resx">
+      <DependentUpon>FRM_lista_hojaRuta_orige.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Encomienda\Frm_Lista_Sel_Clientes.resx">
       <DependentUpon>Frm_Lista_Sel_Clientes.vb</DependentUpon>
