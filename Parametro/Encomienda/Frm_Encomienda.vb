@@ -35,7 +35,7 @@ Public Class Frm_Encomienda
     End Sub
 
 
-    Private Sub btn_destinatario_Click(sender As Object, e As EventArgs) Handles btn_destinatario.Click
+    Private Sub btn_destinatario_Click(sender As Object, e As EventArgs)
         Try
             Dim frm As New Frm_Lista_Sel_Clientes
             frm.lbl_titulo.Text = "Lista de Destinatarios"
@@ -112,12 +112,26 @@ Public Class Frm_Encomienda
         Dim TablaGuia As DataTable
         Dim Guia As New LCN.Encomienda_año
         Dim Codigo As Integer
+        Dim año As Integer
+        Dim nroguia As String
 
-        TablaGuia = Guia.Obtenercodigo(19)
+        Me.idsucursal = 1
+        año = Mid(Now.Year, 2, 4)
+
+
+        TablaGuia = Guia.Obtenercodigo(año)
         Codigo = TablaGuia.Rows(0).Item(0).ToString
-        Guia.ActualizarCorrelativo(19)
+        Guia.ActualizarCorrelativo(año)
+        nroguia = Me.idsucursal.ToString + año.ToString
+        For i = Len(Codigo.ToString) + 1 To 5
+            nroguia = nroguia + "0"
+        Next
+        nroguia = nroguia + Codigo.ToString
 
-        MsgBox(codigo)
+
+
+
+        MsgBox(nroguia)
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -133,5 +147,17 @@ Public Class Frm_Encomienda
     End Sub
 
     Private Sub chb_fragil_CheckedChanged(sender As Object, e As EventArgs) Handles chb_fragil.CheckedChanged
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Try
+            Dim frm As New Frm_Lista_Sel_Clientes
+            frm.lbl_titulo.Text = "Lista de Destinatarios"
+            frm.ShowDialog()
+            Me.txt_destinatario.Text = frm.Cliente
+            Me.iddestinatario = frm.ID_CLiente
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
     End Sub
 End Class

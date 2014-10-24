@@ -39,7 +39,6 @@ Partial Class Frm_Encomienda
         Me.Label8 = New System.Windows.Forms.Label()
         Me.txt_ruta = New System.Windows.Forms.TextBox()
         Me.txt_destinatario = New System.Windows.Forms.TextBox()
-        Me.btn_destinatario = New System.Windows.Forms.Button()
         Me.btn_ruta = New System.Windows.Forms.Button()
         Me.txt_remitente = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -62,6 +61,7 @@ Partial Class Frm_Encomienda
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.nud_precioKil = New System.Windows.Forms.NumericUpDown()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
@@ -110,11 +110,11 @@ Partial Class Frm_Encomienda
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.Button2)
         Me.GroupBox3.Controls.Add(Me.Button1)
         Me.GroupBox3.Controls.Add(Me.GroupBox2)
         Me.GroupBox3.Controls.Add(Me.txt_ruta)
         Me.GroupBox3.Controls.Add(Me.txt_destinatario)
-        Me.GroupBox3.Controls.Add(Me.btn_destinatario)
         Me.GroupBox3.Controls.Add(Me.btn_ruta)
         Me.GroupBox3.Controls.Add(Me.txt_remitente)
         Me.GroupBox3.Controls.Add(Me.Label11)
@@ -279,23 +279,6 @@ Partial Class Frm_Encomienda
         Me.txt_destinatario.Name = "txt_destinatario"
         Me.txt_destinatario.Size = New System.Drawing.Size(189, 23)
         Me.txt_destinatario.TabIndex = 3
-        '
-        'btn_destinatario
-        '
-        Me.btn_destinatario.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.btn_destinatario.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.btn_destinatario.FlatAppearance.BorderColor = System.Drawing.Color.Azure
-        Me.btn_destinatario.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_destinatario.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_destinatario.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.btn_destinatario.Image = Global.Parametro.My.Resources.Resources.menu2
-        Me.btn_destinatario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_destinatario.Location = New System.Drawing.Point(312, 58)
-        Me.btn_destinatario.Name = "btn_destinatario"
-        Me.btn_destinatario.Padding = New System.Windows.Forms.Padding(1)
-        Me.btn_destinatario.Size = New System.Drawing.Size(29, 27)
-        Me.btn_destinatario.TabIndex = 4
-        Me.btn_destinatario.UseVisualStyleBackColor = False
         '
         'btn_ruta
         '
@@ -552,6 +535,17 @@ Partial Class Frm_Encomienda
         Me.Timer1.Enabled = True
         Me.Timer1.Interval = 1000
         '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Image = Global.Parametro.My.Resources.Resources.menu2
+        Me.Button2.Location = New System.Drawing.Point(312, 61)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(28, 26)
+        Me.Button2.TabIndex = 34
+        Me.Button2.UseVisualStyleBackColor = False
+        '
         'Frm_Encomienda
         '
         Me.AcceptButton = Me.btn_guardar
@@ -608,7 +602,6 @@ Partial Class Frm_Encomienda
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents txt_remitente As System.Windows.Forms.TextBox
-    Friend WithEvents btn_destinatario As System.Windows.Forms.Button
     Friend WithEvents btn_ruta As System.Windows.Forms.Button
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents txt_ruta As System.Windows.Forms.TextBox
@@ -626,4 +619,5 @@ Partial Class Frm_Encomienda
     Friend WithEvents Num_alto As System.Windows.Forms.NumericUpDown
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 End Class
