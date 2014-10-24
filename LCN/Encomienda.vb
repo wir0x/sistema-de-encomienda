@@ -161,11 +161,20 @@
     ''' <summary>
     ''' Guarda todos los datos de un cliente
     ''' </summary>
-    Public Function Guardar() As Boolean
+    Public Function Guardarencomienda(ByVal codenc As String, ByVal nrodocre As String, ByVal nrodocdes As String, ByVal idhojaru As Integer, ByVal des As String, ByVal fragil As Boolean, ByVal volum As Double, ByVal pes As Double, ByVal mont As Double, ByVal pag As Boolean) As Boolean
         Try
 
-            IniciarSP("Flota_Insert")
-            AddParametro("@Activo", Activo)
+            IniciarSP("encomienda_Insert")
+            AddParametro("@idenco", codenc)
+            AddParametro("@nrodoc_re", nrodocre)
+            AddParametro("@nrodoc_des", nrodocdes)
+            AddParametro("@idhojaruta", idhojaru)
+            AddParametro("@descrip", des)
+            AddParametro("@fragil", fragil)
+            AddParametro("@volumen", volum)
+            AddParametro("@Peso", pes)
+            AddParametro("@monto", mont)
+            AddParametro("@pagado", pag)
 
             If EjecutarTransaccion() = True Then
                 Return True
