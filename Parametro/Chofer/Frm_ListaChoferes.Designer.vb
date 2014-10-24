@@ -22,19 +22,20 @@ Partial Class Frm_ListaChoferes
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.dgv_parametro = New System.Windows.Forms.DataGridView()
-        Me.ParametroId = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PrecioMinimo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PrecioVolumen = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgv_Choferes = New System.Windows.Forms.DataGridView()
+        Me.NroDoc = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Telefono = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Activo = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.Fecha = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Ubicacion = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -49,24 +50,17 @@ Partial Class Frm_ListaChoferes
         Me.btn_cancelar = New System.Windows.Forms.Button()
         Me.btn_reporte = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
-        CType(Me.dgv_parametro, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgv_Choferes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Direccion
-        '
-        Me.Direccion.HeaderText = "Direccion"
-        Me.Direccion.Name = "Direccion"
-        Me.Direccion.ReadOnly = True
-        Me.Direccion.Width = 200
-        '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.dgv_parametro)
-        Me.GroupBox2.Font = New System.Drawing.Font("Ubuntu Light", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.Controls.Add(Me.dgv_Choferes)
+        Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.SystemColors.AppWorkspace
         Me.GroupBox2.Location = New System.Drawing.Point(12, 143)
         Me.GroupBox2.Name = "GroupBox2"
@@ -75,70 +69,79 @@ Partial Class Frm_ListaChoferes
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Lista de Parametros"
         '
-        'dgv_parametro
+        'dgv_Choferes
         '
-        Me.dgv_parametro.AllowUserToAddRows = False
-        Me.dgv_parametro.AllowUserToDeleteRows = False
-        Me.dgv_parametro.AllowUserToResizeColumns = False
-        Me.dgv_parametro.AllowUserToResizeRows = False
-        Me.dgv_parametro.BackgroundColor = System.Drawing.Color.Snow
-        Me.dgv_parametro.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.dgv_parametro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Me.dgv_parametro.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ParametroId, Me.PrecioMinimo, Me.PrecioVolumen, Me.Direccion, Me.Activo, Me.Fecha})
-        Me.dgv_parametro.Location = New System.Drawing.Point(8, 31)
-        Me.dgv_parametro.Name = "dgv_parametro"
-        Me.dgv_parametro.ReadOnly = True
-        Me.dgv_parametro.RowHeadersVisible = False
-        Me.dgv_parametro.Size = New System.Drawing.Size(755, 333)
-        Me.dgv_parametro.TabIndex = 6
+        Me.dgv_Choferes.AllowUserToAddRows = False
+        Me.dgv_Choferes.AllowUserToDeleteRows = False
+        Me.dgv_Choferes.AllowUserToResizeColumns = False
+        Me.dgv_Choferes.AllowUserToResizeRows = False
+        Me.dgv_Choferes.BackgroundColor = System.Drawing.Color.Snow
+        Me.dgv_Choferes.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgv_Choferes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        Me.dgv_Choferes.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NroDoc, Me.Nombre, Me.Telefono, Me.Direccion, Me.Activo, Me.Fecha, Me.Ubicacion})
+        Me.dgv_Choferes.Location = New System.Drawing.Point(8, 31)
+        Me.dgv_Choferes.Name = "dgv_Choferes"
+        Me.dgv_Choferes.ReadOnly = True
+        Me.dgv_Choferes.RowHeadersVisible = False
+        Me.dgv_Choferes.Size = New System.Drawing.Size(755, 333)
+        Me.dgv_Choferes.TabIndex = 6
         '
-        'ParametroId
+        'NroDoc
         '
-        Me.ParametroId.DataPropertyName = "ParametroId"
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.ParametroId.DefaultCellStyle = DataGridViewCellStyle1
-        Me.ParametroId.HeaderText = "Nr. Doc. (CI)"
-        Me.ParametroId.Name = "ParametroId"
-        Me.ParametroId.ReadOnly = True
-        Me.ParametroId.Width = 80
+        Me.NroDoc.DataPropertyName = "NroDoc"
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.NroDoc.DefaultCellStyle = DataGridViewCellStyle6
+        Me.NroDoc.HeaderText = "Nr. Doc. (CI)"
+        Me.NroDoc.Name = "NroDoc"
+        Me.NroDoc.ReadOnly = True
+        Me.NroDoc.Width = 80
         '
-        'PrecioMinimo
+        'Nombre
         '
-        Me.PrecioMinimo.DataPropertyName = "PrecioMinimo"
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.PrecioMinimo.DefaultCellStyle = DataGridViewCellStyle2
-        Me.PrecioMinimo.HeaderText = "Nombres"
-        Me.PrecioMinimo.Name = "PrecioMinimo"
-        Me.PrecioMinimo.ReadOnly = True
-        Me.PrecioMinimo.Width = 200
+        Me.Nombre.DataPropertyName = "Nombre"
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Nombre.DefaultCellStyle = DataGridViewCellStyle7
+        Me.Nombre.HeaderText = "Nombres"
+        Me.Nombre.Name = "Nombre"
+        Me.Nombre.ReadOnly = True
+        Me.Nombre.Width = 200
         '
-        'PrecioVolumen
+        'Telefono
         '
-        Me.PrecioVolumen.DataPropertyName = "PrecioVolumen"
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.PrecioVolumen.DefaultCellStyle = DataGridViewCellStyle3
-        Me.PrecioVolumen.HeaderText = "Telefono"
-        Me.PrecioVolumen.Name = "PrecioVolumen"
-        Me.PrecioVolumen.ReadOnly = True
-        Me.PrecioVolumen.Width = 80
+        Me.Telefono.DataPropertyName = "Telefono"
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Telefono.DefaultCellStyle = DataGridViewCellStyle8
+        Me.Telefono.HeaderText = "Telefono"
+        Me.Telefono.Name = "Telefono"
+        Me.Telefono.ReadOnly = True
+        Me.Telefono.Width = 80
+        '
+        'Direccion
+        '
+        Me.Direccion.DataPropertyName = "Direccion"
+        Me.Direccion.HeaderText = "Direccion"
+        Me.Direccion.Name = "Direccion"
+        Me.Direccion.ReadOnly = True
+        Me.Direccion.Width = 200
         '
         'Activo
         '
         Me.Activo.DataPropertyName = "Activo"
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle4.NullValue = False
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Activo.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle9.NullValue = False
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Activo.DefaultCellStyle = DataGridViewCellStyle9
         Me.Activo.HeaderText = "Activo"
         Me.Activo.Name = "Activo"
         Me.Activo.ReadOnly = True
+        Me.Activo.Visible = False
         Me.Activo.Width = 45
         '
         'Fecha
         '
-        Me.Fecha.DataPropertyName = "Fecha"
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Fecha.DefaultCellStyle = DataGridViewCellStyle5
+        Me.Fecha.DataPropertyName = "FechaAct"
+        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Fecha.DefaultCellStyle = DataGridViewCellStyle10
         Me.Fecha.HeaderText = "Fecha Actualizado"
         Me.Fecha.Name = "Fecha"
         Me.Fecha.ReadOnly = True
@@ -146,14 +149,21 @@ Partial Class Frm_ListaChoferes
         Me.Fecha.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
         Me.Fecha.Width = 135
         '
+        'Ubicacion
+        '
+        Me.Ubicacion.DataPropertyName = "Ubicacion"
+        Me.Ubicacion.HeaderText = "Ubicacion"
+        Me.Ubicacion.Name = "Ubicacion"
+        Me.Ubicacion.ReadOnly = True
+        '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Ubuntu Condensed", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(315, 9)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(201, 35)
+        Me.Label4.Size = New System.Drawing.Size(243, 33)
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "Lista de Choferes"
         '
@@ -181,9 +191,10 @@ Partial Class Frm_ListaChoferes
         'cmb_estado
         '
         Me.cmb_estado.FormattingEnabled = True
+        Me.cmb_estado.Items.AddRange(New Object() {"INACTIVO", "ACTIVO"})
         Me.cmb_estado.Location = New System.Drawing.Point(87, 23)
         Me.cmb_estado.Name = "cmb_estado"
-        Me.cmb_estado.Size = New System.Drawing.Size(201, 25)
+        Me.cmb_estado.Size = New System.Drawing.Size(201, 23)
         Me.cmb_estado.TabIndex = 0
         '
         'GroupBox3
@@ -192,7 +203,7 @@ Partial Class Frm_ListaChoferes
         Me.GroupBox3.Controls.Add(Me.txt_buscar)
         Me.GroupBox3.Controls.Add(Me.Label3)
         Me.GroupBox3.Controls.Add(Me.Label1)
-        Me.GroupBox3.Font = New System.Drawing.Font("Ubuntu Light", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.ForeColor = System.Drawing.SystemColors.AppWorkspace
         Me.GroupBox3.Location = New System.Drawing.Point(12, 77)
         Me.GroupBox3.Name = "GroupBox3"
@@ -213,22 +224,22 @@ Partial Class Frm_ListaChoferes
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Ubuntu Light", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label3.Location = New System.Drawing.Point(341, 28)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(54, 17)
+        Me.Label3.Size = New System.Drawing.Size(63, 15)
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "Buscar : "
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Ubuntu Light", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(24, 27)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(54, 17)
+        Me.Label1.Size = New System.Drawing.Size(63, 15)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Estado : "
         '
@@ -246,7 +257,7 @@ Partial Class Frm_ListaChoferes
         Me.GroupBox1.Controls.Add(Me.btn_nuevo)
         Me.GroupBox1.Controls.Add(Me.btn_cancelar)
         Me.GroupBox1.Controls.Add(Me.btn_reporte)
-        Me.GroupBox1.Font = New System.Drawing.Font("Ubuntu Light", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.AppWorkspace
         Me.GroupBox1.Location = New System.Drawing.Point(12, 532)
         Me.GroupBox1.Name = "GroupBox1"
@@ -261,7 +272,7 @@ Partial Class Frm_ListaChoferes
         Me.btn_nuevo.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_nuevo.FlatAppearance.BorderColor = System.Drawing.Color.Azure
         Me.btn_nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_nuevo.Font = New System.Drawing.Font("Ubuntu Light", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_nuevo.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_nuevo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btn_nuevo.Image = Global.Parametro.My.Resources.Resources.file
         Me.btn_nuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -281,7 +292,7 @@ Partial Class Frm_ListaChoferes
         Me.btn_cancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btn_cancelar.FlatAppearance.BorderColor = System.Drawing.Color.Azure
         Me.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_cancelar.Font = New System.Drawing.Font("Ubuntu Light", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_cancelar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_cancelar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btn_cancelar.Image = Global.Parametro.My.Resources.Resources._exit
         Me.btn_cancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -300,7 +311,7 @@ Partial Class Frm_ListaChoferes
         Me.btn_reporte.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_reporte.FlatAppearance.BorderColor = System.Drawing.Color.Azure
         Me.btn_reporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_reporte.Font = New System.Drawing.Font("Ubuntu Light", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_reporte.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_reporte.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btn_reporte.Image = Global.Parametro.My.Resources.Resources.insert_template
         Me.btn_reporte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -330,7 +341,7 @@ Partial Class Frm_ListaChoferes
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Frm_ListaChoferes"
         Me.GroupBox2.ResumeLayout(False)
-        CType(Me.dgv_parametro, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgv_Choferes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -341,14 +352,8 @@ Partial Class Frm_ListaChoferes
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Direccion As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
-    Friend WithEvents dgv_parametro As System.Windows.Forms.DataGridView
-    Friend WithEvents ParametroId As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents PrecioMinimo As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents PrecioVolumen As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Activo As System.Windows.Forms.DataGridViewCheckBoxColumn
-    Friend WithEvents Fecha As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents dgv_Choferes As System.Windows.Forms.DataGridView
     Friend WithEvents btn_nuevo As System.Windows.Forms.Button
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents btn_cancelar As System.Windows.Forms.Button
@@ -362,4 +367,11 @@ Partial Class Frm_ListaChoferes
     Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents btn_reporte As System.Windows.Forms.Button
+    Friend WithEvents NroDoc As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Nombre As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Telefono As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Direccion As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Activo As System.Windows.Forms.DataGridViewCheckBoxColumn
+    Friend WithEvents Fecha As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Ubicacion As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

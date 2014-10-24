@@ -37,6 +37,8 @@ Partial Class Frm_Chofer
         Me.txt_nombre = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.cmbUbicacion = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -49,7 +51,7 @@ Partial Class Frm_Chofer
         Me.GroupBox1.Controls.Add(Me.btn_guardar)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        Me.GroupBox1.Location = New System.Drawing.Point(9, 288)
+        Me.GroupBox1.Location = New System.Drawing.Point(9, 307)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(384, 56)
         Me.GroupBox1.TabIndex = 1
@@ -129,10 +131,12 @@ Partial Class Frm_Chofer
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.cmbUbicacion)
         Me.GroupBox3.Controls.Add(Me.txt_telefono)
         Me.GroupBox3.Controls.Add(Me.txt_direccion)
         Me.GroupBox3.Controls.Add(Me.txt_nrodoc)
         Me.GroupBox3.Controls.Add(Me.Label8)
+        Me.GroupBox3.Controls.Add(Me.Label2)
         Me.GroupBox3.Controls.Add(Me.Label7)
         Me.GroupBox3.Controls.Add(Me.txt_nombre)
         Me.GroupBox3.Controls.Add(Me.Label3)
@@ -141,7 +145,7 @@ Partial Class Frm_Chofer
         Me.GroupBox3.ForeColor = System.Drawing.SystemColors.AppWorkspace
         Me.GroupBox3.Location = New System.Drawing.Point(9, 79)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(384, 189)
+        Me.GroupBox3.Size = New System.Drawing.Size(384, 222)
         Me.GroupBox3.TabIndex = 0
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Parametros Cliente"
@@ -178,7 +182,7 @@ Partial Class Frm_Chofer
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(18, 97)
+        Me.Label8.Location = New System.Drawing.Point(61, 97)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(71, 15)
         Me.Label8.TabIndex = 14
@@ -189,7 +193,7 @@ Partial Class Frm_Chofer
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(18, 129)
+        Me.Label7.Location = New System.Drawing.Point(52, 129)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(80, 15)
         Me.Label7.TabIndex = 13
@@ -209,7 +213,7 @@ Partial Class Frm_Chofer
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(18, 65)
+        Me.Label3.Location = New System.Drawing.Point(66, 65)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(66, 15)
         Me.Label3.TabIndex = 7
@@ -220,11 +224,31 @@ Partial Class Frm_Chofer
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(18, 33)
+        Me.Label1.Location = New System.Drawing.Point(13, 33)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(119, 15)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Nro. Documento :"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(53, 186)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(79, 15)
+        Me.Label2.TabIndex = 13
+        Me.Label2.Text = "Ubicacion :"
+        '
+        'cmbUbicacion
+        '
+        Me.cmbUbicacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmbUbicacion.FormattingEnabled = True
+        Me.cmbUbicacion.Location = New System.Drawing.Point(139, 182)
+        Me.cmbUbicacion.Name = "cmbUbicacion"
+        Me.cmbUbicacion.Size = New System.Drawing.Size(150, 23)
+        Me.cmbUbicacion.TabIndex = 15
         '
         'Frm_Chofer
         '
@@ -232,7 +256,7 @@ Partial Class Frm_Chofer
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.btn_cancelar
-        Me.ClientSize = New System.Drawing.Size(405, 354)
+        Me.ClientSize = New System.Drawing.Size(405, 384)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.GroupBox1)
@@ -264,4 +288,6 @@ Partial Class Frm_Chofer
     Friend WithEvents txt_nombre As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents cmbUbicacion As System.Windows.Forms.ComboBox
+    Friend WithEvents Label2 As System.Windows.Forms.Label
 End Class

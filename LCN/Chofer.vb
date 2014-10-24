@@ -18,6 +18,8 @@ Public Class Chofer
     Private _Telefono As String
     Private _Activo As Boolean
     Private _FechaAct As Date
+    Private _Ubicacion As Integer
+
 #End Region
 
 #Region "Propiedades"
@@ -86,11 +88,41 @@ Public Class Chofer
         End Set
     End Property
 
+    Public Property Ubicacion() As Integer
+        Get
+            Return _Ubicacion
+        End Get
+        Set(ByVal value As Integer)
+            _Ubicacion = value
+        End Set
+    End Property
+
 
 #End Region
 
 #Region "Metodos"
 
+    Public Sub New()
+        ' CONSTRUCTOR 1
+    End Sub
+
+    Public Sub New(ByVal Nombre As String,
+                    ByVal NroDoc As String,
+                    ByVal Direccion As String,
+                    ByVal Telefono As String,
+                    ByVal Activo As Boolean,
+                    ByVal FechaAct As Date,
+                    ByVal Ubicacion As Integer)
+
+        Me.Nombre = Nombre
+        Me.NroDoc = NroDoc
+        Me.Direccion = Direccion
+        Me.Telefono = Telefono
+        Me.Activo = Activo
+        Me.FechaAct = FechaAct
+        Me.Ubicacion = Ubicacion
+
+    End Sub
     Public Function Guardar() As Boolean
         Try
 
@@ -99,6 +131,8 @@ Public Class Chofer
             AddParametro("@Nombre", Nombre)
             AddParametro("@Direccion", Direccion)
             AddParametro("@Telefono", Telefono)
+            AddParametro("@Ubicacion", Ubicacion)
+
 
             If EjecutarTransaccion() = True Then
                 Return True
@@ -121,6 +155,7 @@ Public Class Chofer
             AddParametro("@Nombre", Nombre)
             AddParametro("@Direccion", Direccion)
             AddParametro("@Telefono", Telefono)
+            AddParametro("@Ubicacion", Ubicacion)
 
             If EjecutarTransaccion() = True Then
                 Return True
