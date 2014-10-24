@@ -6,7 +6,44 @@ LCN
 </name>
 </assembly>
 <members>
-<member name="M:LCN.Flota.Guardar">
+<member name="P:LCN.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:LCN.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:LCN.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:LCN.Clientes.Guardar">
+	<summary>
+ Guarda todos los datos de un cliente
+ </summary>
+</member><member name="M:LCN.Clientes.Obtener(System.Boolean,System.String)">
+	<summary>
+ Obtiene todos los clientes segun su nombre
+ </summary>
+	<param name="Estado">Estado del cliente (Activo/Inactivo)</param>
+	<param name="Nombre">Cliente que desea buscar</param>
+</member><member name="M:LCN.Clientes.ClienteGetByID(System.Int32)">
+	<summary>
+ Obtiene un cliente por su ID
+ </summary>
+	<param name="ID_Cliente">ID del cliente</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LCN.Clientes.Actualizar(System.String)">
+	<summary>
+ Actualiza los datos de un cliente incluyendo si ID
+ </summary>
+	<param name="NroDoc_Anterior">ID Anterior del cliente</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LCN.Flota.Guardar">
 	<summary>
  Guarda todos los datos de un cliente
  </summary>
@@ -62,30 +99,15 @@ LCN
 	<param name="Descripcion">Descripcion</param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:LCN.Clientes.Guardar">
+</member><member name="M:LCN.Encomienda.Guardar">
 	<summary>
  Guarda todos los datos de un cliente
  </summary>
-</member><member name="M:LCN.Clientes.Obtener(System.Boolean,System.String)">
+</member><member name="M:LCN.Encomienda.Obtener(System.String,System.Boolean)">
 	<summary>
- Obtiene todos los clientes segun su nombre
+ Obtiene todos las Flotas segun su placa
  </summary>
-	<param name="Estado">Estado del cliente (Activo/Inactivo)</param>
-	<param name="Nombre">Cliente que desea buscar</param>
-</member><member name="M:LCN.Clientes.ClienteGetByID(System.Int32)">
-	<summary>
- Obtiene un cliente por su ID
- </summary>
-	<param name="ID_Cliente">ID del cliente</param>
-	<returns></returns>
-	<remarks></remarks>
-</member><member name="M:LCN.Clientes.Actualizar(System.String)">
-	<summary>
- Actualiza los datos de un cliente incluyendo si ID
- </summary>
-	<param name="NroDoc_Anterior">ID Anterior del cliente</param>
-	<returns></returns>
-	<remarks></remarks>
+	<param name="Placa">Flota que desea buscar</param>
 </member><member name="P:LCN.Parametro.IdParam">
 	<summary>
  Identificador del la tabla Parametro 
@@ -155,19 +177,6 @@ LCN
  </summary>
 	<returns>Retorna el ultimo parametro modificado</returns>
 	<remarks></remarks>
-</member><member name="P:LCN.My.Resources.Resources.ResourceManager">
-	<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member><member name="P:LCN.My.Resources.Resources.Culture">
-	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="T:LCN.My.Resources.Resources">
-	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
-</summary>
 </member>
 </members>
 </doc>

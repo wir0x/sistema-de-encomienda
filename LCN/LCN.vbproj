@@ -65,6 +65,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Chofer.vb" />
+    <Compile Include="Encomienda_año.vb" />
+    <Compile Include="Encomienda.vb" />
     <Compile Include="Clientes.vb" />
     <Compile Include="Flota.vb" />
     <Compile Include="HistorialRuta.vb" />

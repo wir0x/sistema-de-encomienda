@@ -14,3 +14,11 @@ d:\flash\Parametro_central\LCD\obj\Debug\LCD.vbproj.GenerateResource.Cache
 d:\flash\Parametro_central\LCD\obj\Debug\LCD.dll
 d:\flash\Parametro_central\LCD\obj\Debug\LCD.xml
 d:\flash\Parametro_central\LCD\obj\Debug\LCD.pdb
+C:\Users\wgarcia\Source\Repos\Sistema-de-Encomiendas\LCD\bin\Debug\LCD.dll
+C:\Users\wgarcia\Source\Repos\Sistema-de-Encomiendas\LCD\bin\Debug\LCD.pdb
+C:\Users\wgarcia\Source\Repos\Sistema-de-Encomiendas\LCD\bin\Debug\LCD.xml
+C:\Users\wgarcia\Source\Repos\Sistema-de-Encomiendas\LCD\obj\Debug\LCD.Resources.resources
+C:\Users\wgarcia\Source\Repos\Sistema-de-Encomiendas\LCD\obj\Debug\LCD.vbproj.GenerateResource.Cache
+C:\Users\wgarcia\Source\Repos\Sistema-de-Encomiendas\LCD\obj\Debug\LCD.dll
+C:\Users\wgarcia\Source\Repos\Sistema-de-Encomiendas\LCD\obj\Debug\LCD.xml
+C:\Users\wgarcia\Source\Repos\Sistema-de-Encomiendas\LCD\obj\Debug\LCD.pdb

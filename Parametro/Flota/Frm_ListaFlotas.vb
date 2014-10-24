@@ -54,4 +54,10 @@
     Private Sub txt_buscar_TextChanged(sender As Object, e As EventArgs) Handles txt_buscar.TextChanged
         Me.CargarGrid(Me.cmbEstado.SelectedIndex, Me.txt_buscar.Text)
     End Sub
+
+    Private Sub btn_nuevo_Click(sender As Object, e As EventArgs) Handles btn_nuevo.Click
+        Dim frm As New Frm_Flota
+        frm.ShowDialog()
+        Me.CargarGrid(True, "")
+    End Sub
 End Class

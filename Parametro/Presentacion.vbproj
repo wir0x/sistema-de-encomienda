@@ -15,6 +15,7 @@
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publicar\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -27,7 +28,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -109,6 +109,12 @@
       <DependentUpon>Frm_Confirmar.vb</DependentUpon>
     </Compile>
     <Compile Include="Confirmar\Frm_Confirmar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Encomienda\Frm_Lista_Sel_Clientes.Designer.vb">
+      <DependentUpon>Frm_Lista_Sel_Clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Encomienda\Frm_Lista_Sel_Clientes.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ruta\Frm_ListaRutas.Designer.vb">
@@ -224,6 +230,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Confirmar\Frm_Confirmar.resx">
       <DependentUpon>Frm_Confirmar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Encomienda\Frm_Lista_Sel_Clientes.resx">
+      <DependentUpon>Frm_Lista_Sel_Clientes.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ruta\Frm_ListaRutas.resx">
       <DependentUpon>Frm_ListaRutas.vb</DependentUpon>
