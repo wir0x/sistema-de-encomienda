@@ -8,7 +8,10 @@ Public Class Puntos
 #Region "ATRIBUTOS"
     Private _id_Punto As Integer
     Private _descripcion As String
-    Private _estado As Boolean
+    Private _instancia As String
+    Private _baseDatos As String
+    Private _activo As Boolean
+    Private _fechaAct As Date
 
 #End Region
 
@@ -32,12 +35,39 @@ Public Class Puntos
         End Set
     End Property
 
-    Public Property Estado() As String
+    Public Property Instancia() As String
         Get
-            Return _estado
+            Return _instancia
         End Get
         Set(ByVal value As String)
-            _estado = value
+            _instancia = value
+        End Set
+    End Property
+
+    Public Property BaseDatos() As String
+        Get
+            Return _baseDatos
+        End Get
+        Set(ByVal value As String)
+            _baseDatos = value
+        End Set
+    End Property
+
+    Public Property Activo() As Boolean
+        Get
+            Return _activo
+        End Get
+        Set(ByVal value As Boolean)
+            _activo = value
+        End Set
+    End Property
+
+    Public Property FechaAct() As String
+        Get
+            Return _fechaAct
+        End Get
+        Set(ByVal value As String)
+            _fechaAct = value
         End Set
     End Property
 
@@ -49,10 +79,19 @@ Public Class Puntos
 
     End Sub
 
-    Sub New(ByVal ID_Punto As Integer, ByVal Descripcion As String, ByVal Estado As Boolean)
+    Sub New(ByVal ID_Punto As Integer,
+            ByVal Descripcion As String,
+            ByVal Instancia As String,
+            ByVal BaseDatos As String,
+            ByVal Activo As Boolean,
+            ByVal FechaAct As Date)
+
         Me.ID_Punto = ID_Punto
         Me.Descripcion = Descripcion
-        Me.Estado = Estado
+        Me.Instancia = Instancia
+        Me.BaseDatos = BaseDatos
+        Me.Activo = Activo
+        Me.FechaAct = FechaAct
     End Sub
 
     ''' <summary>
@@ -63,9 +102,12 @@ Public Class Puntos
     Public Function Guardar() As Boolean
         Try
             IniciarSP("Pun_Insert")
-            AddParametro("@ID_Punto", Me.ID_Punto)
-            AddParametro("@Descripcion", Me.Descripcion)
-            AddParametro("@Activo", Me.Estado)
+            AddParametro("@ID_Punto", ID_Punto)
+            AddParametro("@Descripcion", Descripcion)
+            AddParametro("@Instancia", Instancia)
+            AddParametro("@BaseDatos", BaseDatos)
+            AddParametro("@Activo", Activo)
+            AddParametro("@FechaAct", FechaAct)
 
             If EjecutarTransaccion() Then
                 Return True
@@ -76,7 +118,7 @@ Public Class Puntos
             MsgBox("Error en : " & ex.Message & vbNewLine & "Desde : " & ex.Source & ex.ToString, MsgBoxStyle.Critical, "DANIEL ROMERO BACOTICH")
             Return False
         End Try
-     
+
     End Function
 
     ''' <summary>
@@ -89,9 +131,13 @@ Public Class Puntos
         Try
             IniciarSP("Pun_Update")
             AddParametro("ID_Anterior", ID_Anterior)
-            AddParametro("@ID_Punto", Me.ID_Punto)
-            AddParametro("@Descripcion", Me.Descripcion)
-            AddParametro("@Activo", Me.Estado)
+            AddParametro("@ID_Punto", ID_Punto)
+            AddParametro("@Descripcion", Descripcion)
+            AddParametro("@Instancia", Instancia)
+            AddParametro("@BaseDatos", BaseDatos)
+            AddParametro("@Activo", Activo)
+            AddParametro("@FechaAct", FechaAct)
+
 
             If EjecutarTransaccion() Then
                 Return True
