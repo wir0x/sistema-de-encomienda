@@ -1,11 +1,20 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Presentacion", "Parametro\Presentacion.vbproj", "{E8260B46-3028-45CC-8291-EB80449FF47C}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "LCD", "LCD\LCD.vbproj", "{F8F91125-48B9-4F62-9054-4A521843FB66}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "LCN", "LCN\LCN.vbproj", "{DA2019FF-C4C6-4820-B66F-4CA9FDAB6283}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CE49D526-17FE-4934-88BC-F68E4E98A7BC}"
+	ProjectSection(SolutionItems) = preProject
+		ID_CorrelativoGet.sql = ID_CorrelativoGet.sql
+		ID_CorrelativoUpdate.sql = ID_CorrelativoUpdate.sql
+		TablaEncAño.sql = TablaEncAño.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
