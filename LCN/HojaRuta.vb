@@ -229,6 +229,25 @@ Public Class HojaRuta
 
     End Function
 
+    Public Function BusquedaHojaRutaOrigen(ByVal suc As Integer) As DataTable
+
+        Dim Tabla As New DataTable
+
+        IniciarSP("HojaRuta_GetAllOrigen")
+        AddParametro("@suc", suc)
+
+        If EjecutarTransaccion() = True Then
+            If getTabla(Tabla) = True Then
+                Return Tabla
+            Else
+                Return Nothing
+            End If
+        Else
+            Return Nothing
+        End If
+
+    End Function
+
 #End Region
 
 End Class
