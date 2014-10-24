@@ -22,3 +22,11 @@ C:\Users\wgarcia\Source\Repos\Sistema-de-Encomiendas\LCD\obj\Debug\LCD.vbproj.Ge
 C:\Users\wgarcia\Source\Repos\Sistema-de-Encomiendas\LCD\obj\Debug\LCD.dll
 C:\Users\wgarcia\Source\Repos\Sistema-de-Encomiendas\LCD\obj\Debug\LCD.xml
 C:\Users\wgarcia\Source\Repos\Sistema-de-Encomiendas\LCD\obj\Debug\LCD.pdb
+C:\Users\DANIEL\Source\Repos\Sistema-de-Encomiendas\LCD\bin\Debug\LCD.dll
+C:\Users\DANIEL\Source\Repos\Sistema-de-Encomiendas\LCD\bin\Debug\LCD.pdb
+C:\Users\DANIEL\Source\Repos\Sistema-de-Encomiendas\LCD\bin\Debug\LCD.xml
+C:\Users\DANIEL\Source\Repos\Sistema-de-Encomiendas\LCD\obj\Debug\LCD.Resources.resources
+C:\Users\DANIEL\Source\Repos\Sistema-de-Encomiendas\LCD\obj\Debug\LCD.vbproj.GenerateResource.Cache
+C:\Users\DANIEL\Source\Repos\Sistema-de-Encomiendas\LCD\obj\Debug\LCD.dll
+C:\Users\DANIEL\Source\Repos\Sistema-de-Encomiendas\LCD\obj\Debug\LCD.xml
+C:\Users\DANIEL\Source\Repos\Sistema-de-Encomiendas\LCD\obj\Debug\LCD.pdb

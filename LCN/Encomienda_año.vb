@@ -1,34 +1,35 @@
 ﻿Public Class Encomienda_año
     Inherits LCD.CAD
 #Region "ATRIBUTOS"
-    Private _id_enc_a As Integer
-    Private _ano As Integer
-    Private _corelativo As Integer
+    Private _ID_Encomienda As Integer
+    Private _Año As Integer
+    Private _Correlativo As Integer
 #End Region
 
 #Region "PROPIEDADES"
-    Public Property id_enc_a() As Integer
+    Public Property ID_Encomienda()
         Get
-            Return _id_enc_a
+            Return _ID_Encomienda
         End Get
-        Set(ByVal value As Integer)
-            _id_enc_a = value
+        Set(ByVal value)
+            _ID_Encomienda = value
         End Set
     End Property
-    Public Property ano() As Integer
+
+    Public Property Año() As Integer
         Get
-            Return _ano
+            Return _Año
         End Get
         Set(ByVal value As Integer)
-            _ano = value
+            _Año = value
         End Set
     End Property
-    Public Property corelativo() As Integer
+    Public Property Correlativo() As Integer
         Get
-            Return _corelativo
+            Return _Correlativo
         End Get
         Set(ByVal value As Integer)
-            _corelativo = value
+            _Correlativo = value
         End Set
     End Property
 
@@ -44,15 +45,15 @@
                    ByVal ano As Integer,
                    ByVal corelativo As Integer)
         'CONSTRUCTOR 2
-        Me.id_enc_a = id_enc_a
-        Me.ano = ano
-        Me.corelativo = corelativo
+        Me.ID_Encomienda = id_enc_a
+        Me.Año = ano
+        Me.Correlativo = corelativo
     End Sub
     Public Function Obtenercodigo(ByVal año As Integer) As DataTable
 
         Dim Tabla As New DataTable
 
-        IniciarSP("generar_nroguia")
+        IniciarSP("ID_CorrelativoGet")
         AddParametro("@año", año)
 
         If EjecutarTransaccion() = True Then
@@ -66,6 +67,25 @@
         End If
 
     End Function
+
+    Public Function ActualizarCorrelativo(ByVal Año As Integer) As Boolean
+        Try
+
+            IniciarSP("ID_CorrelativoUpdate")
+            AddParametro("@Año", Año)
+
+            If EjecutarTransaccion() = True Then
+                Return True
+            Else
+                Return False
+            End If
+
+        Catch ex As Exception
+            MsgBox("Error en : " & ex.Message & vbNewLine & "Desde : " & ex.Source & ex.ToString, MsgBoxStyle.Critical, "DANIEL ROMERO BACOTICH")
+            Return False
+        End Try
+    End Function
+
 
 #End Region
 

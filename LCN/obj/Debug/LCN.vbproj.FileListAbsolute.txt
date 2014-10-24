@@ -45,3 +45,15 @@ C:\Users\wgarcia\Source\Repos\Sistema-de-Encomiendas\LCN\obj\Debug\LCN.vbproj.Ge
 C:\Users\wgarcia\Source\Repos\Sistema-de-Encomiendas\LCN\obj\Debug\LCN.dll
 C:\Users\wgarcia\Source\Repos\Sistema-de-Encomiendas\LCN\obj\Debug\LCN.xml
 C:\Users\wgarcia\Source\Repos\Sistema-de-Encomiendas\LCN\obj\Debug\LCN.pdb
+C:\Users\DANIEL\Source\Repos\Sistema-de-Encomiendas\LCN\bin\Debug\LCN.dll
+C:\Users\DANIEL\Source\Repos\Sistema-de-Encomiendas\LCN\bin\Debug\LCN.pdb
+C:\Users\DANIEL\Source\Repos\Sistema-de-Encomiendas\LCN\bin\Debug\LCN.xml
+C:\Users\DANIEL\Source\Repos\Sistema-de-Encomiendas\LCN\bin\Debug\LCD.dll
+C:\Users\DANIEL\Source\Repos\Sistema-de-Encomiendas\LCN\bin\Debug\LCD.pdb
+C:\Users\DANIEL\Source\Repos\Sistema-de-Encomiendas\LCN\bin\Debug\LCD.xml
+C:\Users\DANIEL\Source\Repos\Sistema-de-Encomiendas\LCN\obj\Debug\LCN.vbprojResolveAssemblyReference.cache
+C:\Users\DANIEL\Source\Repos\Sistema-de-Encomiendas\LCN\obj\Debug\LCN.Resources.resources
+C:\Users\DANIEL\Source\Repos\Sistema-de-Encomiendas\LCN\obj\Debug\LCN.vbproj.GenerateResource.Cache
+C:\Users\DANIEL\Source\Repos\Sistema-de-Encomiendas\LCN\obj\Debug\LCN.dll
+C:\Users\DANIEL\Source\Repos\Sistema-de-Encomiendas\LCN\obj\Debug\LCN.xml
+C:\Users\DANIEL\Source\Repos\Sistema-de-Encomiendas\LCN\obj\Debug\LCN.pdb

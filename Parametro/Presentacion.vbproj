@@ -295,6 +295,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\LCD\LCD.vbproj">
+      <Project>{f8f91125-48b9-4f62-9054-4a521843fb66}</Project>
+      <Name>LCD</Name>
+    </ProjectReference>
     <ProjectReference Include="..\LCN\LCN.vbproj">
       <Project>{DA2019FF-C4C6-4820-B66F-4CA9FDAB6283}</Project>
       <Name>LCN</Name>

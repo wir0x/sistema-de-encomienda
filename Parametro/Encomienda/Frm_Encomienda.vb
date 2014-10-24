@@ -1,4 +1,6 @@
 ﻿Imports LCN
+
+Imports System.Data.SqlClient
 Public Class Frm_Encomienda
     Private idsucursal As Integer
     Private idremitente As String
@@ -115,13 +117,14 @@ Public Class Frm_Encomienda
     End Sub
 
     Private Sub btn_guardar_Click(sender As Object, e As EventArgs) Handles btn_guardar.Click
-        Dim tablaguia As DataTable
-        Dim guia As New LCN.Encomienda_año
-        Dim codigo As String
 
-        tablaguia = guia.Obtenercodigo(10)
+        Dim TablaGuia As DataTable
+        Dim Guia As New LCN.Encomienda_año
+        Dim Codigo As Integer
 
-        codigo = tablaguia.Rows(0).Item(0).ToString
+        TablaGuia = Guia.Obtenercodigo(19)
+        Codigo = TablaGuia.Rows(0).Item(0).ToString
+        Guia.ActualizarCorrelativo(19)
 
         MsgBox(codigo)
     End Sub
