@@ -9,6 +9,7 @@ Public Class Puntos
     Private _id_Punto As Integer
     Private _descripcion As String
     Private _estado As Boolean
+
 #End Region
 
 #Region "PROPIEDADES"
