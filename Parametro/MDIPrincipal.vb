@@ -106,4 +106,9 @@
     'Private Sub Timer1_Tick(sender As System.Object, e As System.EventArgs) Handles Timer1.Tick
     '    tss_fecha.Text = Date.Now()
     'End Sub
+
+    Private Sub HistorialEncomiendaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HistorialEncomiendaToolStripMenuItem.Click
+        Dim frm As New Frm_HistorialEncomienda
+        frm.ShowDialog()
+    End Sub
 End Class

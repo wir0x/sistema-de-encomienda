@@ -65,6 +65,7 @@ Partial Class MDIPrincipal
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.HistorialEncomiendaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -143,7 +144,7 @@ Partial Class MDIPrincipal
         '
         'EncomiendaToolStripMenuItem
         '
-        Me.EncomiendaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevaEncomiendaToolStripMenuItem, Me.ConToolStripMenuItem})
+        Me.EncomiendaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevaEncomiendaToolStripMenuItem, Me.ConToolStripMenuItem, Me.HistorialEncomiendaToolStripMenuItem})
         Me.EncomiendaToolStripMenuItem.Name = "EncomiendaToolStripMenuItem"
         Me.EncomiendaToolStripMenuItem.Size = New System.Drawing.Size(98, 22)
         Me.EncomiendaToolStripMenuItem.Text = "Encomienda"
@@ -378,9 +379,6 @@ Partial Class MDIPrincipal
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Encomiendas"
         '
-        'Timer1
-        '
-        '
         'Label4
         '
         Me.Label4.AutoSize = True
@@ -392,6 +390,13 @@ Partial Class MDIPrincipal
         Me.Label4.Size = New System.Drawing.Size(450, 69)
         Me.Label4.TabIndex = 5
         Me.Label4.Text = "otra prueba"
+        '
+        'HistorialEncomiendaToolStripMenuItem
+        '
+        Me.HistorialEncomiendaToolStripMenuItem.Image = Global.Parametro.My.Resources.Resources.file_powerpoint
+        Me.HistorialEncomiendaToolStripMenuItem.Name = "HistorialEncomiendaToolStripMenuItem"
+        Me.HistorialEncomiendaToolStripMenuItem.Size = New System.Drawing.Size(215, 22)
+        Me.HistorialEncomiendaToolStripMenuItem.Text = "Historial Encomienda"
         '
         'MDIPrincipal
         '
@@ -465,4 +470,5 @@ Partial Class MDIPrincipal
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents ToolStripStatusLabel2 As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents HistorialEncomiendaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class
