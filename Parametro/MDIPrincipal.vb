@@ -117,4 +117,9 @@
         Dim frm As New Frm_listaPuntos
         frm.ShowDialog()
     End Sub
+
+    Private Sub ListaEncomiendasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListaEncomiendasToolStripMenuItem.Click
+        Dim frm As New frmListaEncomiendas
+        frm.ShowDialog()
+    End Sub
 End Class

@@ -51,6 +51,7 @@ Partial Class MDIPrincipal
         Me.AgregarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PuntosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AgregarToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListaPuntosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HojaRutaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AgregarToolStripMenuItem6 = New System.Windows.Forms.ToolStripMenuItem()
         Me.FlotaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -66,7 +67,7 @@ Partial Class MDIPrincipal
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.ListaPuntosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListaEncomiendasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -145,7 +146,7 @@ Partial Class MDIPrincipal
         '
         'EncomiendaToolStripMenuItem
         '
-        Me.EncomiendaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevaEncomiendaToolStripMenuItem, Me.ConToolStripMenuItem, Me.HistorialEncomiendaToolStripMenuItem})
+        Me.EncomiendaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevaEncomiendaToolStripMenuItem, Me.ConToolStripMenuItem, Me.HistorialEncomiendaToolStripMenuItem, Me.ListaEncomiendasToolStripMenuItem})
         Me.EncomiendaToolStripMenuItem.Name = "EncomiendaToolStripMenuItem"
         Me.EncomiendaToolStripMenuItem.Size = New System.Drawing.Size(98, 22)
         Me.EncomiendaToolStripMenuItem.Text = "Encomienda"
@@ -255,7 +256,7 @@ Partial Class MDIPrincipal
         Me.ParametroToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarToolStripMenuItem})
         Me.ParametroToolStripMenuItem.Image = Global.Parametro.My.Resources.Resources.coin
         Me.ParametroToolStripMenuItem.Name = "ParametroToolStripMenuItem"
-        Me.ParametroToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ParametroToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
         Me.ParametroToolStripMenuItem.Text = "Parametro"
         '
         'AgregarToolStripMenuItem
@@ -270,21 +271,27 @@ Partial Class MDIPrincipal
         Me.PuntosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarToolStripMenuItem2, Me.ListaPuntosToolStripMenuItem})
         Me.PuntosToolStripMenuItem.Image = Global.Parametro.My.Resources.Resources.location
         Me.PuntosToolStripMenuItem.Name = "PuntosToolStripMenuItem"
-        Me.PuntosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.PuntosToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
         Me.PuntosToolStripMenuItem.Text = "Puntos"
         '
         'AgregarToolStripMenuItem2
         '
         Me.AgregarToolStripMenuItem2.Name = "AgregarToolStripMenuItem2"
-        Me.AgregarToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
+        Me.AgregarToolStripMenuItem2.Size = New System.Drawing.Size(151, 22)
         Me.AgregarToolStripMenuItem2.Text = "Agregar"
+        '
+        'ListaPuntosToolStripMenuItem
+        '
+        Me.ListaPuntosToolStripMenuItem.Name = "ListaPuntosToolStripMenuItem"
+        Me.ListaPuntosToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
+        Me.ListaPuntosToolStripMenuItem.Text = "Lista Puntos"
         '
         'HojaRutaToolStripMenuItem
         '
         Me.HojaRutaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarToolStripMenuItem6})
         Me.HojaRutaToolStripMenuItem.Image = Global.Parametro.My.Resources.Resources.location2
         Me.HojaRutaToolStripMenuItem.Name = "HojaRutaToolStripMenuItem"
-        Me.HojaRutaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.HojaRutaToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
         Me.HojaRutaToolStripMenuItem.Text = "Hoja Ruta"
         '
         'AgregarToolStripMenuItem6
@@ -298,7 +305,7 @@ Partial Class MDIPrincipal
         Me.FlotaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevaFlotaToolStripMenuItem1, Me.ListaFlotasToolStripMenuItem})
         Me.FlotaToolStripMenuItem.Image = Global.Parametro.My.Resources.Resources.truck
         Me.FlotaToolStripMenuItem.Name = "FlotaToolStripMenuItem"
-        Me.FlotaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.FlotaToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
         Me.FlotaToolStripMenuItem.Text = "Flota"
         '
         'NuevaFlotaToolStripMenuItem1
@@ -399,11 +406,11 @@ Partial Class MDIPrincipal
         Me.Label4.TabIndex = 5
         Me.Label4.Text = "otra prueba"
         '
-        'ListaPuntosToolStripMenuItem
+        'ListaEncomiendasToolStripMenuItem
         '
-        Me.ListaPuntosToolStripMenuItem.Name = "ListaPuntosToolStripMenuItem"
-        Me.ListaPuntosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.ListaPuntosToolStripMenuItem.Text = "Lista Puntos"
+        Me.ListaEncomiendasToolStripMenuItem.Name = "ListaEncomiendasToolStripMenuItem"
+        Me.ListaEncomiendasToolStripMenuItem.Size = New System.Drawing.Size(215, 22)
+        Me.ListaEncomiendasToolStripMenuItem.Text = "Lista Encomiendas"
         '
         'MDIPrincipal
         '
@@ -479,4 +486,5 @@ Partial Class MDIPrincipal
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents HistorialEncomiendaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ListaPuntosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ListaEncomiendasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class
