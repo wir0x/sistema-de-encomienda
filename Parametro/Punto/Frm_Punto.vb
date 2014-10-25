@@ -1,4 +1,5 @@
-﻿Public Class Frm_Punto
+﻿Imports LCD.CAD
+Public Class Frm_Punto
 
     Private Sub PierdeFoco(ByVal sender As TextBox, ByVal e As System.EventArgs) Handles txt_idpunto.LostFocus, txt_instancia.LostFocus, txt_basededatos.LostFocus, txt_descripcion.LostFocus
         sender.BackColor = Color.White
@@ -32,5 +33,15 @@
             MsgBox("Debe especificar el ID del punto a crear", MsgBoxStyle.Critical, "ENCOMIENDAS")
             Me.txt_idpunto.Focus()
         End If
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim punto As New LCN.Puntos
+        Dim Ser As New LCD.CAD
+        Me.Cursor = Cursors.WaitCursor
+        If punto.ActualizarSevidoresPunto(Ser.db_host) = True Then
+            MsgBox("Servidores actualidos de forma correcta!", MsgBoxStyle.Information, "ENCOMIENDAS")
+        End If
+        Me.Cursor = Cursors.Default
     End Sub
 End Class

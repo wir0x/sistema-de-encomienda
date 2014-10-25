@@ -227,6 +227,30 @@ Public Class Puntos
 
     End Function
 
+    ''' <summary>
+    ''' Actualiza los puntos de todos los servidores vinculados
+    ''' </summary>
+    ''' <param name="InstanciaRecibida">Instacia del cliente</param>
+    ''' <returns></returns>
+    ''' <remarks></remarks>
+    Public Function ActualizarSevidoresPunto(ByVal InstanciaRecibida As String) As Boolean
+        Try
+            IniciarSP("ActualizaPunto")
+            '  AddParametro("@InstanciaRecibida", InstanciaRecibida)
+
+            If EjecutarTransaccion() Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox("Error en : " & ex.Message & vbNewLine & "Desde : " & ex.Source & ex.ToString, MsgBoxStyle.Critical, "DANIEL ROMERO BACOTICH")
+            Return False
+        End Try
+
+    End Function
+
+
 #End Region
 
 
