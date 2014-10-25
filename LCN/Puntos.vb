@@ -230,7 +230,7 @@ Public Class Puntos
     ''' <summary>
     ''' Actualiza los puntos de todos los servidores vinculados
     ''' </summary>
-    ''' <param name="InstanciaRecibida">Instacia del cliente</param>
+    ''' <param name="InstanciaRecibida">Instacia del servidor</param>
     ''' <returns></returns>
     ''' <remarks></remarks>
     Public Function ActualizarSevidoresPunto(ByVal InstanciaRecibida As String) As Boolean
@@ -250,6 +250,52 @@ Public Class Puntos
 
     End Function
 
+    ''' <summary>
+    ''' Actualiza los choferes en todas las sucursales
+    ''' </summary>
+    ''' <param name="InstanciaRecibida">Instacia del servidor</param>
+    ''' <returns></returns>
+    ''' <remarks></remarks>
+    Public Function ActualizaChofer(ByVal InstanciaRecibida As String) As Boolean
+        Try
+            IniciarSP("ActualizaChofer")
+            AddParametro("@InstanciaRecibida", InstanciaRecibida)
+
+            If EjecutarTransaccion() Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox("Error en : " & ex.Message & vbNewLine & "Desde : " & ex.Source & ex.ToString, MsgBoxStyle.Critical, "DANIEL ROMERO BACOTICH")
+            Return False
+        End Try
+
+    End Function
+
+
+    ''' <summary>
+    ''' Actualiza las flotas en todas las sucursales
+    ''' </summary>
+    ''' <param name="InstanciaRecibida">Instacia del servidor</param>
+    ''' <returns></returns>
+    ''' <remarks></remarks>
+    Public Function ActualizaFlotas(ByVal InstanciaRecibida As String) As Boolean
+        Try
+            IniciarSP("ActualizaFlotas")
+            AddParametro("@InstanciaRecibida", InstanciaRecibida)
+
+            If EjecutarTransaccion() Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox("Error en : " & ex.Message & vbNewLine & "Desde : " & ex.Source & ex.ToString, MsgBoxStyle.Critical, "DANIEL ROMERO BACOTICH")
+            Return False
+        End Try
+
+    End Function
 
 #End Region
 
