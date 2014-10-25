@@ -1,6 +1,6 @@
 ﻿Public Class Frm_ListaFlotas
 
-    Private Sub PierdeFoco(ByVal sender As TextBox, ByVal e As System.EventArgs) Handles cmbEstado.LostFocus, txt_buscar.LostFocus
+    Private Sub PierdeFoco(ByVal sender As TextBox, ByVal e As System.EventArgs) Handles txt_buscar.LostFocus
         sender.BackColor = Color.White
         sender.SelectAll()
     End Sub
@@ -21,7 +21,7 @@
         Me.dgFlotas.ClearSelection()
     End Sub
 
-    Private Sub AgarraFoco(ByVal sender As TextBox, ByVal e As System.EventArgs) Handles cmbEstado.GotFocus, txt_buscar.GotFocus
+    Private Sub AgarraFoco(ByVal sender As TextBox, ByVal e As System.EventArgs) Handles txt_buscar.GotFocus
         sender.BackColor = Color.LightCyan
         sender.SelectAll()
     End Sub
@@ -45,6 +45,14 @@
 
     Private Sub Frm_ListaFlotas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.cmbEstado.SelectedIndex = 1
+    End Sub
+
+    Private Sub cmbEstado_GotFocus(sender As Object, e As EventArgs) Handles cmbEstado.GotFocus
+        Me.cmbEstado.BackColor = Color.Cyan
+    End Sub
+
+    Private Sub cmbEstado_LostFocus(sender As Object, e As EventArgs) Handles cmbEstado.LostFocus
+        Me.cmbEstado.BackColor = Color.White
     End Sub
 
     Private Sub cmbEstado_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbEstado.SelectedIndexChanged
