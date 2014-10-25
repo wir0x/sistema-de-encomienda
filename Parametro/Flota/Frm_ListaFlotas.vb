@@ -89,7 +89,7 @@
         Dim pun As New LCN.Puntos
         Dim con As New LCD.CAD
         Me.Cursor = Cursors.WaitCursor
-        If pun.ActualizarSevidoresPunto(con.db_host) Then
+        If pun.ActualizaFlotas(con.db_host) Then
             MsgBox("Flotas Actualizadas de forma correcta!", MsgBoxStyle.Information, "ENCOMIENDAS")
         End If
         Me.Cursor = Cursors.Default
