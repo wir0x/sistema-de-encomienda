@@ -49,7 +49,7 @@ Public Class Frm_HojaRuta
     Private Sub Btn_Lista_Flotas_Click_1(sender As Object, e As EventArgs) Handles Btn_Lista_Flotas.Click
         Try
             Dim frm As New Frm_ListaFlotas
-            frm.Show()
+            frm.ShowDialog()
             Me.txt_Flota.Text = frm.Placa
             Me.IDFlota = frm.ID_Flota
         Catch ex As Exception
