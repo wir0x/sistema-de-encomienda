@@ -22,32 +22,33 @@ Partial Class Frm_listaPuntos
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle26 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle27 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle28 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle29 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle30 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.cmb_estado = New System.Windows.Forms.ComboBox()
+        Me.txt_buscar = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.dgv_parametro = New System.Windows.Forms.DataGridView()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.btn_nuevo = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.btn_reporte = New System.Windows.Forms.Button()
         Me.ID_Punto = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Descripcion = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Instancia = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.BaseDatos = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Activo = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.FechaAct = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.cmb_estado = New System.Windows.Forms.ComboBox()
-        Me.txt_buscar = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.btnActualizar = New System.Windows.Forms.Button()
+        Me.btn_nuevo = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btn_reporte = New System.Windows.Forms.Button()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.dgv_parametro, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -62,7 +63,7 @@ Partial Class Frm_listaPuntos
         Me.GroupBox3.Controls.Add(Me.txt_buscar)
         Me.GroupBox3.Controls.Add(Me.Label3)
         Me.GroupBox3.Controls.Add(Me.Label1)
-        Me.GroupBox3.Font = New System.Drawing.Font("Ubuntu Light", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.ForeColor = System.Drawing.SystemColors.AppWorkspace
         Me.GroupBox3.Location = New System.Drawing.Point(9, 86)
         Me.GroupBox3.Name = "GroupBox3"
@@ -71,10 +72,51 @@ Partial Class Frm_listaPuntos
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Atributos Parametro"
         '
+        'cmb_estado
+        '
+        Me.cmb_estado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmb_estado.FormattingEnabled = True
+        Me.cmb_estado.Items.AddRange(New Object() {"INACTIVO", "ACTIVO"})
+        Me.cmb_estado.Location = New System.Drawing.Point(73, 31)
+        Me.cmb_estado.Name = "cmb_estado"
+        Me.cmb_estado.Size = New System.Drawing.Size(201, 23)
+        Me.cmb_estado.TabIndex = 9
+        '
+        'txt_buscar
+        '
+        Me.txt_buscar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txt_buscar.Location = New System.Drawing.Point(406, 31)
+        Me.txt_buscar.Multiline = True
+        Me.txt_buscar.Name = "txt_buscar"
+        Me.txt_buscar.Size = New System.Drawing.Size(191, 24)
+        Me.txt_buscar.TabIndex = 10
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label3.Location = New System.Drawing.Point(329, 35)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(63, 15)
+        Me.Label3.TabIndex = 12
+        Me.Label3.Text = "Buscar : "
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(10, 35)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(63, 15)
+        Me.Label1.TabIndex = 11
+        Me.Label1.Text = "Estado : "
+        '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.dgv_parametro)
-        Me.GroupBox2.Font = New System.Drawing.Font("Ubuntu Light", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.SystemColors.AppWorkspace
         Me.GroupBox2.Location = New System.Drawing.Point(9, 172)
         Me.GroupBox2.Name = "GroupBox2"
@@ -101,6 +143,70 @@ Partial Class Frm_listaPuntos
         Me.dgv_parametro.Size = New System.Drawing.Size(606, 209)
         Me.dgv_parametro.TabIndex = 0
         '
+        'ID_Punto
+        '
+        Me.ID_Punto.DataPropertyName = "_Punto"
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.ID_Punto.DefaultCellStyle = DataGridViewCellStyle1
+        Me.ID_Punto.HeaderText = "ID"
+        Me.ID_Punto.Name = "ID_Punto"
+        Me.ID_Punto.ReadOnly = True
+        Me.ID_Punto.Width = 40
+        '
+        'Descripcion
+        '
+        Me.Descripcion.DataPropertyName = "Descripcion"
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Descripcion.DefaultCellStyle = DataGridViewCellStyle2
+        Me.Descripcion.HeaderText = "Descripcion"
+        Me.Descripcion.Name = "Descripcion"
+        Me.Descripcion.ReadOnly = True
+        Me.Descripcion.Width = 150
+        '
+        'Instancia
+        '
+        Me.Instancia.DataPropertyName = "Instancia"
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Instancia.DefaultCellStyle = DataGridViewCellStyle3
+        Me.Instancia.HeaderText = "Instancia"
+        Me.Instancia.Name = "Instancia"
+        Me.Instancia.ReadOnly = True
+        Me.Instancia.Width = 120
+        '
+        'BaseDatos
+        '
+        Me.BaseDatos.DataPropertyName = "BaseDatos"
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.BaseDatos.DefaultCellStyle = DataGridViewCellStyle4
+        Me.BaseDatos.HeaderText = "Base de Datos"
+        Me.BaseDatos.Name = "BaseDatos"
+        Me.BaseDatos.ReadOnly = True
+        Me.BaseDatos.Width = 110
+        '
+        'Activo
+        '
+        Me.Activo.DataPropertyName = "Activo"
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle5.NullValue = False
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Activo.DefaultCellStyle = DataGridViewCellStyle5
+        Me.Activo.HeaderText = "Activo"
+        Me.Activo.Name = "Activo"
+        Me.Activo.ReadOnly = True
+        Me.Activo.Width = 45
+        '
+        'FechaAct
+        '
+        Me.FechaAct.DataPropertyName = "FechaAct"
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.FechaAct.DefaultCellStyle = DataGridViewCellStyle6
+        Me.FechaAct.HeaderText = "Ultima Actualizacion"
+        Me.FechaAct.Name = "FechaAct"
+        Me.FechaAct.ReadOnly = True
+        Me.FechaAct.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.FechaAct.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.FechaAct.Width = 135
+        '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.IndianRed
@@ -111,21 +217,9 @@ Partial Class Frm_listaPuntos
         Me.Panel2.Size = New System.Drawing.Size(650, 59)
         Me.Panel2.TabIndex = 26
         '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Ubuntu Condensed", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(224, 11)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(179, 35)
-        Me.Label4.TabIndex = 0
-        Me.Label4.Text = "Lista de Puntos"
-        '
         'PictureBox1
         '
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.IBeam
-
         Me.PictureBox1.Location = New System.Drawing.Point(12, 5)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(57, 51)
@@ -133,8 +227,20 @@ Partial Class Frm_listaPuntos
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(224, 11)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(215, 33)
+        Me.Label4.TabIndex = 0
+        Me.Label4.Text = "Lista de Puntos"
+        '
         'GroupBox4
         '
+        Me.GroupBox4.Controls.Add(Me.btnActualizar)
         Me.GroupBox4.Controls.Add(Me.btn_nuevo)
         Me.GroupBox4.Controls.Add(Me.Button1)
         Me.GroupBox4.Controls.Add(Me.btn_reporte)
@@ -146,6 +252,15 @@ Partial Class Frm_listaPuntos
         Me.GroupBox4.TabIndex = 27
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Operaciones"
+        '
+        'btnActualizar
+        '
+        Me.btnActualizar.Location = New System.Drawing.Point(25, 22)
+        Me.btnActualizar.Name = "btnActualizar"
+        Me.btnActualizar.Size = New System.Drawing.Size(108, 23)
+        Me.btnActualizar.TabIndex = 3
+        Me.btnActualizar.Text = "ACTUALIZAR"
+        Me.btnActualizar.UseVisualStyleBackColor = True
         '
         'btn_nuevo
         '
@@ -205,114 +320,11 @@ Partial Class Frm_listaPuntos
         Me.btn_reporte.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btn_reporte.UseVisualStyleBackColor = False
         '
-        'ID_Punto
-        '
-        Me.ID_Punto.DataPropertyName = "_Punto"
-        DataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.ID_Punto.DefaultCellStyle = DataGridViewCellStyle25
-        Me.ID_Punto.HeaderText = "ID"
-        Me.ID_Punto.Name = "ID_Punto"
-        Me.ID_Punto.ReadOnly = True
-        Me.ID_Punto.Width = 40
-        '
-        'Descripcion
-        '
-        Me.Descripcion.DataPropertyName = "Descripcion"
-        DataGridViewCellStyle26.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Descripcion.DefaultCellStyle = DataGridViewCellStyle26
-        Me.Descripcion.HeaderText = "Descripcion"
-        Me.Descripcion.Name = "Descripcion"
-        Me.Descripcion.ReadOnly = True
-        Me.Descripcion.Width = 150
-        '
-        'Instancia
-        '
-        Me.Instancia.DataPropertyName = "Instancia"
-        DataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Instancia.DefaultCellStyle = DataGridViewCellStyle27
-        Me.Instancia.HeaderText = "Instancia"
-        Me.Instancia.Name = "Instancia"
-        Me.Instancia.ReadOnly = True
-        Me.Instancia.Width = 120
-        '
-        'BaseDatos
-        '
-        Me.BaseDatos.DataPropertyName = "BaseDatos"
-        DataGridViewCellStyle28.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.BaseDatos.DefaultCellStyle = DataGridViewCellStyle28
-        Me.BaseDatos.HeaderText = "Base de Datos"
-        Me.BaseDatos.Name = "BaseDatos"
-        Me.BaseDatos.ReadOnly = True
-        Me.BaseDatos.Width = 110
-        '
-        'Activo
-        '
-        Me.Activo.DataPropertyName = "Activo"
-        DataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle29.NullValue = False
-        DataGridViewCellStyle29.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Activo.DefaultCellStyle = DataGridViewCellStyle29
-        Me.Activo.HeaderText = "Activo"
-        Me.Activo.Name = "Activo"
-        Me.Activo.ReadOnly = True
-        Me.Activo.Width = 45
-        '
-        'FechaAct
-        '
-        Me.FechaAct.DataPropertyName = "FechaAct"
-        DataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.FechaAct.DefaultCellStyle = DataGridViewCellStyle30
-        Me.FechaAct.HeaderText = "Ultima Actualizacion"
-        Me.FechaAct.Name = "FechaAct"
-        Me.FechaAct.ReadOnly = True
-        Me.FechaAct.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.FechaAct.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.FechaAct.Width = 135
-        '
-        'cmb_estado
-        '
-        Me.cmb_estado.FormattingEnabled = True
-        Me.cmb_estado.Items.AddRange(New Object() {"INACTIVO", "ACTIVO"})
-        Me.cmb_estado.Location = New System.Drawing.Point(73, 31)
-        Me.cmb_estado.Name = "cmb_estado"
-        Me.cmb_estado.Size = New System.Drawing.Size(201, 25)
-        Me.cmb_estado.TabIndex = 9
-        '
-        'txt_buscar
-        '
-        Me.txt_buscar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txt_buscar.Location = New System.Drawing.Point(406, 31)
-        Me.txt_buscar.Multiline = True
-        Me.txt_buscar.Name = "txt_buscar"
-        Me.txt_buscar.Size = New System.Drawing.Size(191, 24)
-        Me.txt_buscar.TabIndex = 10
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(329, 35)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(63, 15)
-        Me.Label3.TabIndex = 12
-        Me.Label3.Text = "Buscar : "
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(10, 35)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(63, 15)
-        Me.Label1.TabIndex = 11
-        Me.Label1.Text = "Estado : "
-        '
         'Frm_listaPuntos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.CancelButton = Me.Button1
         Me.ClientSize = New System.Drawing.Size(646, 516)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.Panel2)
@@ -320,6 +332,7 @@ Partial Class Frm_listaPuntos
         Me.Controls.Add(Me.GroupBox2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Frm_listaPuntos"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Frm_listaPuntos"
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
@@ -352,4 +365,5 @@ Partial Class Frm_listaPuntos
     Friend WithEvents txt_buscar As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents btnActualizar As System.Windows.Forms.Button
 End Class
