@@ -1,4 +1,6 @@
-﻿Public Class Frm_ListaChoferes
+﻿Imports LCN
+
+Public Class Frm_ListaChoferes
 
     Private Sub PierdeFoco(ByVal sender As TextBox, ByVal e As System.EventArgs) Handles cmb_estado.LostFocus, txt_buscar.LostFocus
         sender.BackColor = Color.White
@@ -58,5 +60,52 @@
 
     Private Sub txt_buscar_TextChanged(sender As Object, e As EventArgs) Handles txt_buscar.TextChanged
         Me.Llenar_dgChoferes(Me.txt_buscar.Text, Me.cmb_estado.SelectedIndex)
+    End Sub
+
+    Private Sub dgv_Choferes_MouseDown(sender As Object, e As MouseEventArgs) Handles dgv_Choferes.MouseDown
+        If cmb_estado.Text = "ACTIVOS" Then
+            If e.Button = MouseButtons.Right Then
+                With Me.dgv_Choferes
+                    Dim Hitest As DataGridView.HitTestInfo = .HitTest(e.X, e.Y)
+
+                    If Hitest.Type = DataGridViewHitTestType.Cell Then
+                        .CurrentCell = .Rows(Hitest.RowIndex).Cells(Hitest.ColumnIndex)
+                        .ContextMenuStrip = Me.ContextMenuStrip1
+
+                    End If
+                End With
+            Else
+                Me.dgv_Choferes.ContextMenuStrip = Nothing
+            End If
+        Else
+            Me.dgv_Choferes.ContextMenuStrip = Nothing
+        End If
+    End Sub
+
+    Dim frm As New Frm_Chofer
+
+    Private Sub ModificarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ModificarToolStripMenuItem.Click
+        frm.txt_nrodoc.Text = Me.dgv_Choferes.CurrentRow.Cells("NroDoc").Value
+        frm.txt_nombre.Text = Me.dgv_Choferes.CurrentRow.Cells("Nombre").Value
+        frm.txt_direccion.Text = Me.dgv_Choferes.CurrentRow.Cells("Direccion").Value
+        frm.txt_telefono.Text = Me.dgv_Choferes.CurrentRow.Cells("Telefono").Value
+        frm.cmbUbicacion.Text = (Me.dgv_Choferes.CurrentRow.Cells("Ubicacion").Value)
+        frm.nuevo = False
+        frm.ShowDialog()
+        Me.Llenar_dgChoferes(Me.txt_buscar.Text, 1)
+    End Sub
+
+    Dim ch As New Chofer
+
+    Private Sub EliminarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EliminarToolStripMenuItem.Click
+        If vbYes = MsgBox("¿Está seguro que desea eliminar un registro?", MsgBoxStyle.Question + MsgBoxStyle.YesNo) Then
+            ch.NroDoc = Me.dgv_Choferes.CurrentRow.Cells("NroDoc").Value
+            If ch.Eliminar() Then
+                Me.Llenar_dgChoferes(Me.txt_buscar.Text, 1)
+                MsgBox("Eliminado Satisfactoriamente", MsgBoxStyle.Information, "CHOFERES")
+            Else
+                MsgBox("Ocurrio algun problema", MsgBoxStyle.Critical)
+            End If
+        End If
     End Sub
 End Class

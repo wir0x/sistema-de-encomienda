@@ -22,20 +22,12 @@ Partial Class Frm_ListaChoferes
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.dgv_Choferes = New System.Windows.Forms.DataGridView()
-        Me.NroDoc = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Telefono = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Activo = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.Fecha = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Ubicacion = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -49,12 +41,21 @@ Partial Class Frm_ListaChoferes
         Me.btn_nuevo = New System.Windows.Forms.Button()
         Me.btn_cancelar = New System.Windows.Forms.Button()
         Me.btn_reporte = New System.Windows.Forms.Button()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ModificarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NroDoc = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Telefono = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Ubicacion = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox2.SuspendLayout()
         CType(Me.dgv_Choferes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
+        Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox2
@@ -78,83 +79,13 @@ Partial Class Frm_ListaChoferes
         Me.dgv_Choferes.BackgroundColor = System.Drawing.Color.Snow
         Me.dgv_Choferes.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgv_Choferes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Me.dgv_Choferes.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NroDoc, Me.Nombre, Me.Telefono, Me.Direccion, Me.Activo, Me.Fecha, Me.Ubicacion})
+        Me.dgv_Choferes.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NroDoc, Me.Nombre, Me.Telefono, Me.Direccion, Me.Ubicacion})
         Me.dgv_Choferes.Location = New System.Drawing.Point(8, 31)
         Me.dgv_Choferes.Name = "dgv_Choferes"
         Me.dgv_Choferes.ReadOnly = True
         Me.dgv_Choferes.RowHeadersVisible = False
         Me.dgv_Choferes.Size = New System.Drawing.Size(755, 333)
         Me.dgv_Choferes.TabIndex = 6
-        '
-        'NroDoc
-        '
-        Me.NroDoc.DataPropertyName = "NroDoc"
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.NroDoc.DefaultCellStyle = DataGridViewCellStyle6
-        Me.NroDoc.HeaderText = "Nr. Doc. (CI)"
-        Me.NroDoc.Name = "NroDoc"
-        Me.NroDoc.ReadOnly = True
-        Me.NroDoc.Width = 80
-        '
-        'Nombre
-        '
-        Me.Nombre.DataPropertyName = "Nombre"
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Nombre.DefaultCellStyle = DataGridViewCellStyle7
-        Me.Nombre.HeaderText = "Nombres"
-        Me.Nombre.Name = "Nombre"
-        Me.Nombre.ReadOnly = True
-        Me.Nombre.Width = 200
-        '
-        'Telefono
-        '
-        Me.Telefono.DataPropertyName = "Telefono"
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Telefono.DefaultCellStyle = DataGridViewCellStyle8
-        Me.Telefono.HeaderText = "Telefono"
-        Me.Telefono.Name = "Telefono"
-        Me.Telefono.ReadOnly = True
-        Me.Telefono.Width = 80
-        '
-        'Direccion
-        '
-        Me.Direccion.DataPropertyName = "Direccion"
-        Me.Direccion.HeaderText = "Direccion"
-        Me.Direccion.Name = "Direccion"
-        Me.Direccion.ReadOnly = True
-        Me.Direccion.Width = 200
-        '
-        'Activo
-        '
-        Me.Activo.DataPropertyName = "Activo"
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle9.NullValue = False
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Activo.DefaultCellStyle = DataGridViewCellStyle9
-        Me.Activo.HeaderText = "Activo"
-        Me.Activo.Name = "Activo"
-        Me.Activo.ReadOnly = True
-        Me.Activo.Visible = False
-        Me.Activo.Width = 45
-        '
-        'Fecha
-        '
-        Me.Fecha.DataPropertyName = "FechaAct"
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Fecha.DefaultCellStyle = DataGridViewCellStyle10
-        Me.Fecha.HeaderText = "Fecha Actualizado"
-        Me.Fecha.Name = "Fecha"
-        Me.Fecha.ReadOnly = True
-        Me.Fecha.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Fecha.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.Fecha.Width = 135
-        '
-        'Ubicacion
-        '
-        Me.Ubicacion.DataPropertyName = "Ubicacion"
-        Me.Ubicacion.HeaderText = "Ubicacion"
-        Me.Ubicacion.Name = "Ubicacion"
-        Me.Ubicacion.ReadOnly = True
         '
         'Label4
         '
@@ -191,11 +122,12 @@ Partial Class Frm_ListaChoferes
         'cmb_estado
         '
         Me.cmb_estado.FormattingEnabled = True
-        Me.cmb_estado.Items.AddRange(New Object() {"INACTIVO", "ACTIVO"})
+        Me.cmb_estado.Items.AddRange(New Object() {"INACTIVOS", "ACTIVOS"})
         Me.cmb_estado.Location = New System.Drawing.Point(87, 23)
         Me.cmb_estado.Name = "cmb_estado"
         Me.cmb_estado.Size = New System.Drawing.Size(201, 23)
         Me.cmb_estado.TabIndex = 0
+        Me.cmb_estado.Text = "ACTIVOS"
         '
         'GroupBox3
         '
@@ -248,7 +180,7 @@ Partial Class Frm_ListaChoferes
         Me.StatusStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 592)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(795, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(801, 22)
         Me.StatusStrip1.TabIndex = 24
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -324,13 +256,76 @@ Partial Class Frm_ListaChoferes
         Me.btn_reporte.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btn_reporte.UseVisualStyleBackColor = False
         '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ModificarToolStripMenuItem, Me.EliminarToolStripMenuItem})
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(153, 70)
+        '
+        'ModificarToolStripMenuItem
+        '
+        Me.ModificarToolStripMenuItem.Name = "ModificarToolStripMenuItem"
+        Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
+        Me.ModificarToolStripMenuItem.Text = "Modificar"
+        '
+        'EliminarToolStripMenuItem
+        '
+        Me.EliminarToolStripMenuItem.Name = "EliminarToolStripMenuItem"
+        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.EliminarToolStripMenuItem.Text = "Eliminar"
+        '
+        'NroDoc
+        '
+        Me.NroDoc.DataPropertyName = "NroDoc"
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.NroDoc.DefaultCellStyle = DataGridViewCellStyle4
+        Me.NroDoc.HeaderText = "Nr. Doc. (CI)"
+        Me.NroDoc.Name = "NroDoc"
+        Me.NroDoc.ReadOnly = True
+        Me.NroDoc.Width = 80
+        '
+        'Nombre
+        '
+        Me.Nombre.DataPropertyName = "Nombre"
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Nombre.DefaultCellStyle = DataGridViewCellStyle5
+        Me.Nombre.HeaderText = "Nombres"
+        Me.Nombre.Name = "Nombre"
+        Me.Nombre.ReadOnly = True
+        Me.Nombre.Width = 200
+        '
+        'Telefono
+        '
+        Me.Telefono.DataPropertyName = "Telefono"
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Telefono.DefaultCellStyle = DataGridViewCellStyle6
+        Me.Telefono.HeaderText = "Telefono"
+        Me.Telefono.Name = "Telefono"
+        Me.Telefono.ReadOnly = True
+        Me.Telefono.Width = 80
+        '
+        'Direccion
+        '
+        Me.Direccion.DataPropertyName = "Direccion"
+        Me.Direccion.HeaderText = "Direccion"
+        Me.Direccion.Name = "Direccion"
+        Me.Direccion.ReadOnly = True
+        Me.Direccion.Width = 200
+        '
+        'Ubicacion
+        '
+        Me.Ubicacion.DataPropertyName = "Ubicacion"
+        Me.Ubicacion.HeaderText = "Ubicacion"
+        Me.Ubicacion.Name = "Ubicacion"
+        Me.Ubicacion.ReadOnly = True
+        '
         'Frm_ListaChoferes
         '
         Me.AcceptButton = Me.btn_reporte
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.btn_cancelar
-        Me.ClientSize = New System.Drawing.Size(795, 614)
+        Me.ClientSize = New System.Drawing.Size(801, 614)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.GroupBox3)
@@ -348,6 +343,7 @@ Partial Class Frm_ListaChoferes
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
+        Me.ContextMenuStrip1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -367,11 +363,12 @@ Partial Class Frm_ListaChoferes
     Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents btn_reporte As System.Windows.Forms.Button
+    Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
+    Friend WithEvents ModificarToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents EliminarToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents NroDoc As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Nombre As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Telefono As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Direccion As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Activo As System.Windows.Forms.DataGridViewCheckBoxColumn
-    Friend WithEvents Fecha As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Ubicacion As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

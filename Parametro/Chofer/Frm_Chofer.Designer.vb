@@ -29,16 +29,16 @@ Partial Class Frm_Chofer
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.cmbUbicacion = New System.Windows.Forms.ComboBox()
         Me.txt_telefono = New System.Windows.Forms.TextBox()
         Me.txt_direccion = New System.Windows.Forms.TextBox()
         Me.txt_nrodoc = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txt_nombre = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.cmbUbicacion = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -150,10 +150,20 @@ Partial Class Frm_Chofer
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Parametros Cliente"
         '
+        'cmbUbicacion
+        '
+        Me.cmbUbicacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmbUbicacion.FormattingEnabled = True
+        Me.cmbUbicacion.Location = New System.Drawing.Point(139, 182)
+        Me.cmbUbicacion.Name = "cmbUbicacion"
+        Me.cmbUbicacion.Size = New System.Drawing.Size(150, 23)
+        Me.cmbUbicacion.TabIndex = 15
+        '
         'txt_telefono
         '
         Me.txt_telefono.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.txt_telefono.Location = New System.Drawing.Point(139, 97)
+        Me.txt_telefono.MaxLength = 15
         Me.txt_telefono.Multiline = True
         Me.txt_telefono.Name = "txt_telefono"
         Me.txt_telefono.Size = New System.Drawing.Size(228, 24)
@@ -163,6 +173,7 @@ Partial Class Frm_Chofer
         '
         Me.txt_direccion.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.txt_direccion.Location = New System.Drawing.Point(139, 129)
+        Me.txt_direccion.MaxLength = 200
         Me.txt_direccion.Multiline = True
         Me.txt_direccion.Name = "txt_direccion"
         Me.txt_direccion.Size = New System.Drawing.Size(228, 47)
@@ -172,6 +183,7 @@ Partial Class Frm_Chofer
         '
         Me.txt_nrodoc.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.txt_nrodoc.Location = New System.Drawing.Point(139, 33)
+        Me.txt_nrodoc.MaxLength = 15
         Me.txt_nrodoc.Multiline = True
         Me.txt_nrodoc.Name = "txt_nrodoc"
         Me.txt_nrodoc.Size = New System.Drawing.Size(228, 24)
@@ -188,6 +200,17 @@ Partial Class Frm_Chofer
         Me.Label8.TabIndex = 14
         Me.Label8.Text = "Telefono :"
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(53, 186)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(79, 15)
+        Me.Label2.TabIndex = 13
+        Me.Label2.Text = "Ubicacion :"
+        '
         'Label7
         '
         Me.Label7.AutoSize = True
@@ -203,6 +226,7 @@ Partial Class Frm_Chofer
         '
         Me.txt_nombre.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.txt_nombre.Location = New System.Drawing.Point(139, 65)
+        Me.txt_nombre.MaxLength = 50
         Me.txt_nombre.Multiline = True
         Me.txt_nombre.Name = "txt_nombre"
         Me.txt_nombre.Size = New System.Drawing.Size(228, 24)
@@ -229,26 +253,6 @@ Partial Class Frm_Chofer
         Me.Label1.Size = New System.Drawing.Size(119, 15)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Nro. Documento :"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(53, 186)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(79, 15)
-        Me.Label2.TabIndex = 13
-        Me.Label2.Text = "Ubicacion :"
-        '
-        'cmbUbicacion
-        '
-        Me.cmbUbicacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmbUbicacion.FormattingEnabled = True
-        Me.cmbUbicacion.Location = New System.Drawing.Point(139, 182)
-        Me.cmbUbicacion.Name = "cmbUbicacion"
-        Me.cmbUbicacion.Size = New System.Drawing.Size(150, 23)
-        Me.cmbUbicacion.TabIndex = 15
         '
         'Frm_Chofer
         '

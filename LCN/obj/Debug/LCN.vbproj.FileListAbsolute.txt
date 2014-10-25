@@ -69,3 +69,15 @@ D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Sistema-de-Encomiendas\LCN\obj
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Sistema-de-Encomiendas\LCN\obj\Debug\LCN.dll
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Sistema-de-Encomiendas\LCN\obj\Debug\LCN.xml
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Sistema-de-Encomiendas\LCN\obj\Debug\LCN.pdb
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\LCN\bin\Debug\LCN.dll
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\LCN\bin\Debug\LCN.pdb
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\LCN\bin\Debug\LCN.xml
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\LCN\bin\Debug\LCD.dll
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\LCN\bin\Debug\LCD.pdb
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\LCN\bin\Debug\LCD.xml
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\LCN\obj\Debug\LCN.vbprojResolveAssemblyReference.cache
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\LCN\obj\Debug\LCN.Resources.resources
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\LCN\obj\Debug\LCN.vbproj.GenerateResource.Cache
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\LCN\obj\Debug\LCN.dll
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\LCN\obj\Debug\LCN.xml
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\LCN\obj\Debug\LCN.pdb

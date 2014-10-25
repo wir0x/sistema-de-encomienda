@@ -3,10 +3,10 @@ Imports System.Data.SqlClient
 
 Public Class CAD
 
-    Public db_host As String = "WILSONGARCIA-PC\sql2008r2"
+    Public db_host As String = "SISTEMAS\DBCASA"
     Private db_name As String = "BDEncomiendas"
     Private db_user As String = "sa"
-    Private db_pass As String = "1596357"
+    Private db_pass As String = "ingenieria de sistemas"
     Private cnx As New SqlConnection
     Private Comando As New SqlCommand
 

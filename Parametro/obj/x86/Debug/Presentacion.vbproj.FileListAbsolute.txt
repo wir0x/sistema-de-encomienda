@@ -136,3 +136,40 @@ D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Sistema-de-Encomiendas\Paramet
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Sistema-de-Encomiendas\Parametro\bin\Debug\LCD.xml
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Sistema-de-Encomiendas\Parametro\bin\Debug\LCN.pdb
 D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Sistema-de-Encomiendas\Parametro\bin\Debug\LCN.xml
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.exe
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.xml
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.pdb
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\bin\Debug\Parametro.exe
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\bin\Debug\Parametro.pdb
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\bin\Debug\Parametro.xml
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\bin\Debug\LCD.dll
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\bin\Debug\LCN.dll
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\bin\Debug\LCD.pdb
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\bin\Debug\LCD.xml
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\bin\Debug\LCN.pdb
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\bin\Debug\LCN.xml
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Presentacion.vbprojResolveAssemblyReference.cache
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_Chofer.resources
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_Cliente.resources
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_ListaClientes.resources
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_Confirmar.resources
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_lista_ruta_Origen.resources
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_Lista_Sel_Clientes.resources
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_HistorialEncomienda.resources
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_listaPuntos.resources
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_ListaRutas.resources
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_Encomienda.resources
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_Flota.resources
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_ListaFlotas.resources
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_Permisos.resources
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_HojaRuta.resources
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.MDIPrincipal.resources
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_Parametro.resources
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Resources.resources
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_Login.resources
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_Punto.resources
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_TipoUsuario.resources
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_ListaChoferes.resources
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_ListaUsuarios.resources
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_Usuario.resources
+C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Presentacion.vbproj.GenerateResource.Cache
