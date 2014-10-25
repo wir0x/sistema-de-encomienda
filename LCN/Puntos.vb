@@ -236,7 +236,7 @@ Public Class Puntos
     Public Function ActualizarSevidoresPunto(ByVal InstanciaRecibida As String) As Boolean
         Try
             IniciarSP("ActualizaPunto")
-            '  AddParametro("@InstanciaRecibida", InstanciaRecibida)
+            AddParametro("@InstanciaRecibida", InstanciaRecibida)
 
             If EjecutarTransaccion() Then
                 Return True
