@@ -111,4 +111,10 @@
         Dim frm As New Frm_HistorialEncomienda
         frm.ShowDialog()
     End Sub
+
+  
+    Private Sub ListaPuntosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListaPuntosToolStripMenuItem.Click
+        Dim frm As New Frm_listaPuntos
+        frm.ShowDialog()
+    End Sub
 End Class

@@ -35,6 +35,7 @@ Partial Class MDIPrincipal
         Me.EncomiendaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NuevaEncomiendaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HistorialEncomiendaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NuevoClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ListaDeClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -65,7 +66,7 @@ Partial Class MDIPrincipal
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.HistorialEncomiendaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListaPuntosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -82,19 +83,19 @@ Partial Class MDIPrincipal
         '
         'ToolStripStatusLabel2
         '
-        Me.ToolStripStatusLabel2.Font = New System.Drawing.Font("Ubuntu Light", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripStatusLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ToolStripStatusLabel2.ForeColor = System.Drawing.Color.Gray
         Me.ToolStripStatusLabel2.Name = "ToolStripStatusLabel2"
-        Me.ToolStripStatusLabel2.Size = New System.Drawing.Size(48, 17)
+        Me.ToolStripStatusLabel2.Size = New System.Drawing.Size(55, 17)
         Me.ToolStripStatusLabel2.Text = "Estado:"
         '
         'tss_fecha
         '
         Me.tss_fecha.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.tss_fecha.Font = New System.Drawing.Font("Ubuntu Light", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tss_fecha.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tss_fecha.ForeColor = System.Drawing.Color.Gray
         Me.tss_fecha.Name = "tss_fecha"
-        Me.tss_fecha.Size = New System.Drawing.Size(41, 17)
+        Me.tss_fecha.Size = New System.Drawing.Size(46, 17)
         Me.tss_fecha.Text = "Fecha"
         '
         'MenuStrip1
@@ -162,6 +163,13 @@ Partial Class MDIPrincipal
         Me.ConToolStripMenuItem.Name = "ConToolStripMenuItem"
         Me.ConToolStripMenuItem.Size = New System.Drawing.Size(215, 22)
         Me.ConToolStripMenuItem.Text = "Confirma Encomienda"
+        '
+        'HistorialEncomiendaToolStripMenuItem
+        '
+        Me.HistorialEncomiendaToolStripMenuItem.Image = Global.Parametro.My.Resources.Resources.file_powerpoint
+        Me.HistorialEncomiendaToolStripMenuItem.Name = "HistorialEncomiendaToolStripMenuItem"
+        Me.HistorialEncomiendaToolStripMenuItem.Size = New System.Drawing.Size(215, 22)
+        Me.HistorialEncomiendaToolStripMenuItem.Text = "Historial Encomienda"
         '
         'ClienteToolStripMenuItem
         '
@@ -247,7 +255,7 @@ Partial Class MDIPrincipal
         Me.ParametroToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarToolStripMenuItem})
         Me.ParametroToolStripMenuItem.Image = Global.Parametro.My.Resources.Resources.coin
         Me.ParametroToolStripMenuItem.Name = "ParametroToolStripMenuItem"
-        Me.ParametroToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
+        Me.ParametroToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ParametroToolStripMenuItem.Text = "Parametro"
         '
         'AgregarToolStripMenuItem
@@ -259,16 +267,16 @@ Partial Class MDIPrincipal
         '
         'PuntosToolStripMenuItem
         '
-        Me.PuntosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarToolStripMenuItem2})
+        Me.PuntosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarToolStripMenuItem2, Me.ListaPuntosToolStripMenuItem})
         Me.PuntosToolStripMenuItem.Image = Global.Parametro.My.Resources.Resources.location
         Me.PuntosToolStripMenuItem.Name = "PuntosToolStripMenuItem"
-        Me.PuntosToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
+        Me.PuntosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.PuntosToolStripMenuItem.Text = "Puntos"
         '
         'AgregarToolStripMenuItem2
         '
         Me.AgregarToolStripMenuItem2.Name = "AgregarToolStripMenuItem2"
-        Me.AgregarToolStripMenuItem2.Size = New System.Drawing.Size(128, 22)
+        Me.AgregarToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
         Me.AgregarToolStripMenuItem2.Text = "Agregar"
         '
         'HojaRutaToolStripMenuItem
@@ -276,7 +284,7 @@ Partial Class MDIPrincipal
         Me.HojaRutaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarToolStripMenuItem6})
         Me.HojaRutaToolStripMenuItem.Image = Global.Parametro.My.Resources.Resources.location2
         Me.HojaRutaToolStripMenuItem.Name = "HojaRutaToolStripMenuItem"
-        Me.HojaRutaToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
+        Me.HojaRutaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.HojaRutaToolStripMenuItem.Text = "Hoja Ruta"
         '
         'AgregarToolStripMenuItem6
@@ -290,7 +298,7 @@ Partial Class MDIPrincipal
         Me.FlotaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevaFlotaToolStripMenuItem1, Me.ListaFlotasToolStripMenuItem})
         Me.FlotaToolStripMenuItem.Image = Global.Parametro.My.Resources.Resources.truck
         Me.FlotaToolStripMenuItem.Name = "FlotaToolStripMenuItem"
-        Me.FlotaToolStripMenuItem.Size = New System.Drawing.Size(143, 22)
+        Me.FlotaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.FlotaToolStripMenuItem.Text = "Flota"
         '
         'NuevaFlotaToolStripMenuItem1
@@ -391,12 +399,11 @@ Partial Class MDIPrincipal
         Me.Label4.TabIndex = 5
         Me.Label4.Text = "otra prueba"
         '
-        'HistorialEncomiendaToolStripMenuItem
+        'ListaPuntosToolStripMenuItem
         '
-        Me.HistorialEncomiendaToolStripMenuItem.Image = Global.Parametro.My.Resources.Resources.file_powerpoint
-        Me.HistorialEncomiendaToolStripMenuItem.Name = "HistorialEncomiendaToolStripMenuItem"
-        Me.HistorialEncomiendaToolStripMenuItem.Size = New System.Drawing.Size(215, 22)
-        Me.HistorialEncomiendaToolStripMenuItem.Text = "Historial Encomienda"
+        Me.ListaPuntosToolStripMenuItem.Name = "ListaPuntosToolStripMenuItem"
+        Me.ListaPuntosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ListaPuntosToolStripMenuItem.Text = "Lista Puntos"
         '
         'MDIPrincipal
         '
@@ -471,4 +478,5 @@ Partial Class MDIPrincipal
     Friend WithEvents ToolStripStatusLabel2 As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents HistorialEncomiendaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ListaPuntosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class
