@@ -71,7 +71,7 @@ Public Class Frm_Encomienda
     Private Sub cal_precio()
         Dim pre As Double
         pre = Me.volumen + Me.kilo
-        If pre >= Me.pre_minimo Then
+        If pre > Me.pre_minimo Then
             Me.nud_monto.Value = pre
         Else
             Me.nud_monto.Value = Me.pre_minimo
@@ -81,10 +81,16 @@ Public Class Frm_Encomienda
         Dim vol As Double
         vol = (((Me.Num_alto.Value * Me.Num_ancho.Value * Me.Num_base.Value) / 100) / 100) / 100
         Me.nud_vol.Value = vol
+        If Me.nud_vol.Value > Me.vol_dis Then
+            MsgBox("No puede cargar mas del Volumen:" + Me.vol_dis.ToString + " m3 a la flota")
+        End If
         Me.volumen = vol * Me.pre_vol
     End Sub
     Private Sub cal_kilo()
-        kilo = Me.nud_peso.Value * Me.pre_kilo
+        Me.kilo = Me.nud_peso.Value * Me.pre_kilo
+        If Me.nud_peso.Value >= Me.peso_dis Then
+            MsgBox("No puede cargar mas del peso :" + Me.peso_dis.ToString + " Kilos a la flota")
+        End If
     End Sub
 
     Private Sub Num_alto_ValueChanged(sender As Object, e As EventArgs) Handles Num_alto.ValueChanged
@@ -121,20 +127,43 @@ Public Class Frm_Encomienda
 
         año = Mid(Now.Year, 2, 4)
 
+        If Me.nud_vol.Value > Me.vol_dis Then
+            MsgBox("No puede cargar mas del Volumen:" + Me.vol_dis.ToString + " m3 a la flota")
+        Else
+            If Me.nud_peso.Value >= Me.peso_dis Then
+                MsgBox("No puede cargar mas del peso :" + Me.peso_dis.ToString + " Kilos a la flota")
+            Else
+                If Me.idremitente > 0 Then
+                    If Me.iddestinatario > 0 Then
+                        TablaGuia = Guia.Obtenercodigo(año)
+                        Codigo = TablaGuia.Rows(0).Item(0).ToString
+                        Guia.ActualizarCorrelativo(año)
+                        nroguia = Me.idsucursal.ToString + año.ToString
+                        For i = Len(Codigo.ToString) + 1 To 5
+                            nroguia = nroguia + "0"
+                        Next
+                        nroguia = nroguia + Codigo.ToString
 
-        TablaGuia = Guia.Obtenercodigo(año)
-        Codigo = TablaGuia.Rows(0).Item(0).ToString
-        Guia.ActualizarCorrelativo(año)
-        nroguia = Me.idsucursal.ToString + año.ToString
-        For i = Len(Codigo.ToString) + 1 To 5
-            nroguia = nroguia + "0"
-        Next
-        nroguia = nroguia + Codigo.ToString
+                        Dim enco As New LCN.Encomienda
 
+                        If enco.Guardarencomienda(nroguia, Me.idremitente, Me.iddestinatario, Me.idhojaruta, Me.txt_descripcion.Text, Me.chb_fragil.Checked, Me.nud_vol.Value, Me.nud_peso.Value, Me.nud_monto.Value, Me.chb_pagado.Checked) Then
+                            MsgBox("insertada")
+                            Me.Close()
+                        Else
+                            MsgBox("no se pudo insertar")
+                        End If
 
+                    Else
+                        MsgBox("Seleccione un destinatario")
+                    End If
+                Else
+                    MsgBox("Selecione un remitete")
+                End If
 
+            End If
+        End If
 
-        MsgBox(nroguia)
+        
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
