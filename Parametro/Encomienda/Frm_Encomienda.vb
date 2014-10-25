@@ -13,6 +13,7 @@ Public Class Frm_Encomienda
     Private peso_dis As Double
     Private vol_dis As Double
     Private volumen As Double
+    Private idusuario As Integer
 
     Private Sub traer_parametros()
         Dim tablaParametro As DataTable
@@ -54,6 +55,7 @@ Public Class Frm_Encomienda
 
     Private Sub Frm_Encomienda_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.idsucursal = 1
+        Me.idusuario = 1
         Me.lbl_datetime.Text = DateAndTime.Now
         Me.traer_parametros()
         'Me.cal_kilo()
@@ -146,7 +148,7 @@ Public Class Frm_Encomienda
 
                         Dim enco As New LCN.Encomienda
 
-                        If enco.Guardarencomienda(nroguia, Me.idremitente, Me.iddestinatario, Me.idhojaruta, Me.txt_descripcion.Text, Me.chb_fragil.Checked, Me.nud_vol.Value, Me.nud_peso.Value, Me.nud_monto.Value, Me.chb_pagado.Checked) Then
+                        If enco.Guardarencomienda(nroguia, Me.idremitente, Me.iddestinatario, Me.idhojaruta, Me.txt_descripcion.Text, Me.chb_fragil.Checked, Me.nud_vol.Value, Me.nud_peso.Value, Me.nud_monto.Value, Me.chb_pagado.Checked, Me.idusuario) Then
                             MsgBox("insertada")
                             Me.Close()
                         Else
