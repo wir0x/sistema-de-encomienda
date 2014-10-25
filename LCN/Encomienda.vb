@@ -161,7 +161,7 @@
     ''' <summary>
     ''' Guarda todos los datos de un cliente
     ''' </summary>
-    Public Function Guardarencomienda(ByVal codenc As String, ByVal nrodocre As String, ByVal nrodocdes As String, ByVal idhojaru As Integer, ByVal des As String, ByVal fragil As Boolean, ByVal volum As Double, ByVal pes As Double, ByVal mont As Double, ByVal pag As Boolean) As Boolean
+    Public Function Guardarencomienda(ByVal codenc As String, ByVal nrodocre As String, ByVal nrodocdes As String, ByVal idhojaru As Integer, ByVal des As String, ByVal fragil As Boolean, ByVal volum As Double, ByVal pes As Double, ByVal mont As Double, ByVal pag As Boolean, ByVal idusu As Integer) As Boolean
         Try
 
             IniciarSP("encomienda_Insert")
@@ -175,6 +175,7 @@
             AddParametro("@Peso", pes)
             AddParametro("@monto", mont)
             AddParametro("@pagado", pag)
+            AddParametro("@idusu", idusu)
 
             If EjecutarTransaccion() = True Then
                 Return True
