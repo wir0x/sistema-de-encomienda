@@ -99,7 +99,7 @@ LCN
 	<param name="Descripcion">Descripcion</param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:LCN.Encomienda.Guardar">
+</member><member name="M:LCN.Encomienda.Guardarencomienda(System.String,System.String,System.String,System.Int32,System.String,System.Boolean,System.Double,System.Double,System.Double,System.Boolean)">
 	<summary>
  Guarda todos los datos de un cliente
  </summary>
