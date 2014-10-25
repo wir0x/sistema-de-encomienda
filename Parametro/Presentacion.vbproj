@@ -123,6 +123,18 @@
     <Compile Include="Encomienda\Frm_Lista_Sel_Clientes.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="HistorialEncomienda\Frm_HistorialEncomienda.Designer.vb">
+      <DependentUpon>Frm_HistorialEncomienda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HistorialEncomienda\Frm_HistorialEncomienda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Punto\Frm_listaPuntos.Designer.vb">
+      <DependentUpon>Frm_listaPuntos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Punto\Frm_listaPuntos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Ruta\Frm_ListaRutas.Designer.vb">
       <DependentUpon>Frm_ListaRutas.vb</DependentUpon>
     </Compile>
@@ -242,6 +254,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Encomienda\Frm_Lista_Sel_Clientes.resx">
       <DependentUpon>Frm_Lista_Sel_Clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistorialEncomienda\Frm_HistorialEncomienda.resx">
+      <DependentUpon>Frm_HistorialEncomienda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Punto\Frm_listaPuntos.resx">
+      <DependentUpon>Frm_listaPuntos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ruta\Frm_ListaRutas.resx">
       <DependentUpon>Frm_ListaRutas.vb</DependentUpon>

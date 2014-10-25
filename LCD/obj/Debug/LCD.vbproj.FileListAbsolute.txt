@@ -30,3 +30,12 @@ C:\Users\DANIEL\Source\Repos\Sistema-de-Encomiendas\LCD\obj\Debug\LCD.vbproj.Gen
 C:\Users\DANIEL\Source\Repos\Sistema-de-Encomiendas\LCD\obj\Debug\LCD.dll
 C:\Users\DANIEL\Source\Repos\Sistema-de-Encomiendas\LCD\obj\Debug\LCD.xml
 C:\Users\DANIEL\Source\Repos\Sistema-de-Encomiendas\LCD\obj\Debug\LCD.pdb
+D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Sistema-de-Encomiendas\LCD\bin\Debug\LCD.dll
+D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Sistema-de-Encomiendas\LCD\bin\Debug\LCD.pdb
+D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Sistema-de-Encomiendas\LCD\bin\Debug\LCD.xml
+D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Sistema-de-Encomiendas\LCD\obj\Debug\LCD.vbprojResolveAssemblyReference.cache
+D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Sistema-de-Encomiendas\LCD\obj\Debug\LCD.Resources.resources
+D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Sistema-de-Encomiendas\LCD\obj\Debug\LCD.vbproj.GenerateResource.Cache
+D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Sistema-de-Encomiendas\LCD\obj\Debug\LCD.dll
+D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Sistema-de-Encomiendas\LCD\obj\Debug\LCD.xml
+D:\iFiles\Documents\GitHub\Sistema-de-Encomiendas\Sistema-de-Encomiendas\LCD\obj\Debug\LCD.pdb

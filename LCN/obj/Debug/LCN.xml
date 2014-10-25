@@ -63,6 +63,12 @@ LCN
 	<param name="id_Flota">ID del cliente</param>
 	<returns></returns>
 	<remarks></remarks>
+</member><member name="M:LCN.HistorialEncomienda.CrearHistorial">
+	<summary>
+ Crear un nuevo registro el la clase parametro
+ </summary>
+	<returns>retorna un boolean true si el la registro se ejecuto exitosamente</returns>
+	<remarks></remarks>
 </member><member name="M:LCN.Puntos.Guardar">
 	<summary>
  Guarda un Punto
@@ -99,7 +105,14 @@ LCN
 	<param name="Descripcion">Descripcion</param>
 	<returns></returns>
 	<remarks></remarks>
-</member><member name="M:LCN.Encomienda.Guardarencomienda(System.String,System.String,System.String,System.Int32,System.String,System.Boolean,System.Double,System.Double,System.Double,System.Boolean)">
+</member><member name="M:LCN.Puntos.ActualizarSevidoresPunto(System.String)">
+	<summary>
+ Actualiza los puntos de todos los servidores vinculados
+ </summary>
+	<param name="InstanciaRecibida">Instacia del cliente</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:LCN.Encomienda.Guardarencomienda(System.String,System.String,System.String,System.Int32,System.String,System.Boolean,System.Double,System.Double,System.Double,System.Boolean,System.Int32)">
 	<summary>
  Guarda todos los datos de un cliente
  </summary>

@@ -37,7 +37,6 @@ Partial Class Frm_Punto
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -64,7 +63,6 @@ Partial Class Frm_Punto
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Controls.Add(Me.btn_cancelar)
         Me.GroupBox1.Controls.Add(Me.btn_guardar)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -106,7 +104,7 @@ Partial Class Frm_Punto
         Me.btn_guardar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btn_guardar.Image = Global.Parametro.My.Resources.Resources.box_add1
         Me.btn_guardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_guardar.Location = New System.Drawing.Point(121, 15)
+        Me.btn_guardar.Location = New System.Drawing.Point(105, 15)
         Me.btn_guardar.Name = "btn_guardar"
         Me.btn_guardar.Padding = New System.Windows.Forms.Padding(7, 0, 5, 0)
         Me.btn_guardar.Size = New System.Drawing.Size(112, 33)
@@ -228,15 +226,6 @@ Partial Class Frm_Punto
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "Registro Punto"
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(13, 17)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(94, 29)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "ACTUALIZAR"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'Frm_Punto
         '
         Me.AcceptButton = Me.btn_guardar
@@ -275,5 +264,4 @@ Partial Class Frm_Punto
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class
