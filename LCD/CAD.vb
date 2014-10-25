@@ -3,10 +3,10 @@ Imports System.Data.SqlClient
 
 Public Class CAD
 
-    Public db_host As String = "SISTEMAS\DBCASA"
+    Public db_host As String = "PORTATIL-HP\ALGORITMO"
     Private db_name As String = "BDEncomiendas"
     Private db_user As String = "sa"
-    Private db_pass As String = "ingenieria de sistemas"
+    Private db_pass As String = "bacotich"
     Private cnx As New SqlConnection
     Private Comando As New SqlCommand
 
@@ -93,6 +93,7 @@ Public Class CAD
 
             Try
                 Comando.ExecuteNonQuery()
+                ' Comando.ExecuteScalar()
                 transaccion.Commit()
                 band = True
                 EjecutarTransaccion = band

@@ -173,3 +173,7 @@ C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug
 C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_ListaUsuarios.resources
 C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_Usuario.resources
 C:\Users\Jhon Vargas\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Presentacion.vbproj.GenerateResource.Cache
+C:\Users\DANIEL\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_lista_ruta_Origen.resources
+C:\Users\DANIEL\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_HistorialEncomienda.resources
+C:\Users\DANIEL\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.Frm_listaPuntos.resources
+C:\Users\DANIEL\Source\Repos\Sistema-de-Encomiendas\Parametro\obj\x86\Debug\Parametro.frmListaEncomiendas.resources

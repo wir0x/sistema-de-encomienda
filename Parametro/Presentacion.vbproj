@@ -111,6 +111,12 @@
     <Compile Include="Confirmar\Frm_Confirmar.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Encomienda\frmListaEncomiendas.Designer.vb">
+      <DependentUpon>frmListaEncomiendas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Encomienda\frmListaEncomiendas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Encomienda\Frm_lista_ruta_Origen.Designer.vb">
       <DependentUpon>Frm_lista_ruta_Origen.vb</DependentUpon>
     </Compile>
@@ -248,6 +254,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Confirmar\Frm_Confirmar.resx">
       <DependentUpon>Frm_Confirmar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Encomienda\frmListaEncomiendas.resx">
+      <DependentUpon>frmListaEncomiendas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Encomienda\Frm_lista_ruta_Origen.resx">
       <DependentUpon>Frm_lista_ruta_Origen.vb</DependentUpon>

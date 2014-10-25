@@ -213,6 +213,26 @@
 
     End Function
 
+    Public Function encomiendasGetByDia(ByVal FechaInicio As Date, ByVal FechaFin As Date) As DataTable
+
+        Dim Tabla As New DataTable
+
+        IniciarSP("encomiendasGetByDia")
+        AddParametro("@FechaInicio", FechaInicio)
+        AddParametro("@FechaFin", FechaFin)
+
+        If EjecutarTransaccion() = True Then
+            If getTabla(Tabla) = True Then
+                Return Tabla
+            Else
+                Return Nothing
+            End If
+        Else
+            Return Nothing
+        End If
+
+    End Function
+
 #End Region
 
 End Class

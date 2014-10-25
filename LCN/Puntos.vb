@@ -297,6 +297,23 @@ Public Class Puntos
 
     End Function
 
+    Public Function migrarencomiendas(ByVal InstanciaRecibida As String) As Boolean
+        Try
+            IniciarSP("migrarencomiendas")
+            AddParametro("@instanciaenviada", InstanciaRecibida)
+
+            If EjecutarTransaccion() Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox("Error en : " & ex.Message & vbNewLine & "Desde : " & ex.Source & ex.ToString, MsgBoxStyle.Critical, "DANIEL ROMERO BACOTICH")
+            Return False
+        End Try
+
+    End Function
+
 #End Region
 
 
