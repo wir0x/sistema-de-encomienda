@@ -3,7 +3,7 @@ Imports System.Data.SqlClient
 
 Public Class CAD
 
-    Private db_host As String = "WILSONGARCIA-PC\sql2008r2"
+    Public db_host As String = "WILSONGARCIA-PC\sql2008r2"
     Private db_name As String = "BDEncomiendas"
     Private db_user As String = "sa"
     Private db_pass As String = "1596357"
