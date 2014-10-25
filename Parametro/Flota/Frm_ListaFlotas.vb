@@ -84,4 +84,15 @@
     Private Sub tsmiModificar_Click(sender As Object, e As EventArgs) Handles tsmiModificar.Click
 
     End Sub
+
+    Private Sub btnActualizar_Click(sender As Object, e As EventArgs) Handles btnActualizar.Click
+        Dim pun As New LCN.Puntos
+        Dim con As New LCD.CAD
+        Me.Cursor = Cursors.WaitCursor
+        If pun.ActualizarSevidoresPunto(con.db_host) Then
+            MsgBox("Flotas Actualizadas de forma correcta!", MsgBoxStyle.Information, "ENCOMIENDAS")
+        End If
+        Me.Cursor = Cursors.Default
+
+    End Sub
 End Class
