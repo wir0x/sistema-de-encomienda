@@ -120,4 +120,14 @@ Public Class Frm_ListaChoferes
             Me.Close()
         End If
     End Sub
+
+    Private Sub btnActualizar_Click(sender As Object, e As EventArgs) Handles btnActualizar.Click
+        Dim pun As New LCN.Puntos
+        Dim con As New LCD.CAD
+        Me.Cursor = Cursors.WaitCursor
+        If pun.ActualizaChofer(con.db_host) Then
+            MsgBox("Choferes Actualizados de forma correcta!", MsgBoxStyle.Information, "ENCOMIENDAS")
+        End If
+        Me.Cursor = Cursors.Default
+    End Sub
 End Class

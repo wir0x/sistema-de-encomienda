@@ -49,6 +49,7 @@ Partial Class Frm_ListaChoferes
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ModificarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.btnActualizar = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         CType(Me.dgv_Choferes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -231,6 +232,7 @@ Partial Class Frm_ListaChoferes
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.btnActualizar)
         Me.GroupBox1.Controls.Add(Me.btn_nuevo)
         Me.GroupBox1.Controls.Add(Me.btn_cancelar)
         Me.GroupBox1.Controls.Add(Me.btn_reporte)
@@ -319,6 +321,15 @@ Partial Class Frm_ListaChoferes
         Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.EliminarToolStripMenuItem.Text = "Eliminar"
         '
+        'btnActualizar
+        '
+        Me.btnActualizar.Location = New System.Drawing.Point(8, 19)
+        Me.btnActualizar.Name = "btnActualizar"
+        Me.btnActualizar.Size = New System.Drawing.Size(123, 29)
+        Me.btnActualizar.TabIndex = 3
+        Me.btnActualizar.Text = "ACTUALIZAR"
+        Me.btnActualizar.UseVisualStyleBackColor = True
+        '
         'Frm_ListaChoferes
         '
         Me.AcceptButton = Me.btn_reporte
@@ -371,4 +382,5 @@ Partial Class Frm_ListaChoferes
     Friend WithEvents Telefono As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Direccion As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Ubicacion As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents btnActualizar As System.Windows.Forms.Button
 End Class
