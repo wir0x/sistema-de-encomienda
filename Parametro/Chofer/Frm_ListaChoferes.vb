@@ -108,4 +108,16 @@ Public Class Frm_ListaChoferes
             End If
         End If
     End Sub
+
+    Public Nom As String = ""
+    Public Ci As New Integer
+
+    Private Sub dgv_Choferes_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_Choferes.CellDoubleClick
+        MsgBox("ok")
+        If Me.dgv_Choferes.CurrentRow.Selected = False Then
+            Me.Nom = Me.dgv_Choferes.CurrentRow.Cells("Nombre").Value
+            Me.Ci = Me.dgv_Choferes.CurrentRow.Cells("NroDoc").Value
+            Me.Close()
+        End If
+    End Sub
 End Class

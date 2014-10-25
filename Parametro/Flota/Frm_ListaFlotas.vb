@@ -60,4 +60,20 @@
         frm.ShowDialog()
         Me.CargarGrid(True, "")
     End Sub
+
+    Public Placa As String = ""
+    Public ID_Flota As New Integer
+
+    Private Sub dgFlotas_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgFlotas.CellDoubleClick
+        MsgBox("ok")
+        If Me.dgFlotas.CurrentRow.Selected = False Then
+            Me.Placa = Me.dgFlotas.CurrentRow.Cells("Pla").Value
+            Me.ID_Flota = Me.dgFlotas.CurrentRow.Cells("ID").Value
+            Me.Close()
+        End If
+    End Sub
+
+    Private Sub tsmiModificar_Click(sender As Object, e As EventArgs) Handles tsmiModificar.Click
+
+    End Sub
 End Class

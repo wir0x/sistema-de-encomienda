@@ -30,11 +30,10 @@ Partial Class Frm_HojaRuta
         Me.btn_cancelar = New System.Windows.Forms.Button()
         Me.btn_guardar = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.Btn_Lista_Flotas = New System.Windows.Forms.Button()
         Me.txt_Chofer = New System.Windows.Forms.TextBox()
-        Me.Btn_Lista_Chofer = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txt_Flota = New System.Windows.Forms.TextBox()
-        Me.Btn_Lista_Flotas = New System.Windows.Forms.Button()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.cbDestino = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -44,6 +43,7 @@ Partial Class Frm_HojaRuta
         Me.DtFechaLlegada = New System.Windows.Forms.DateTimePicker()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.BtnChoferes = New System.Windows.Forms.Button()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -150,11 +150,11 @@ Partial Class Frm_HojaRuta
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.BtnChoferes)
+        Me.GroupBox3.Controls.Add(Me.Btn_Lista_Flotas)
         Me.GroupBox3.Controls.Add(Me.txt_Chofer)
-        Me.GroupBox3.Controls.Add(Me.Btn_Lista_Chofer)
         Me.GroupBox3.Controls.Add(Me.Label6)
         Me.GroupBox3.Controls.Add(Me.txt_Flota)
-        Me.GroupBox3.Controls.Add(Me.Btn_Lista_Flotas)
         Me.GroupBox3.Controls.Add(Me.Label11)
         Me.GroupBox3.Controls.Add(Me.cbDestino)
         Me.GroupBox3.Controls.Add(Me.Label5)
@@ -173,6 +173,15 @@ Partial Class Frm_HojaRuta
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Parametros Cliente"
         '
+        'Btn_Lista_Flotas
+        '
+        Me.Btn_Lista_Flotas.Location = New System.Drawing.Point(328, 123)
+        Me.Btn_Lista_Flotas.Name = "Btn_Lista_Flotas"
+        Me.Btn_Lista_Flotas.Size = New System.Drawing.Size(28, 23)
+        Me.Btn_Lista_Flotas.TabIndex = 43
+        Me.Btn_Lista_Flotas.Text = "Btn"
+        Me.Btn_Lista_Flotas.UseVisualStyleBackColor = True
+        '
         'txt_Chofer
         '
         Me.txt_Chofer.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
@@ -181,23 +190,6 @@ Partial Class Frm_HojaRuta
         Me.txt_Chofer.Name = "txt_Chofer"
         Me.txt_Chofer.Size = New System.Drawing.Size(189, 26)
         Me.txt_Chofer.TabIndex = 1
-        '
-        'Btn_Lista_Chofer
-        '
-        Me.Btn_Lista_Chofer.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.Btn_Lista_Chofer.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.Btn_Lista_Chofer.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Btn_Lista_Chofer.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Lista_Chofer.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Btn_Lista_Chofer.Image = Global.Parametro.My.Resources.Resources.menu2
-        Me.Btn_Lista_Chofer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Btn_Lista_Chofer.Location = New System.Drawing.Point(323, 157)
-        Me.Btn_Lista_Chofer.Name = "Btn_Lista_Chofer"
-        Me.Btn_Lista_Chofer.Padding = New System.Windows.Forms.Padding(5, 1, 5, 1)
-        Me.Btn_Lista_Chofer.Size = New System.Drawing.Size(33, 28)
-        Me.Btn_Lista_Chofer.TabIndex = 10
-        Me.Btn_Lista_Chofer.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Btn_Lista_Chofer.UseVisualStyleBackColor = False
         '
         'Label6
         '
@@ -218,23 +210,6 @@ Partial Class Frm_HojaRuta
         Me.txt_Flota.Name = "txt_Flota"
         Me.txt_Flota.Size = New System.Drawing.Size(189, 26)
         Me.txt_Flota.TabIndex = 0
-        '
-        'Btn_Lista_Flotas
-        '
-        Me.Btn_Lista_Flotas.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.Btn_Lista_Flotas.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.Btn_Lista_Flotas.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Btn_Lista_Flotas.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Lista_Flotas.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Btn_Lista_Flotas.Image = Global.Parametro.My.Resources.Resources.menu2
-        Me.Btn_Lista_Flotas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Btn_Lista_Flotas.Location = New System.Drawing.Point(323, 122)
-        Me.Btn_Lista_Flotas.Name = "Btn_Lista_Flotas"
-        Me.Btn_Lista_Flotas.Padding = New System.Windows.Forms.Padding(5, 1, 5, 1)
-        Me.Btn_Lista_Flotas.Size = New System.Drawing.Size(33, 28)
-        Me.Btn_Lista_Flotas.TabIndex = 11
-        Me.Btn_Lista_Flotas.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Btn_Lista_Flotas.UseVisualStyleBackColor = False
         '
         'Label11
         '
@@ -333,6 +308,15 @@ Partial Class Frm_HojaRuta
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "Fecha Llegada"
         '
+        'BtnChoferes
+        '
+        Me.BtnChoferes.Location = New System.Drawing.Point(328, 155)
+        Me.BtnChoferes.Name = "BtnChoferes"
+        Me.BtnChoferes.Size = New System.Drawing.Size(28, 23)
+        Me.BtnChoferes.TabIndex = 44
+        Me.BtnChoferes.Text = "Btn"
+        Me.BtnChoferes.UseVisualStyleBackColor = True
+        '
         'Frm_HojaRuta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -363,10 +347,8 @@ Partial Class Frm_HojaRuta
     Friend WithEvents btn_guardar As System.Windows.Forms.Button
     Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
     Friend WithEvents txt_Chofer As System.Windows.Forms.TextBox
-    Friend WithEvents Btn_Lista_Chofer As System.Windows.Forms.Button
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents txt_Flota As System.Windows.Forms.TextBox
-    Friend WithEvents Btn_Lista_Flotas As System.Windows.Forms.Button
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents cbDestino As System.Windows.Forms.ComboBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
@@ -376,4 +358,6 @@ Partial Class Frm_HojaRuta
     Friend WithEvents DtFechaLlegada As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Btn_Lista_Flotas As System.Windows.Forms.Button
+    Friend WithEvents BtnChoferes As System.Windows.Forms.Button
 End Class

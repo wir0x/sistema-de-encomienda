@@ -23,11 +23,16 @@ Partial Class Frm_ListaChoferes
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.dgv_Choferes = New System.Windows.Forms.DataGridView()
+        Me.NroDoc = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Telefono = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Ubicacion = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -44,11 +49,6 @@ Partial Class Frm_ListaChoferes
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ModificarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NroDoc = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Telefono = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Ubicacion = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox2.SuspendLayout()
         CType(Me.dgv_Choferes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -86,6 +86,51 @@ Partial Class Frm_ListaChoferes
         Me.dgv_Choferes.RowHeadersVisible = False
         Me.dgv_Choferes.Size = New System.Drawing.Size(755, 333)
         Me.dgv_Choferes.TabIndex = 6
+        '
+        'NroDoc
+        '
+        Me.NroDoc.DataPropertyName = "NroDoc"
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.NroDoc.DefaultCellStyle = DataGridViewCellStyle1
+        Me.NroDoc.HeaderText = "Nr. Doc. (CI)"
+        Me.NroDoc.Name = "NroDoc"
+        Me.NroDoc.ReadOnly = True
+        Me.NroDoc.Width = 80
+        '
+        'Nombre
+        '
+        Me.Nombre.DataPropertyName = "Nombre"
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Nombre.DefaultCellStyle = DataGridViewCellStyle2
+        Me.Nombre.HeaderText = "Nombres"
+        Me.Nombre.Name = "Nombre"
+        Me.Nombre.ReadOnly = True
+        Me.Nombre.Width = 200
+        '
+        'Telefono
+        '
+        Me.Telefono.DataPropertyName = "Telefono"
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Crimson
+        Me.Telefono.DefaultCellStyle = DataGridViewCellStyle3
+        Me.Telefono.HeaderText = "Telefono"
+        Me.Telefono.Name = "Telefono"
+        Me.Telefono.ReadOnly = True
+        Me.Telefono.Width = 80
+        '
+        'Direccion
+        '
+        Me.Direccion.DataPropertyName = "Direccion"
+        Me.Direccion.HeaderText = "Direccion"
+        Me.Direccion.Name = "Direccion"
+        Me.Direccion.ReadOnly = True
+        Me.Direccion.Width = 200
+        '
+        'Ubicacion
+        '
+        Me.Ubicacion.DataPropertyName = "Ubicacion"
+        Me.Ubicacion.HeaderText = "Ubicacion"
+        Me.Ubicacion.Name = "Ubicacion"
+        Me.Ubicacion.ReadOnly = True
         '
         'Label4
         '
@@ -260,7 +305,7 @@ Partial Class Frm_ListaChoferes
         '
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ModificarToolStripMenuItem, Me.EliminarToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(153, 70)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(126, 48)
         '
         'ModificarToolStripMenuItem
         '
@@ -271,53 +316,8 @@ Partial Class Frm_ListaChoferes
         'EliminarToolStripMenuItem
         '
         Me.EliminarToolStripMenuItem.Name = "EliminarToolStripMenuItem"
-        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.EliminarToolStripMenuItem.Text = "Eliminar"
-        '
-        'NroDoc
-        '
-        Me.NroDoc.DataPropertyName = "NroDoc"
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.NroDoc.DefaultCellStyle = DataGridViewCellStyle4
-        Me.NroDoc.HeaderText = "Nr. Doc. (CI)"
-        Me.NroDoc.Name = "NroDoc"
-        Me.NroDoc.ReadOnly = True
-        Me.NroDoc.Width = 80
-        '
-        'Nombre
-        '
-        Me.Nombre.DataPropertyName = "Nombre"
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Nombre.DefaultCellStyle = DataGridViewCellStyle5
-        Me.Nombre.HeaderText = "Nombres"
-        Me.Nombre.Name = "Nombre"
-        Me.Nombre.ReadOnly = True
-        Me.Nombre.Width = 200
-        '
-        'Telefono
-        '
-        Me.Telefono.DataPropertyName = "Telefono"
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.Telefono.DefaultCellStyle = DataGridViewCellStyle6
-        Me.Telefono.HeaderText = "Telefono"
-        Me.Telefono.Name = "Telefono"
-        Me.Telefono.ReadOnly = True
-        Me.Telefono.Width = 80
-        '
-        'Direccion
-        '
-        Me.Direccion.DataPropertyName = "Direccion"
-        Me.Direccion.HeaderText = "Direccion"
-        Me.Direccion.Name = "Direccion"
-        Me.Direccion.ReadOnly = True
-        Me.Direccion.Width = 200
-        '
-        'Ubicacion
-        '
-        Me.Ubicacion.DataPropertyName = "Ubicacion"
-        Me.Ubicacion.HeaderText = "Ubicacion"
-        Me.Ubicacion.Name = "Ubicacion"
-        Me.Ubicacion.ReadOnly = True
         '
         'Frm_ListaChoferes
         '

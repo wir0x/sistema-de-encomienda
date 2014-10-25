@@ -47,11 +47,11 @@ Partial Class Frm_ListaFlotas
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.tsmiModificar = New System.Windows.Forms.ToolStripMenuItem()
         Me.EliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ParametroId = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PrecioMinimo = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PrecioKilo = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PrecioVolumen = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Pla = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.VolumenCarga = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Peso = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Activo = New System.Windows.Forms.DataGridViewCheckBoxColumn()
@@ -84,7 +84,7 @@ Partial Class Frm_ListaFlotas
         Me.dgFlotas.BackgroundColor = System.Drawing.Color.Snow
         Me.dgFlotas.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgFlotas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Me.dgFlotas.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ParametroId, Me.PrecioMinimo, Me.PrecioKilo, Me.PrecioVolumen, Me.Direccion, Me.VolumenCarga, Me.Peso, Me.Activo, Me.Fecha, Me.Ubicacion})
+        Me.dgFlotas.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.PrecioMinimo, Me.PrecioKilo, Me.PrecioVolumen, Me.Pla, Me.VolumenCarga, Me.Peso, Me.Activo, Me.Fecha, Me.Ubicacion})
         Me.dgFlotas.Location = New System.Drawing.Point(8, 31)
         Me.dgFlotas.Name = "dgFlotas"
         Me.dgFlotas.ReadOnly = True
@@ -280,15 +280,15 @@ Partial Class Frm_ListaFlotas
         Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.EliminarToolStripMenuItem.Text = "Eliminar"
         '
-        'ParametroId
+        'ID
         '
-        Me.ParametroId.DataPropertyName = "ID_flota"
+        Me.ID.DataPropertyName = "ID_flota"
         DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Crimson
-        Me.ParametroId.DefaultCellStyle = DataGridViewCellStyle1
-        Me.ParametroId.HeaderText = "ID. Flota"
-        Me.ParametroId.Name = "ParametroId"
-        Me.ParametroId.ReadOnly = True
-        Me.ParametroId.Width = 80
+        Me.ID.DefaultCellStyle = DataGridViewCellStyle1
+        Me.ID.HeaderText = "ID. Flota"
+        Me.ID.Name = "ID"
+        Me.ID.ReadOnly = True
+        Me.ID.Width = 80
         '
         'PrecioMinimo
         '
@@ -320,13 +320,13 @@ Partial Class Frm_ListaFlotas
         Me.PrecioVolumen.ReadOnly = True
         Me.PrecioVolumen.Width = 50
         '
-        'Direccion
+        'Pla
         '
-        Me.Direccion.DataPropertyName = "Placa"
-        Me.Direccion.HeaderText = "Placa"
-        Me.Direccion.Name = "Direccion"
-        Me.Direccion.ReadOnly = True
-        Me.Direccion.Width = 50
+        Me.Pla.DataPropertyName = "Placa"
+        Me.Pla.HeaderText = "Placa"
+        Me.Pla.Name = "Pla"
+        Me.Pla.ReadOnly = True
+        Me.Pla.Width = 50
         '
         'VolumenCarga
         '
@@ -421,11 +421,11 @@ Partial Class Frm_ListaFlotas
     Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
     Friend WithEvents tsmiModificar As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents EliminarToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ParametroId As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ID As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents PrecioMinimo As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents PrecioKilo As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents PrecioVolumen As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Direccion As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Pla As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents VolumenCarga As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Peso As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Activo As System.Windows.Forms.DataGridViewCheckBoxColumn
